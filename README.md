@@ -1,8 +1,6 @@
-## Rocco Marosi
+## Rocco Marosi ⟐ Architecture Photography ⟐ 
 
-⟐ Architecture Photography
-
-⟀ Rocco Marosi website [roccomarosi.com](http://roccomarosi.com)
+⟀ Rocco Marosi showroom [roccomarosi.com](http://roccomarosi.com)
 
 ```sh
 	¯¯\_(ツ)_/¯¯ 
