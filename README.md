@@ -1,4 +1,10 @@
-## Rocco Marosi ⟐ Architecture Photography ⟐ version 0.1.0
+#### Rocco Marosi ⟐ Architecture Photography ⟐
+- - - -
+
+##  dev version 0.2.0
+
+
+
 
 Rocco Marosi showroom [roccomarosi.com](http://roccomarosi.com)
 
@@ -12,3 +18,6 @@ All photos © Rocco Marosi. All rights reserved.
 Please, ask for permission first by contacting us through _info@junglestar.org_
 
 Thanks, Junglestar team
+
+
+
