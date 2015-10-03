@@ -1,10 +1,11 @@
 #### Rocco Marosi ⟐ Architecture Photography ⟐
 - - - -
 
-##  dev version 0.2.0
+#### version 0.2.0 development branch
+- [material design lite](http://www.getmdl.io/started/index.html#download)
+- [flickity](http://flickity.metafizzy.co/)
 
-
-
+- - - -
 
 Rocco Marosi showroom [roccomarosi.com](http://roccomarosi.com)
 
