@@ -7,15 +7,6 @@
 	  <meta name="description" content="Architectural Photography Services" />
 	  <meta name="keywords" content="photographer, architecture, architectural photography, get a quote, specialized, professional, skilled, imaginery, villa, resort, mall, public spaces, available"/>
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  
-
-<!-- material design lite -->
-	  <link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
-		
-
-		<script src="/node_modules/material-design-lite/material.min.js"></script>
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
 		<link rel="author" href="https://www.google.com/+Roccomarosi">
@@ -42,191 +33,120 @@
 		<meta name="application-name" content="Rocco Marosi">
 		<meta name="msapplication-TileColor" content="#2d89ef">
 		<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=0.1.0">
-		<meta name="theme-color" content="#ffffff">        
+		<meta name="theme-color" content="#ffffff">
+
+
+<!-- material design lite 
+	  <link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
+		
+
+		<script src="/node_modules/material-design-lite/material.min.js"></script>
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+
+<!-- flickity -->
+		<link rel="stylesheet" href="css/flickity.min.css" media="screen">
+
+		<script src="j/flickity.pkgd.min.js"></script>
+
+		<link rel="stylesheet" href="css/rok.css" >
+
 	</head>
 
 	<body>
 
-		<header>
-			<div id="slidingMenuDesc" >
-				<div><span>Iperimagination</span></div>
-				<div><span>Feeling The Space</span></div>
-				<div><span>Seduction Imperative</span></div>
-				<div><span> ⟐ Rocco Marosi is available on planet earth!</span></div>
+	
+		<header class="menu">
+			
+			<div class="menu_optional" >
+				<div>Iperimagination</div>
+				<div>Feeling The Space</div>
+				<div>Seduction Imperative</div>
+				<div>Rocco Marosi is available on planet earth!</div>
 			</div>
 			
-			<nav>
-				<ul id="slidingMenu">
-					<li><a title="Rocco Marosi is currently available for hire" href="/">Rocco Marosi</a></li>
-					
-					<li><a title="a selected portfolio of Rocco's residential works" href="residential.htm"><article>residential</article></a></li>
-					
-					<li><a title="a selected portfolio of Rocco's public spaces works" href="public.htm"><article>public</article></a></li>
-					
-					<li><a title="a selected portfolio of Rocco's commercial spaces works" href="commercial.htm"><article>commercial</article></a></li>
-					
-					<li><a title="rocco.marosi@gmail.com" href="mailto:rocco.marosi@gmail.com"><article>Get a quote</article></a></li>
-					
-					<li><a target="_blank" title="connect" href="https://google.com/+Roccomarosi?rel=author">+</a></li>
-				</ul>
+			<nav class="menu_links">
+
+				<a class="menu_link" title="Rocco Marosi is currently available for hire" href="/">Rocco Marosi</a>
+
+				<a class="menu_link" title="a selected portfolio of Rocco's residential works" href="residential.htm">Residential</a>
+
+				<a class="menu_link" title="a selected portfolio of Rocco's public spaces works" href="public.htm">Public</a>
+				
+				<a class="menu_link" title="a selected portfolio of Rocco's commercial spaces works" href="commercial.htm">Commercial</a>
+
+				<a class="menu_link" title="rocco.marosi@gmail.com" href="mailto:rocco.marosi@gmail.com">Get a quote</a>
+
+				<a class="menu_link" target="_blank" title="connect" href="https://google.com/+Roccomarosi?rel=author">+</a>
+
 			</nav>
+
 		</header>
 
 
-		<div id="control">
-			<div id="start"></div>
-			<div id="stop"></div>
-		</div>
-
-	  <div id="slides">
-	    <ul class="slides-container">
+	  <div class="wrap">
+			
+			<div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>
 	    
-		    <li>
-			    <figure>
-						<img src="p/130820-photographer-rocco-marosi-4670.jpg" alt="Aska, Bali, Indonesia • J.Bergougnoux • Rocco Marosi © 2013">
-						
-						<figcaption class="botstik">
-					    <div class="slidecaption">Aska, Bali • J.Bergougnoux • Rocco Marosi <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank" title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License">©</a> 2013
-					    </div>
-				    </figcaption>
-			    </figure>
-		    </li>
+		    <div class="gallery-cell">
+		    	<img src="p/130820-photographer-rocco-marosi-4670.jpg" alt="Aska, Bali, Indonesia • J.Bergougnoux • Rocco Marosi © 2013">
+		    </div>
 	    
-	      <li>
-		      <figure>
-			      <img src="p/130728-photographer-rocco-marosi-4300.jpg" alt="Marina Bay Sands, Singapore • Safdie Architects • Rocco Marosi © 2013">
+	     	<div class="gallery-cell">
+	     		<img src="p/130728-photographer-rocco-marosi-4300.jpg" alt="Marina Bay Sands, Singapore • Safdie Architects • Rocco Marosi © 2013">
+		    </div>
 
-			      <figcaption class="botstik">
-			        <div class="slidecaption">Marina Bay Sands, Singapore • Safdie Architects • Rocco Marosi <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank" title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License">©</a> 2013  
-			        </div>
-			      </figcaption>
-		      </figure>
-		    </li>
+		   	<div class="gallery-cell">
+		   		<img src="p/150509-photographer-rocco-marosi-6097.jpg" alt="Expo 2015, Milano, Italy • Rocco Marosi © 2015">
+		    </div>
 
-
-		   	<li>
-		      <figure>
-			      <img src="p/150509-photographer-rocco-marosi-6097.jpg" alt="Expo 2015, Milano, Italy • Rocco Marosi © 2015">
-
-			      <figcaption class="botstik">
-			        <div class="slidecaption">Expo 2015, Milano, Italy • Rocco Marosi © 2015<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank" title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License">©</a> 2015  
-			        </div>
-			      </figcaption>
-		      </figure>
-		    </li>
-
-
-	      <li>
-		      <figure>
-			      <img src="p/130622-photographer-rocco-marosi-3342.jpg" alt="Muchmore, Bali, Indonesia • Landi Designs • Rocco Marosi © 2013">
-		      
-			      <figcaption class="botstik">
-			        <div class="slidecaption">Muchmore, Bali • Landi Designs • Rocco Marosi <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank" title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License">©</a> 2013
-			    		</div>
-				    </figcaption>
-		      </figure>		    
-		    </li>      
+	      <div class="gallery-cell">
+	      	<img src="p/130622-photographer-rocco-marosi-3342.jpg" alt="Muchmore, Bali, Indonesia • Landi Designs • Rocco Marosi © 2013">
+		    </div>      
 	      
-	      <li>
-		      <figure>
-		      <img src="p/130616-photographer-rocco-marosi-3026.jpg" alt="Muchmore, Bali, Indonesia • Landi Designs • Rocco Marosi © 2013">
-		      
-			      <figcaption class="botstik">
-			        <div class="slidecaption">Muchmore, Bali • Landi Designs • Rocco Marosi <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank" title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License">©</a> 2013
-				    	</div>
-				    </figcaption>
-			    </figure>
-		    </li>      
+	      <div class="gallery-cell">
+	      	<img src="p/130616-photographer-rocco-marosi-3026.jpg" alt="Muchmore, Bali, Indonesia • Landi Designs • Rocco Marosi © 2013">
+		    </div>      
 	      
-	      <li>
-		      <figure>
-			      <img src="p/120124-photographer-rocco-marosi-8165.jpg" alt="Honk Kong, Dragon year • Rocco Marosi © 2012">
-		      
-			      <figcaption class="botstik">
-			        <div class="slidecaption">Honk Kong, Dragon year • Rocco Marosi <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank" title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License">©</a> 2012
-			        </div>
-			      </figcaption>
-		      </figure>
-		    </li>
+	      <div class="gallery-cell">
+	      	<img src="p/120124-photographer-rocco-marosi-8165.jpg" alt="Honk Kong, Dragon year • Rocco Marosi © 2012">
+		    </div>
 				
-				<li>
-					<figure>
-						<img src="p/130820-photographer-rocco-marosi-4673.jpg" alt="Aska, Bali, Indonesia • J.Bergougnoux • Rocco Marosi © 2013">
-					
-						<figcaption class="botstik">
-				  		<div class="slidecaption">Aska, Bali • J.Bergougnoux • Rocco Marosi <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank" title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License">©</a> 2013
-							</div>
-						</figcaption>
-					</figure>
-				</li>      
-				      
+				<div class="gallery-cell">
+					<img src="p/130820-photographer-rocco-marosi-4673.jpg" alt="Aska, Bali, Indonesia • J.Bergougnoux • Rocco Marosi © 2013">
+				</div>      		    
 	      
-	      <li>
-		      <figure>
-		      	<img src="p/120719-photographer-rocco-marosi-castaway-02.jpg" alt="Castaway, Indonesia • Landi Designs • Rocco Marosi © 2010">
-		      
-			      <figcaption class="botstik">
-			      	<div class="slidecaption">Castaway, Indonesia • Landi Designs • Rocco Marosi <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank" title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License">©</a> 2010
-			      	</div>
-			      </figcaption>
-		      </figure>
-		    </li>      
+	      <div class="gallery-cell">
+	      	<img src="p/120719-photographer-rocco-marosi-castaway-02.jpg" alt="Castaway, Indonesia • Landi Designs • Rocco Marosi © 2010">
+		    </div>      
 	      
-	      <li>
-		      <figure>
-		      	<img src="p/080122-photographer-rocco-marosi-0850.jpg" alt="Ritz Carlton, Bali, Indonesia • Rocco Marosi © 2008">
-		      
-			      <figcaption class="botstik">
-			      	<div class="slidecaption">Ritz Carlton, Indonesia • Rocco Marosi <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank" title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License">©</a> 2008
-				    	</div>
-				    </figcaption>
-			    </figure>
-		    </li>      
+	      <div class="gallery-cell">
+	      	<img src="p/080122-photographer-rocco-marosi-0850.jpg" alt="Ritz Carlton, Bali, Indonesia • Rocco Marosi © 2008">
+		    </div>      
 	      
-	      <li>
-		      <figure>
-		      	<img src="p/130616-photographer-rocco-marosi-3002.jpg" alt="Much more, Indonesia • Landi Designs • Rocco Marosi © 2013">
-			      
-			      <figcaption class="botstik">
-			      	<div class="slidecaption">Muchmore, Bali • Landi Designs • Rocco Marosi <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank" title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License">©</a> 2013
-				    	</div>
-				    </figcaption>
-				   </figure>
-		    </li>
+	      <div class="gallery-cell">
+	      	<img src="p/130616-photographer-rocco-marosi-3002.jpg" alt="Much more, Indonesia • Landi Designs • Rocco Marosi © 2013">
+		    </div>
 
-	      <li>
-		      <figure>
-		      	<img src="p/060110-photographer-rocco-marosi-3517bw.jpg" alt="Genova, Italy • Renzo Piano • Rocco Marosi © 2006">
-		      	
-			      <figcaption class="botstik">
-			      	<div class="slidecaption">Porto Antico, Genova, Italy • Renzo Piano • Rocco Marosi <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US" target="_blank" title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License">©</a> 2006
-				    	</div>
-				    </figcaption>
-			    </figure>
-		    </li>      
-	      
-	      
-	     </ul>
-	      
+	      <div class="gallery-cell">
+	      	<img src="p/060110-photographer-rocco-marosi-3517bw.jpg" alt="Genova, Italy • Renzo Piano • Rocco Marosi © 2006">
+		    </div>      
 
-	    <nav class="slides-navigation">
-	      <a href="#" class="next"></a>
-	      <a href="#" class="prev"></a>
-	    </nav>
-	    
-	  </div>
+	  	</div><!-- /.gallery -->
+
+	</div><!-- /.wrap -->
 
 
 
 		<!-- Universal Google Analytics tracking code --> 
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		
-		  ga('create', 'UA-43130984-1', 'roccomarosi.com');
-		  ga('send', 'pageview');
+		  // ga('create', 'UA-43130984-1', 'roccomarosi.com');
+		  // ga('send', 'pageview');
 		
 		</script>
 	</body>
