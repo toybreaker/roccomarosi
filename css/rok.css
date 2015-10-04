@@ -18,10 +18,11 @@ textarea {
 
 html {
     font-size: 16px;
+    line-height: 1.1;
 }
 body {
     font-size: 1.5rem;
-    line-height: 1.4;
+    font-weight:100;
 }
 ::-moz-selection {
     background: #b3d4fc;
@@ -61,52 +62,24 @@ textarea {
 
 /* Author's custom styles ============================================ */
 
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 100;
+    font-size: 2rem;
+    margin:0;
+    padding:0;
+}
 a {
     text-decoration: none;
-    color: #FFFFFF;
-    text-shadow: 1px 2px 3px #000000;
+    color: #ddd;
 }
-a:hover {
-    text-decoration: underline;
-    color: #ffff00!important;
-}
+a:hover { color: #fff; }
 
-
-/*captions*/
-
-.botstik {
-    position: absolute;
-    bottom: 3%;
-    left: 50px;
-    /*height:40px;*/
-    
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-.slidecaption {
-    overflow: hidden;
-    float: left;
-    color: #FF0;
-    background-color: rgba(0, 0, 0, 0.7);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-    /*for IE8*/
-    
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -khtml-border-radius: 4px;
-    border-radius: 4px;
-}
-figcaption a {
-    color: yellow;
-}
-figcaption a:hover {
-    text-decoration: none;
-}
-
-/* inherit height from parent */
 .wrap { height: 100vh; }
 
+
+/*flickity*/
+/* inherit height from parent */
 .gallery { height: 100%; }
 
 .gallery-cell { height: 100%; }
@@ -114,6 +87,8 @@ figcaption a:hover {
 /* move page dots into gallery */
 .flickity-page-dots { bottom: 10px; }
 
+
+/*menu*/
 .menu{
     position: fixed;
     top:0;
@@ -121,12 +96,19 @@ figcaption a:hover {
     z-index:100;
 }
 .menu_optional{display: none;}
+
 .menu_links{
     margin-top: 1rem;
     margin-right: 1rem; 
 }
-.menu_link{display: block; text-align: right;}
+.menu_link{
+    display: block; 
+    text-align: right;
+}
+.menu_link--title{
+    color: red;
 
+}
 
 /*  Helper classes ======================================================= */
 
