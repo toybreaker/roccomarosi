@@ -9,6 +9,11 @@
 
 Rocco Marosi showroom [roccomarosi.com](http://roccomarosi.com)
 
+<<<<<<< HEAD
+=======
+Rocco Marosi showroom [roccomarosi.com](http://roccomarosi.com)
+
+>>>>>>> gh-pages
 
 ## warning:
 
@@ -18,7 +23,13 @@ All photos © Rocco Marosi. All rights reserved.
 
 Please, ask for permission first by contacting us through _info@junglestar.org_
 
+<<<<<<< HEAD
 Thanks, Junglestar team
 
 
 
+=======
+All photos © Rocco Marosi. All rights reserved.
+
+Thanks, Junglestar team
+>>>>>>> gh-pages
