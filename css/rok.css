@@ -60,7 +60,7 @@ textarea {
 
 
 
-/* Author's custom styles ============================================ */
+/* ---Author---'s custom styles ============================================ */
 
 
 h1,h2,h3,h4,h5,h6{
@@ -75,10 +75,14 @@ a {
 }
 a:hover { color: #fff; }
 
-.wrap { height: 100vh; }
 
 
-/*flickity*/
+.wrap { 
+    position: relative;
+    height: 100vh; 
+}
+
+/*---flickity---*/
 /* inherit height from parent */
 .gallery { height: 100%; }
 
@@ -88,7 +92,7 @@ a:hover { color: #fff; }
 .flickity-page-dots { bottom: 10px; }
 
 
-/*menu*/
+/*---menu---*/
 .menu{
     position: fixed;
     top:0;
@@ -110,20 +114,8 @@ a:hover { color: #fff; }
 
 }
 
-/*  Helper classes ======================================================= */
+/*  Helper classes */
 
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
 .hidden {
     display: none !important;
     visibility: hidden;
@@ -150,17 +142,8 @@ a:hover { color: #fff; }
 .invisible {
     visibility: hidden;
 }
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
-}
+
+
 
 @media print {
     * {
