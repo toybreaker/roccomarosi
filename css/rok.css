@@ -71,9 +71,12 @@ h1,h2,h3,h4,h5,h6{
 }
 a {
     text-decoration: none;
-    color: #ddd;
+    color: #ccc;
 }
-a:hover { color: #fff; }
+a:hover {
+    text-decoration: none;
+    color: #fff; 
+}
 
 
 
@@ -108,10 +111,15 @@ a:hover { color: #fff; }
 .menu_link{
     display: block; 
     text-align: right;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.75);;
 }
 .menu_link--title{
+    color: orangered;
+    text-shadow: 1px 1px 1px rgba(255,255,255,.5);
+}
+.menu_link--title:hover{
     color: red;
-
+    text-shadow: 1px 1px 1px rgba(255,255,255,.5);
 }
 
 /*  Helper classes */
