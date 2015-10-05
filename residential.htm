@@ -36,7 +36,6 @@
 
 		<!-- flickity -->
 		<link rel="stylesheet" href="css/flickity.min.css" media="screen">
-		<script src="j/flickity.pkgd.min.js"></script>
 
 		<link rel="stylesheet" href="css/rok.css" >
 
@@ -75,7 +74,7 @@
 
 	  <div class="wrap">
 			
-			<div class="gallery js-flickity" data-flickity-options='{ "contain": true, "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+			<div class="gallery">
 
 
 				<img class="gallery-cell" src="p/130820-photographer-rocco-marosi-4673.jpg" alt="Aska, Bali, Indonesia • J.Bergougnoux • Rocco Marosi © 2013">
@@ -156,9 +155,35 @@
 
 	  	</div><!-- /.gallery -->
 
-	</div><!-- /.wrap -->
+		</div><!-- /.wrap -->
 
+		<p class="caption">
+			<span class="caption_text">&nbsp;</span>
+		</p>
 
+		<script src="j/flickity.pkgd.min.js"></script>
+
+		<script>
+			var utils = window.fizzyUIUtils;
+
+			docReady( function() {
+			  var flkty = new Flickity( '.gallery', {
+			    contain: true,
+			    wrapAround: true,
+			    autoPlay: true, 
+			    imagesLoaded: true
+			  });
+
+			  var caption = document.querySelector('.caption_text');
+
+			  flkty.on( 'cellSelect', function() {
+			    // set image caption using img's alt
+			    utils.setText( caption, flkty.selectedElement.alt );
+			  });
+
+			});
+
+		</script>
 
 		<!-- Universal Google Analytics tracking code --> 
 		<script>
