@@ -92,7 +92,7 @@ a:hover {
 .gallery-cell { height: 100%; }
 
 /* move page dots into gallery */
-.flickity-page-dots { bottom: 10px; }
+.flickity-page-dots { bottom: .5rem; }
 
 
 /*---menu---*/
@@ -131,7 +131,8 @@ a:hover {
     background: rgba(0,0,0,.5); color: white;
     margin: 0;
     padding: .5rem 1rem;
-    text-align: center;    font-size: 1rem;
+    text-align: center;
+    font-size: .9rem;
     line-height: 2;
 }
 

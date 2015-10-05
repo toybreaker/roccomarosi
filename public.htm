@@ -121,8 +121,11 @@
 			  var flkty = new Flickity( '.gallery', {
 			    contain: true,
 			    wrapAround: true,
-			    autoPlay: true, 
-			    imagesLoaded: true
+			    autoPlay: 6000, 
+			    imagesLoaded: true,
+			    // disable previous & next buttons and dots
+					prevNextButtons: false,
+					pageDots: false
 			  });
 
 			  var caption = document.querySelector('.caption_text');
