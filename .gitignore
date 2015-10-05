@@ -7,4 +7,5 @@ p/_not-used
 p/favicon-32x32.ico
 .htaccess
 node_modules
+js/
 js
