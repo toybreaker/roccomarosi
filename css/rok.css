@@ -62,6 +62,12 @@ textarea {
 
 /* ---Author---'s custom styles ============================================ */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
 
 h1,h2,h3,h4,h5,h6{
     font-weight: 100;
@@ -71,13 +77,12 @@ h1,h2,h3,h4,h5,h6{
 }
 a {
     text-decoration: none;
-    color: gray;
+    color: #ddd;
 }
 a:hover {
     text-decoration: none;
     color: white; 
 }
-
 
 
 .wrap { 
@@ -104,44 +109,103 @@ a:hover {
 }
 .menu_optional{display: none;}
 
-.menu_links{
-    margin-top: 1rem;
-    margin-right: 1rem; 
-}
+.menu_links{ margin-top: 2vh; }
+
 .menu_link{
-    display: block; 
+    text-align: right;
+    margin:4px 0;
+    display: none; 
+    text-shadow: 1px 1px 1px black;
+}
+
+.menu_link h1,
+.menu_link h2{
+    background: rgba(0,0,0,.5);
+    padding: .5rem 16px .5rem 1rem;
+    font-size: 1.75rem;
+    line-height: 1.1;
     text-align: right;
     text-shadow: 1px 1px 1px black;
 }
-.menu_link--title{
-    color: gainsboro;
-}
-.menu_link--title:hover{
-    color: white;
 
+.menu_is_open .menu_link{display: block; }
+
+.menu_link--title{
+    display: block;
+    color: #8ac8ff;
 }
+
+.menu_link--title h1{padding-right:66px;}
+
+.trigger{
+    cursor:pointer;
+    display: block;
+    width: 36px;
+    height: 36px;
+    
+    position: absolute;
+    z-index:2;
+    top:2vh;
+    right:5px;
+    padding: 5px 5px 5px 0;
+    margin-left:20px;
+}
+
+.trigger svg{
+    fill: #8ac8ff;
+    -webkit-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    transform:rotate(0deg);
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.69, 0.2, 0.48, 1.47);
+    transition-property: transform;
+}
+
+.trigger svg:hover{ fill: #8ac8ff; }
+
+.trigger.hide_SVG svg{
+    fill: red;
+    width: 100%;
+    -webkit-transform:rotate(225deg);
+    -ms-transform:rotate(225deg);
+    transform:rotate(225deg);
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.69, 0.2, 0.48, 1.47);
+    transition-property: transform;
+}
+
+.menu_link--title:hover{ color: #8ac8ff; }
 
 .caption {
     position: fixed;
-    bottom: 2rem;
-    left: 5%; right: 5%;
-    max-width: 90%;
-}
-.caption_text{
-    background: rgba(0,0,0,.5); color: white;
-    margin: 0;
-    padding: .5rem 1rem;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    width: 100%;
     text-align: center;
+}
+
+.caption_text{
+    padding: 5px 5px 5px 0;
+    width:auto;
+    margin: 0 auto .5rem auto;
+
+    background: rgba(0,0,0,.5); 
+    color: #8ac8ff;
+    
     font-size: .9rem;
-    line-height: 2;
+    line-height: 1.5;
+    text-align: center;
+    padding: .5rem 1rem;
 }
 
 /*  Helper classes */
 
-.hidden {
+.hidden{
     display: none !important;
     visibility: hidden;
 }
+
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -152,6 +216,7 @@ a:hover {
     position: absolute;
     width: 1px;
 }
+
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -161,9 +226,8 @@ a:hover {
     position: static;
     width: auto;
 }
-.invisible {
-    visibility: hidden;
-}
+
+.invisible { visibility: hidden; }
 
 
 

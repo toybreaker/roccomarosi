@@ -54,6 +54,37 @@
 			
 			<nav class="menu_links">
 
+				<span class="trigger" id="menu_trigger" >
+					<svg class="switch" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path d="M0 0h24v24h-24z" fill="none"/>
+						<path d="M13 7h-2v4h-4v2h4v4h2v-4h4v-2h-4v-4zm-1-5c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+					</svg>
+				</span>
+
+				<script>
+			  /* @info: toggle menu */
+
+			    function toggleClass(element, className){
+			        if (!element || !className){
+			            return;
+			        }
+			        
+			        var classString = element.className, nameIndex = classString.indexOf(className);
+			        if (nameIndex == -1) {
+			            classString += ' ' + className;
+			        }
+			        else {
+			            classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+className.length);
+			        }
+			        element.className = classString;
+			    }
+
+			    document.getElementById('menu_trigger').addEventListener('click', function() {
+			        toggleClass(document.getElementById('menu_trigger'), 'hide_SVG'),
+			        toggleClass(document.body, 'menu_is_open');
+			    });
+				</script>
+				
 				<a class="menu_link menu_link--title" title="Rocco Marosi is currently available for hire" href="/"><h1>Rocco Marosi</h1></a>
 
 				<a class="menu_link" title="a selected portfolio of Rocco's residential works" href="residential.htm"><h2>Residential</h2></a>
@@ -64,7 +95,7 @@
 
 				<a class="menu_link" title="rocco.marosi@gmail.com" href="mailto:rocco.marosi@gmail.com"><h2>Get a quote</h2></a>
 
-				<a class="menu_link" target="_blank" title="connect" href="https://google.com/+Roccomarosi?rel=author">+</a>
+				<a class="menu_link" target="_blank" title="connect" href="https://google.com/+Roccomarosi?rel=author">+&nbsp;&nbsp;</a>
 
 			</nav>
 
