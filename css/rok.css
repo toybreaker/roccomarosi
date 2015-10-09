@@ -91,7 +91,6 @@ a:hover {
 }
 
 /*---flickity---*/
-/* inherit height from parent */
 .gallery { height: 100%; }
 
 .gallery-cell { height: 100%; }
