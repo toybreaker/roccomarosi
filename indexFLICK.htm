@@ -95,15 +95,11 @@
 		</header>
 
 
-	  <div style="width: 100vw">
+	  <div class="wrap">
+			
+			<div class="gallery">
 
-				<div class="delayed-image-load" data-src="p/130820-photographer-rocco-marosi-4670-{width}.jpg" data-alt="Aska, Bali, Indonesia • J.Bergougnoux • Rocco Marosi © 2013"></div>
 
-				<div class="delayed-image-load" data-src="p/130728-photographer-rocco-marosi-4300-{width}.jpg" data-alt="Marina Bay Sands, Singapore • Safdie Architects • Rocco Marosi © 2013"></div>
-
-				<div class="delayed-image-load" data-src="p/150509-photographer-rocco-marosi-6097-{width}.jpg" data-alt="Expo 2015, Milano, Italy • Rocco Marosi © 2015"></div>
-
-		</div>
 
 <!-- 	    	
 				<img  class="gallery-cell" src="p/130820-photographer-rocco-marosi-4670.jpg" alt="Aska, Bali, Indonesia • J.Bergougnoux • Rocco Marosi © 2013">
@@ -113,21 +109,40 @@
 	   		<img class="gallery-cell" src="p/150509-photographer-rocco-marosi-6097.jpg" alt="Expo 2015, Milano, Italy • Rocco Marosi © 2015">  
 -->
 
+	  	</div><!-- /.gallery -->
+
+		</div><!-- /.wrap -->
 
 		<p class="caption">
 			<span class="caption_text">&nbsp;</span>
 		</p>
 
-		<script src="j/Imager.min.js"></script>
+		<script src="j/flickity.pkgd.min.js"></script>
+
 		<script>
-      var imager = new Imager({
-          availableWidths: [320, 640, 1024]
-      });
-    </script>
+			var utils = window.fizzyUIUtils;
 
+			docReady( function() {
+			  var flkty = new Flickity( '.gallery', {
+			    wrapAround: true,
+			    autoPlay: 4000, 
+			    imagesLoaded: true,
+					prevNextButtons: false,
+					pageDots: false
+			  });
 
+			  var caption = document.querySelector('.caption_text');
 
-		<!-- Universal Google Analytics tracking code 
+			  flkty.on( 'cellSelect', function() {
+			    // set image caption using img's alt
+			    utils.setText( caption, flkty.selectedElement.alt );
+			  });
+
+			});
+
+		</script>
+
+		<!-- Universal Google Analytics tracking code --> 
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -137,6 +152,6 @@
 		  ga('create', 'UA-43130984-1', 'roccomarosi.com');
 		  ga('send', 'pageview');
 		
-		</script>--> 
+		</script>
 	</body>
 </html>
