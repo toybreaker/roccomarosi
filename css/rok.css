@@ -99,6 +99,12 @@ a:hover {
 .flickity-page-dots { bottom: .5rem; }
 
 
+
+.bungkus img{
+    width:100%;
+}
+
+
 /*---menu---*/
 .menu{
     position: fixed;
@@ -197,6 +203,19 @@ a:hover {
     text-align: center;
     padding: .5rem 1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  Helper classes */
 
