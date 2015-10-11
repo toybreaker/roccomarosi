@@ -1,0 +1,35 @@
+
+/* ---Author---'s custom styles ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 800;
+    font-size: 4vw;
+    margin:0;
+    padding:0;
+}
+a {
+    text-decoration: none;
+    color: #ddd;
+}
+a:hover {
+    text-decoration: none;
+    color: gray; 
+}
+
+
+.wrap { 
+    position: relative;
+    height: 100vh; 
+}
+
+
+.bungkus img{
+    width:100%;
+}

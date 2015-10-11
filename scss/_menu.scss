@@ -1,0 +1,69 @@
+
+/*---menu---*/
+.menu{
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index:100;
+
+}
+.menu_optional{display: none;}
+
+.menu_links{ 
+    margin-top: 3vh;
+    max-height: 100vh; 
+    overflow: scroll; 
+}
+
+.menu_link{
+    text-align: right;
+    margin:4px 0;
+    display: none; 
+    h1,
+    h2{
+        font-size: 9vw;
+        @include media( "screen", ">minWidth") {font-size: 7vw;}
+        @include media( "screen", ">bp1Width") {font-size: 5vw;}
+        @include media( "screen", ">maxWidth") {font-size: 3vw;}
+        line-height: 1;
+        letter-spacing: -1px;
+        text-align: right;
+        margin-right: 3vw;
+        font-weight: 600;
+
+        color: $text_color;
+        text-align: right;
+        text-transform: uppercase;
+        text-shadow: $text_shadow;
+    }
+    .menu_is_open &{display: block; }
+ }
+
+
+.menu_link--title{
+    display: block;
+    h1{
+        padding-right:80px;
+        font-weight: 800;
+        letter-spacing: -1px;
+    }
+    &:hover{ color: $main_color; }
+}
+
+.trigger{
+    cursor:pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index:2;
+    right:1rem;
+    top: 0;
+    padding: .5rem;
+    margin:.5rem 1.5rem 0 0;  
+}
+
+.text_shadow{
+    shadow: $text_shadow;
+}
+

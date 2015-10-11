@@ -6,3 +6,4 @@ _lab/
 node_modules
 Imager.js/
 p/originals
+.sass-cache/

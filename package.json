@@ -1,23 +1,22 @@
 {
-  "name": "roccomarosi",
-  "version": "0.3.0",
+  "name": "rocco_marosi",
+  "version": "0.4.0",
+  "description": "gulp + ruby-sass + sourcemaps + browsersync = Spoton!",
+  "main": "gulpfile.js",
   "private": true,
-  "description": "imager.js slider",
-  "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "imager",
-    "bbc",
-    "responsive",
-    "images",
-    "rwd"
+    "printONdemand"
   ],
-  "author": "",
-  "license": "Apache-2",
-  "dependencies": {
-    "grunt": "^0.4.2",
-    "grunt-responsive-images": "^0.1.1"
+  "author": "rokma",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^1.7.2",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-filter": "^2.0.2",
+    "gulp-ruby-sass": "^0.7.1" 
   }
 }

@@ -1,0 +1,14 @@
+//variables
+
+$text_color: white;
+$main_color: black;//$text_color;
+$alert_color: yellow;
+$text_shadow:-1px -1px 1px rgba(0, 0, 0, 0.3), 1px 1px 1px rgba(0, 0, 0, 0.3), 0 0 10px #000;
+
+@import 'normalize';
+@import 'boilerplate';
+@import 'cmq';
+@import 'main';
+@import 'menu';
+@import 'helpers';
+@import 'print';
