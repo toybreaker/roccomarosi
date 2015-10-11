@@ -1,6 +1,17 @@
 #### Rocco Marosi ⟐ Architecture Photography ⟐
 - - - -
 
+##imager DEV branch
+
+2do:
+
+- [ ] imager.js setup: lazy load, retina
+
+- [ ] slider
+
+
+- - - -
+
 #### version 0.2.1
 refactored with just html activated [flickity](http://flickity.metafizzy.co/)
 
@@ -8,13 +19,8 @@ refactored with just html activated [flickity](http://flickity.metafizzy.co/)
 
 Rocco Marosi showroom [roccomarosi.com](http://roccomarosi.com)
 
-##DEV branch
+- - - -
 
-2do:
-
-- [ ] imager.js setup: lazy load, retina
-
-- [ ] slider
 
 ## warning:
 
