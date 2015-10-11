@@ -5,10 +5,13 @@
 
 2do:
 
-- [ ] imager.js setup: lazy load, retina
+- [ ] imager.js (6kb) setup: lazy load, retina
 
-- [ ] slider
+- slider:
+    - [ ] flickity (58kb) substitute? 
+    - [ ] vegas (64kb) need at least zepto (9kb) or jquery(84kb)
 
+    
 
 - - - -
 
