@@ -8,7 +8,8 @@
 - [ ] imager.js (6kb) setup: lazy load, retina
 
 - slider:
-    - [ ] flickity (58kb) substitute? 
+    - [ ] swiper.js (20kb) touch | 
+    - [ ] flickity (58kb)
     - [ ] vegas (64kb) need at least zepto (9kb) or jquery(84kb)
 
     
