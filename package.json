@@ -17,6 +17,8 @@
     "gulp": "^3.8.10",
     "gulp-autoprefixer": "^1.0.1",
     "gulp-filter": "^2.0.2",
-    "gulp-ruby-sass": "^0.7.1" 
+    "gulp-imagemin": "^2.3.0",
+    "gulp-responsive": "^1.2.1",
+    "gulp-ruby-sass": "^0.7.1"
   }
 }

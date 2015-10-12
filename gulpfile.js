@@ -1,6 +1,7 @@
 'use strict';
 // GULP here just process sass and enable browsersync
 // sourcemap handled automagically by gulp-ruby-sass
+// images task to optimize images.
 
 // w/watch function now... and it works!!!!!
 var gulp         = require('gulp');
@@ -9,6 +10,40 @@ var filter       = require('gulp-filter');
 var browserSync  = require('browser-sync');
 var reload       = browserSync.reload;
 
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
+
+var responsive = require('gulp-responsive');
+
+gulp.task('images', function () {
+  return gulp.src('src/*.png')
+    .pipe(responsive([{
+      name: 'logo.png',
+      width: 200
+    },{
+      name: 'logo.png',
+      width: 200 * 2,
+      rename: 'logo@2x.png'
+    },{
+      name: 'background-*.png',
+      width: 700
+    },{
+      name: 'cover.png',
+      width: '50%'
+    }]))
+    .pipe(gulp.dest('dist'));
+});
+
+
+gulp.task('imagemin', function () {
+    return gulp.src('src/images/*')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('assests/p/images'));
+});
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
