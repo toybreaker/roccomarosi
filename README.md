@@ -1,21 +1,20 @@
 #### [Rocco Marosi](http://roccomarosi.com) ⟐ Architecture Photography ⟐
-v0.2.3
-- - - -
+version 0.2.3
+ 
 
 ##imager DEV branch
 
-2do:
+urgent:
 
-- [ ] imager.js (6kb) setup: lazy load, retina
+- [ ] imager.js (6kb) setup: retina
 
 - slider:
-    - [ ] swiper.js (20kb) 
+    - [ ] [swiper.js](http://www.idangero.us/swiper/) (20kb) 
     - [ ] flickity (58kb)
     - [ ] vegas (64kb) need at least zepto (9kb) or jquery(84kb)
 
     
-
-- - - -
+ 
 
 ## Changelog
 
