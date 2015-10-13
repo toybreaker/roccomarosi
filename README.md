@@ -9,7 +9,9 @@ urgent:
 - [ ] imager.js (6kb) setup: retina
 
 - slider:
-    - [ ] [swiper.js](http://www.idangero.us/swiper/) (20kb) 
+    - [ ] [swiper.js](http://www.idangero.us/swiper/) (20kb)
+        - [fade demo](http://www.idangero.us/swiper/demos/16-effect-fade.html) 
+        - [fade code](https://github.com/nolimits4web/Swiper/blob/master/demos/16-effect-fade.html)
     - [ ] flickity (58kb)
     - [ ] vegas (64kb) need at least zepto (9kb) or jquery(84kb)
 

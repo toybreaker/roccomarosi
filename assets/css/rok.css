@@ -676,12 +676,18 @@ html, body {
   height: 100%; }
 
 .swiper-container {
-  width: 100%;
-  height: 100%; }
+  height: 100%;
+  width: auto; }
+
+.swiper-wrapper {
+  height: 100%;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
 
 .swiper-slide {
-  background-position: center;
-  background-size: cover; }
+  width: auto;
+  height: 100%; }
 
 /*---menu---*/
 .menu {
