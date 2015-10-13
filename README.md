@@ -1,4 +1,5 @@
-#### Rocco Marosi ⟐ Architecture Photography ⟐
+#### [Rocco Marosi](http://roccomarosi.com) ⟐ Architecture Photography ⟐
+v0.2.3
 - - - -
 
 ##imager DEV branch
@@ -15,6 +16,12 @@
     
 
 - - - -
+
+## Changelog
+
+#### version 0.2.3:
+- gulp images task to automate image generation
+
 #### version 0.2.2:
  - imager.js full screen
  - no slider
@@ -22,11 +29,13 @@
 #### version 0.2.1:
 - refactored with just html activated [flickity](http://flickity.metafizzy.co/)
 
-- - - -
 
-Rocco Marosi showroom [roccomarosi.com](http://roccomarosi.com)
+## Features:
 
-- - - -
+- `gulp images` task to produce sized copies
+- `gulp` task to compile sass and enable browsersync
+- [Imager.js](https://github.com/BBC-News/Imager.js/) to handle responsive images
+
 
 
 ## warning:

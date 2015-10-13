@@ -1,6 +1,6 @@
 {
   "name": "rocco_marosi",
-  "version": "0.4.1",
+  "version": "0.2.3",
   "description": "gulp + ruby-sass + sourcemaps + browsersync = Spoton!",
   "main": "gulpfile.js",
   "private": true,

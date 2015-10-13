@@ -17,13 +17,14 @@ var reload       = browserSync.reload;
 
 
 // Reponsive sizing
-gulp.task('responsive', function () {
+gulp.task('images', function () {
   return gulp.src('./src/images/*.jpg')
     .pipe(responsive({
     '*.jpg': [{
         width:320,
         quality: 51,
         progressive: true,
+        sharper: true,
         rename: {
             suffix:'-320'
         }
@@ -31,6 +32,7 @@ gulp.task('responsive', function () {
         width:640,
         quality: 51,
         progressive: true,
+        sharper: true,
         rename: {
             suffix:'-640'
         }
@@ -43,23 +45,23 @@ gulp.task('responsive', function () {
         }
     },{
         width:1680,
-        quality: 51,
+        quality: 71,
         progressive: true,
         rename: {
             suffix:'-1680'
         }
     }]
     }))
-    .pipe(gulp.dest('./src/images_to_min/'));
+    .pipe(gulp.dest('./assets/p'));
 });
 
 // Compress jpegs
 gulp.task('imagemin', function () {
-    return gulp.src('./src/images_to_min/*.jpg')
+    return gulp.src('./assets/p/*.jpg')
         .pipe(imagemin({
             progressive: true
         }))
-        .pipe(gulp.dest('./assets/p'));
+        .pipe(gulp.dest('./assets/p/min'));
 });
 
 
@@ -88,7 +90,6 @@ gulp.task('sass', function () {
 
 gulp.task('default', ['serve']);
 
-gulp.task('img', ['responsive', 'imagemin']);
 
 // to autoprefix just use sublime (alt+super+p) > autoprefixer 
 // it will prefix the whole css/scss file

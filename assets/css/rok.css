@@ -671,6 +671,18 @@ a:hover {
   text-decoration: none;
   color: gray; }
 
+html, body {
+  position: relative;
+  height: 100%; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover; }
+
 /*---menu---*/
 .menu {
   position: fixed;
