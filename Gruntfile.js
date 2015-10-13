@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     // Project configuration.
     grunt.initConfig({
 
-        wd: '<%= grunt.task.current.args[0] || "grunt" %>/Assets/Images',
+        wd: '<%= grunt.task.current.args[0] || "grunt" %>/src/images',
 
         // grunt responsive_images:dev:grunt
         // grunt responsive_images:dev:lazyload
@@ -20,17 +20,14 @@ module.exports = function (grunt) {
                         },
                         {
                             width: 1024
-                        },
-                        {
-                            width: 1680
                         }
                     ]
                 },
                 files: [{
                     expand: true,
                     cwd: '<%= wd %>',
-                    src: '*.{jpg,gif,png}',
-                    dest: '<%= wd %>/Generated'
+                    src: '*.{jpg,png}',
+                    dest: '/src/images_generated'
                 }]
             }
         }

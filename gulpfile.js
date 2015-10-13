@@ -8,30 +8,61 @@ var gulp         = require('gulp');
 var sass         = require('gulp-ruby-sass');
 var filter       = require('gulp-filter');
 var browserSync  = require('browser-sync');
+
+var rename       = require('gulp-rename');
+var responsive   = require('gulp-responsive');
+var imagemin     = require('gulp-imagemin');
+var pngquant     = require('imagemin-pngquant');
 var reload       = browserSync.reload;
 
-//testing...
-var responsive = require('gulp-responsive-images');
- 
-gulp.task('img', function () {
-  gulp.src('src/images/**/*')
+
+// Reponsive sizing
+gulp.task('responsive', function () {
+  return gulp.src('./src/images/*.jpg')
     .pipe(responsive({
-      '*.jpg': [{
-        width: 1680,
-        suffix: '-1680'
-      }, {
-        width: 1024,
-        suffix: '-1024'
-      }, {
-        width: 640,
-        suffix: '-640'
-      }, {
-        width: 320,
-        suffix: '-320'
-      }]
+    '*.jpg': [{
+        width:320,
+        quality: 51,
+        progressive: true,
+        rename: {
+            suffix:'-320'
+        }
+    },{
+        width:640,
+        quality: 51,
+        progressive: true,
+        rename: {
+            suffix:'-640'
+        }
+    },{
+        width:1024,
+        quality: 51,
+        progressive: true,
+        rename: {
+            suffix:'-1024'
+        }
+    },{
+        width:1680,
+        quality: 51,
+        progressive: true,
+        rename: {
+            suffix:'-1680'
+        }
+    }]
     }))
-    .pipe(gulp.dest('assets/p'));
+    .pipe(gulp.dest('./src/images_to_min/'));
 });
+
+// Compress jpegs
+gulp.task('imagemin', function () {
+    return gulp.src('./src/images_to_min/*.jpg')
+        .pipe(imagemin({
+            progressive: true
+        }))
+        .pipe(gulp.dest('./assets/p'));
+});
+
+
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
@@ -56,6 +87,8 @@ gulp.task('sass', function () {
 });
 
 gulp.task('default', ['serve']);
+
+gulp.task('img', ['responsive', 'imagemin']);
 
 // to autoprefix just use sublime (alt+super+p) > autoprefixer 
 // it will prefix the whole css/scss file
