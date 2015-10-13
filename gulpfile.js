@@ -10,39 +10,27 @@ var filter       = require('gulp-filter');
 var browserSync  = require('browser-sync');
 var reload       = browserSync.reload;
 
-var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
-
-var responsive = require('gulp-responsive');
-
-gulp.task('images', function () {
-  return gulp.src('src/*.png')
-    .pipe(responsive([{
-      name: 'logo.png',
-      width: 200
-    },{
-      name: 'logo.png',
-      width: 200 * 2,
-      rename: 'logo@2x.png'
-    },{
-      name: 'background-*.png',
-      width: 700
-    },{
-      name: 'cover.png',
-      width: '50%'
-    }]))
-    .pipe(gulp.dest('dist'));
-});
-
-
-gulp.task('imagemin', function () {
-    return gulp.src('src/images/*')
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
-        }))
-        .pipe(gulp.dest('assests/p/images'));
+//testing...
+var responsive = require('gulp-responsive-images');
+ 
+gulp.task('img', function () {
+  gulp.src('src/images/**/*')
+    .pipe(responsive({
+      '*.jpg': [{
+        width: 1680,
+        suffix: '-1680'
+      }, {
+        width: 1024,
+        suffix: '-1024'
+      }, {
+        width: 640,
+        suffix: '-640'
+      }, {
+        width: 320,
+        suffix: '-320'
+      }]
+    }))
+    .pipe(gulp.dest('assets/p'));
 });
 
 // Static Server + watching scss/html files
