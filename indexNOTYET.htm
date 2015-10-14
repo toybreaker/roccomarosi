@@ -34,6 +34,8 @@
 		<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=0.1.0">
 		<meta name="theme-color" content="#ffffff">
 
+		<!-- lazysizes  
+		<script src="lazysizes.min.js" async=""></script>-->
 		
     <!-- Material Design Lite -->
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
@@ -46,7 +48,7 @@
 		<!-- font -->
 		<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Raleway:800,500'>
 
-		<!-- rok.css now -->
+		<!-- swiper.min.css inside rok.css now -->
 		<link rel="stylesheet" href="assets/css/rok.css" >
 
 
@@ -61,7 +63,7 @@
 			
 			<nav class="menu_links">
 
-				<span class="switch" id="menu_switch" >
+				<span class="trigger" id="menu_trigger" >
 
 					<!-- Colored FAB button with ripple -->
 					<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
@@ -88,8 +90,8 @@
 			        element.className = classString;
 			    }
 
-			    document.getElementById('menu_switch').addEventListener('click', function() {
-			        toggleClass(document.getElementById('menu_switch'), 'switched_on'),
+			    document.getElementById('menu_trigger').addEventListener('click', function() {
+			        toggleClass(document.getElementById('menu_trigger'), 'hide_SVG'),
 			        toggleClass(document.body, 'menu_is_open');
 			    });
 				</script>
@@ -119,47 +121,47 @@
 
 	  	<div class="swiper-wrapper">
 
-				<div class="swiper-slide" data-sr>
+				<div class="swiper-slide">
           <div class="delayed-image-load" data-src="assets/p/130820-photographer-rocco-marosi-4670-{width}.jpg" data-alt="Aska, Bali, Indonesia • J.Bergougnoux • Rocco Marosi © 2013"></div>
         </div> 
 
-				<div class="swiper-slide" data-sr>
+				<div class="swiper-slide">
           <div class="delayed-image-load" data-src="assets/p/130728-photographer-rocco-marosi-4300-{width}.jpg" data-alt="Marina Bay Sands, Singapore • Safdie Architects • Rocco Marosi © 2013"></div>
         </div>
        
-				<div class="swiper-slide" data-sr>
+				<div class="swiper-slide">
           <div class="delayed-image-load" data-src="assets/p/150509-photographer-rocco-marosi-6097-{width}.jpg" data-alt="Expo 2015, Milano, Italy • Rocco Marosi © 2015"></div>
         </div> 
 
-        <div class="swiper-slide" data-sr>
+        <div class="swiper-slide">
   				<div class="delayed-image-load" data-src="assets/p/130622-photographer-rocco-marosi-3342-{width}.jpg" data-alt="Muchmore, Bali, Indonesia • Landi Designs • Rocco Marosi © 2013"></div>
         </div> 
 
-        <div class="swiper-slide" data-sr>
+        <div class="swiper-slide">
         	<div class="delayed-image-load" data-src="assets/p/130616-photographer-rocco-marosi-3026-{width}.jpg" data-alt="Muchmore, Bali, Indonesia • Landi Designs • Rocco Marosi © 2013"></div>
         </div> 
 
-        <div class="swiper-slide" data-sr>
+        <div class="swiper-slide">
         	<div class="delayed-image-load" data-src="assets/p/120124-photographer-rocco-marosi-8165-{width}.jpg" data-alt="Honk Kong, Dragon year • Rocco Marosi © 2012"></div>
         </div> 
 
-        <div class="swiper-slide" data-sr>  	    
+        <div class="swiper-slide">  	    
   				<div class="delayed-image-load" data-src="assets/p/130820-photographer-rocco-marosi-4673-{width}.jpg" data-alt="Aska, Bali, Indonesia • J.Bergougnoux • Rocco Marosi © 2013"></div>
         </div> 
 
-        <div class="swiper-slide" data-sr>
+        <div class="swiper-slide">
         	<div class="delayed-image-load" data-src="assets/p/120719-photographer-rocco-marosi-castaway-02-{width}.jpg" data-alt="Castaway, Indonesia • Landi Designs • Rocco Marosi © 2010"></div>
          </div> 
 
-        <div class="swiper-slide" data-sr> 	    
+        <div class="swiper-slide"> 	    
         	<div class="delayed-image-load" data-src="assets/p/080122-photographer-rocco-marosi-0850-{width}.jpg" data-alt="Ritz Carlton, Bali, Indonesia • Rocco Marosi © 2008"></div>
          </div> 
 
-        <div class="swiper-slide" data-sr> 	    
+        <div class="swiper-slide"> 	    
         	<div class="delayed-image-load" data-src="assets/p/130616-photographer-rocco-marosi-3002-{width}.jpg" data-alt="Much more, Indonesia • Landi Designs • Rocco Marosi © 2013"></div>
         </div> 
 
-        <div class="swiper-slide" data-sr>  	   
+        <div class="swiper-slide">  	   
         	<div class="delayed-image-load" data-src="assets/p/060110-photographer-rocco-marosi-3517bw-{width}.jpg" data-alt="Genova, Italy • Renzo Piano • Rocco Marosi © 2006"></div>
         </div> 
 
@@ -186,17 +188,30 @@
 
 
 
-    <script src="assets/j/Imager.min.js"></script>
+    <!-- Swiper JS 
+    <script src="assets/j/swiper.min.js"></script>
+-->
+    <!-- fade Initialize Swiper 
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        keyboardControl: true,
+        //direction: 'vertical',
+        //autoplay: 8000,
+        effect: 'fade'
+    });
+    </script>
+-->
+
+		<script src="assets/j/Imager.min.js"></script>
 		<script>
       var imager = new Imager({
           availableWidths: [320, 640, 1024, 1680]
       });
-    </script>
-
-
-    <script src="assets/j/scrollReveal.min.js"></script>
-    <script>
-      window.sr = new scrollReveal();
     </script>
 
 		<!-- Universal Google Analytics tracking code 
