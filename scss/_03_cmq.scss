@@ -15,9 +15,9 @@
 //  @include media( "retina" ) {background: yellow;};
 
 //// Predefined Break-points
-$mediaMinWidth: 600px;
-$mediaBp1Width: 960px;
-$mediaMaxWidth: 1260px;
+$mediaMinWidth: 320px;
+$mediaBp1Width: 640px;
+$mediaMaxWidth: 1024px;
 
 @function translate-media-condition($c) {
   $condMap: (

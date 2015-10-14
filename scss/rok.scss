@@ -1,16 +1,33 @@
 //variables
 
+//colors
 $text_color: white;
 $main_color: black;//$text_color;
 $alert_color: yellow;
-$text_shadow:-1px -1px 1px rgba(0, 0, 0, 0.3), 1px 1px 1px rgba(0, 0, 0, 0.3), 0 0 10px rgb(68,138,255);
-$text_shadow-hover:-1px -1px 1px rgba(0, 0, 0, 0.3), 1px 1px 1px rgba(0, 0, 0, 0.3), 0 0 10px darken(rgb(68,138,255), 20) ;
+
+//material design stuff
+$current_md_color: lighten(rgb(68,138,255), 5);
+
+//shadows
+  //new shadow
+$VAR_shadow_color00:rgba(0,0,0, .5);
+$VAR_shadow_color01:darken(rgb(68,138,255), 20);//rgba(255, 255, 255, .75);
+  //material design settings:
+  // $VAR_shadow_color00:rgb(68,138,255);
+  // $VAR_shadow_color01:rgba(0, 0, 0, 0.3);
+
+$shadow:-1px -1px 0 $VAR_shadow_color01,-1px 1px 0 $VAR_shadow_color01,1px -1px 0 $VAR_shadow_color01,1px 1px 0 $VAR_shadow_color01,0 0 15px $VAR_shadow_color00;
+$shadow-hover:-1px -1px 1px $VAR_shadow_color01,1px 1px 1px $VAR_shadow_color01,0 0 10px darken($VAR_shadow_color00, 20);
+
+//body framing
+$framing: 2.5vw;
+$framing_inside: 95vw;
+$framing_color: white;
 
 @import '01_normalize';
 @import '02_boilerplate';
-//@import '03_swiper';
-@import '04_cmq';
-@import '05_main';
-@import '06_menu';
-@import '07_helpers';
-@import '08_print';
+@import '03_cmq';
+@import '04_main';
+@import '05_menu';
+@import '06_helpers';
+@import '07_print';
