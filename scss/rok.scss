@@ -15,15 +15,7 @@ $main_md_color: rgb(68,138,255);
 $current_md_color: lighten($main_md_color, 5);
 
 //shadows
-  //new shadow
-$VAR_shadow_color00:rgba(0,0,0, .5);
-$VAR_shadow_color01:darken($main_md_color, 20);//rgba(255, 255, 255, .75);
-  //material design settings:
-  // $VAR_shadow_color00:rgb(68,138,255);
-  // $VAR_shadow_color01:rgba(0, 0, 0, 0.3);
-
-$shadow:-1px -1px 0 $VAR_shadow_color01,-1px 1px 0 $VAR_shadow_color01,1px -1px 0 $VAR_shadow_color01,1px 1px 0 $VAR_shadow_color01,0 0 15px $VAR_shadow_color00;
-$shadow-hover:-1px -1px 1px $VAR_shadow_color01,1px 1px 1px $VAR_shadow_color01,0 0 10px darken($VAR_shadow_color00, 20);
+$shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 
 //body framing (not-used)
 // $framing: 2.5vw;
@@ -35,7 +27,7 @@ $shadow-hover:-1px -1px 1px $VAR_shadow_color01,1px 1px 1px $VAR_shadow_color01,
 @import '01_normalize';
 @import '02_boilerplate';
 @import '03_cmq';
-@import '04_header';
-@import '05_main';
-@import '06_helpers';
+@import '04_mixins';
+@import '05_header';
+@import '06_main';
 @import '07_print';
