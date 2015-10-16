@@ -4,18 +4,20 @@
 $light_color: white;
 $dark_color: black;
 
-$text_color: lighten($dark_color, 20); 
+$text_color: lighten($dark_color, 20);
+$text_color_invert: darken($light_color, 20); 
 $main_color: $light_color;
 
 $alert_color: red;
 
 //material design stuff
-$current_md_color: lighten(rgb(68,138,255), 5);
+$main_md_color: rgb(68,138,255);
+$current_md_color: lighten($main_md_color, 5);
 
 //shadows
   //new shadow
 $VAR_shadow_color00:rgba(0,0,0, .5);
-$VAR_shadow_color01:darken(rgb(68,138,255), 20);//rgba(255, 255, 255, .75);
+$VAR_shadow_color01:darken($main_md_color, 20);//rgba(255, 255, 255, .75);
   //material design settings:
   // $VAR_shadow_color00:rgb(68,138,255);
   // $VAR_shadow_color01:rgba(0, 0, 0, 0.3);
@@ -32,8 +34,8 @@ $shadow-hover:-1px -1px 1px $VAR_shadow_color01,1px 1px 1px $VAR_shadow_color01,
 //import partials
 @import '01_normalize';
 @import '02_boilerplate';
-@import '03_header';
-@import '04_cmq';
+@import '03_cmq';
+@import '04_header';
 @import '05_main';
 @import '06_helpers';
 @import '07_print';
