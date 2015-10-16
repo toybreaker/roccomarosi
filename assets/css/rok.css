@@ -158,9 +158,7 @@ html {
   line-height: 1.1; }
 
 body {
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-family: Raleway; }
+  font-size: 1.5rem; }
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -195,6 +193,11 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 /**
 * Conditional Media Query Mixin by @sheiko (http://dsheiko.com)
 * The problem this mixin solves is explained there 
@@ -202,6 +205,11 @@ textarea {
 * https://github.com/dsheiko
 * MIT license: http://www.opensource.org/licenses/mit-license.php
 */
+.header {
+  width: 100%;
+  min-height: 100px;
+  background-color: white; }
+
 .title_wrap {
   width: calc(50% - 2rem);
   margin: 2rem 1rem 1rem 1rem;
@@ -222,10 +230,7 @@ textarea {
 .priority-nav {
   white-space: nowrap; }
   .priority-nav ul {
-    display: inline-block;
-    pointer-events: none; }
-    .priority-nav ul.show {
-      pointer-events: all; }
+    display: inline-block; }
   .priority-nav li {
     display: inline-block; }
   .priority-nav-has-dropdown .priority-nav__dropdown-toggle {
@@ -261,21 +266,22 @@ nav {
     list-style-type: none;
     padding: 0;
     margin: 0; }
+  nav li {
+    display: inline-block; }
   nav a {
     display: inline-block;
     padding: 2rem 1rem;
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 1.5; }
-  nav li {
-    display: inline-block; }
   nav:first-child a {
     padding-left: 0; }
 
 .nav__dropdown-wrapper {
   display: inline-block;
   -webkit-perspective: 500px;
-  perspective: 500px; }
+  perspective: 500px;
+  z-index: 10; }
 
 .nav__dropdown {
   padding: 2rem;
@@ -302,12 +308,17 @@ nav {
       font-weight: 300;
       font-size: 1.6rem; }
     .nav__dropdown li.last {
-      border: 1px solid #b3b3b3;
-      background: rgba(158, 158, 158, 0.2);
-      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
       border-radius: 2px; }
       .nav__dropdown li.last a {
+        margin-top: .75rem;
+        margin-right: 1.5rem;
+        border: 1px solid #b3b3b3;
+        background: rgba(158, 158, 158, 0.2);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
         font-size: 1.1rem; }
+        .nav__dropdown li.last a:hover {
+          background: rgba(158, 158, 158, 0.1);
+          color: #b3b3b3; }
   .nav__dropdown.show {
     -webkit-transform: rotateX(0deg);
     transform: rotateX(0deg);
@@ -343,6 +354,10 @@ nav {
   .nav__dropdown-toggle:hover {
     color: #333333; }
 
+.undertitle {
+  position: fixed;
+  z-index: -1; }
+
 /* ---Author---'s custom styles ============================================ */
 * {
   margin: 0;
@@ -372,9 +387,13 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden; }
 
-.swiper-slide img {
-  width: 100%;
-  margin: 0; }
+.slide {
+  margin-bottom: 1rem; }
+  .slide img {
+    width: 100%;
+    margin: 0;
+    border-top: 4px solid white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
 
 .hide {
   display: none;
@@ -394,12 +413,8 @@ body {
     .what {
       white-space: nowrap; } }
 
-.header {
-  width: 100%;
-  min-height: 100px; }
-
 .mdl-mega-footer {
-  padding: 40px 40px 80px 40px;
+  padding: 2rem 1rem 6rem 2rem;
   color: #cccccc;
   font-weight: 300;
   background-color: black; }
@@ -420,6 +435,8 @@ body {
     float: right; }
 
 .mdl-logo {
+  font-size: 1.1rem;
+  line-height: 1.25;
   text-transform: uppercase;
   margin-bottom: 16px;
   color: #cccccc; }

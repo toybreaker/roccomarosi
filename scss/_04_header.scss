@@ -1,4 +1,8 @@
-
+.header{
+  width: 100%;
+  min-height: 100px;
+  background-color: white;
+}
 //rocco marosi
 .title_wrap{
   width: calc(50% - 2rem);
@@ -6,21 +10,17 @@
   padding: 0 1rem;
   float:left;
   display: inline;
-  .title{
-    h1{font-size: 1.5rem; line-height:1;}
-  }
   
+  .title h1{font-size: 1.5rem; line-height:1;}
 } 
+
 //menu
 .nav_wrap{
   position: absolute;
   right: 0;
   width: calc(50% - 2rem);
-  .nav{
-    text-align: right;
-  }
+  .nav{ text-align: right;  }
 }
-
 
 // PriorityNav.js - http://twitter.com/GijsRoge
 .priority-nav{
@@ -30,12 +30,11 @@
   //Makes sure the menu's are inline-block so they don't take up the entire width of its parent. This will break the plugin.
   ul{
     display: inline-block;
-    pointer-events: none;
-    &.show{ pointer-events: all;}
+    //padding-left: 3rem;
   }
-  li{
-    display: inline-block;
-  }
+
+  li{ display: inline-block; }
+
   &-has-dropdown{
     .priority-nav{
       &__dropdown{
@@ -47,10 +46,12 @@
       }
     }
   }
+
   &__wrapper{
     position: relative;
     right:0;
   }
+
   &__dropdown{
     position: absolute;
     &.show{
@@ -61,10 +62,12 @@
       position: absolute;
     }
   }
+
   &-is-visible{
     visibility: visible;
     display: inline-block;
   }
+
   &-is-hidden{
     visibility: hidden;
     display: none!important;
@@ -75,8 +78,6 @@
 // more stuff to clean...
 nav {
   margin: 0;
-  //padding: 0 2rem;
-  //min-width: 200px;
   position: relative;
   white-space: nowrap;
   width: 100%; 
@@ -85,6 +86,7 @@ nav {
     list-style-type: none;
     padding: 0;
     margin: 0; }
+  li { display: inline-block; }
   a {
     display: inline-block;
     padding: 2rem 1rem;
@@ -92,18 +94,14 @@ nav {
     font-size: 1.25rem;
     line-height: 1.5; 
   }
-  li {
-    display: inline-block; 
-  }
-  &:first-child a {
-    padding-left: 0; 
-  }
+  &:first-child a { padding-left: 0; }
 }
 
 .nav__dropdown-wrapper {
   display: inline-block;
   -webkit-perspective: 500px;
-  perspective: 500px; 
+  perspective: 500px;
+  z-index: 10;
 }
   
 // @media (max-width: 650px) {
@@ -137,16 +135,19 @@ nav {
       font-size: 1.6rem;
     }
     &.last{
-      border: 1px solid lighten($text_color, 50);
-      background: rgba(158,158,158,.2);
-      box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-      // box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 1.5px 0px, rgba(0, 0, 0, 0.239216) 0px 1px 1px 0px;
-      &:hover{
-        //border: 1px solid $text_color;
-        
-      }
       border-radius: 2px;
-      a{font-size: 1.1rem;}
+      a{
+        margin-top:.75rem;
+        margin-right:1.5rem;
+        border: 1px solid lighten($text_color, 50);
+        background: rgba(158,158,158,.2);
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+        font-size: 1.1rem;
+        &:hover {
+          background: rgba(158,158,158,.1);
+          color: lighten($text_color, 50);
+        }
+      }
     }
   }
   &.show {
@@ -174,8 +175,6 @@ nav {
   }
 }
 
-
-
 // @media (max-width: 650px) {
 //   .nav__dropdown {
 //     right: auto;
@@ -198,7 +197,16 @@ nav {
   background-repeat: no-repeat;
   background-position: 100% center;
   color:lighten($text_color, 50);
+
   &:hover{color: $text_color;} 
 }
+
+
+.undertitle{
+  position: fixed;
+  z-index:-1;
+}
+
+
 
 

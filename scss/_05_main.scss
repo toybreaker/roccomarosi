@@ -33,12 +33,16 @@ body {
   line-height:1;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+
 }
 
-.swiper-slide {
+.slide {
+  margin-bottom:1rem;
   img{
     width: 100%;
     margin: 0;
+    border-top: 4px solid white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
   } 
 }
 .hide{
@@ -48,26 +52,23 @@ body {
 }
 
 .what{
-    letter-spacing: -1px;
-    font-size:100%;
-    font-weight: 300;
-    display:inline;
-    position: relative;
-    top:0;
-    right:0;
-    color:lighten($text_color, 50);
-    @include media( "screen", ">bp1Width"){white-space: nowrap;}
-    
+  letter-spacing: -1px;
+  font-size:100%;
+  font-weight: 300;
+  display:inline;
+  position: relative;
+  top:0;
+  right:0;
+  color:lighten($text_color, 50);
+
+  @include media( "screen", ">bp1Width"){white-space: nowrap;}
 }
 
-.header{
-  width: 100%;
-  min-height: 100px;
-}
+
 
 //footer
 .mdl-mega-footer{
-  padding: 40px 40px 80px 40px;
+  padding: 2rem 1rem 6rem 2rem;
   color: $text_color_invert;
   font-weight: 300;
   background-color: $dark_color;
@@ -88,10 +89,15 @@ body {
 }
 
 .mdl-logo {
+  font-size: 1.1rem;
+  line-height: 1.25;
   text-transform: uppercase;
   margin-bottom: 16px;
   color: $text_color_invert;
-  small{display:block; opacity: .5;}
+  small{
+    display:block; 
+    opacity: .5;
+  }
 }
 
 .mdl-mega-footer__link-list{
