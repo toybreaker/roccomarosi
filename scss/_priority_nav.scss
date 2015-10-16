@@ -1,0 +1,163 @@
+/*
+ * Core styles + custom stuff for 
+ * PriorityNav.js
+ * Free to use under the MIT License.
+ * http://twitter.com/GijsRoge
+ */
+
+
+// Core styles 
+.priority-nav{
+
+  white-space: nowrap; // prevent flash of unstyled content
+
+  //Makes sure the menu's are inline-block so they don't take up the entire width of its parent. This will break the plugin.
+  ul{
+    display: inline-block;
+  }
+  li{
+    display: inline-block;
+  }
+  &-has-dropdown{
+    .priority-nav{
+      &__dropdown{
+        &-toggle{
+          position: relative;
+        }
+      }
+    }
+  }
+  &__wrapper{
+    position: relative;
+  }
+  &__dropdown{
+    position: absolute;
+    &.show{
+      visibility: visible;
+    }
+    &-toggle{
+      visibility: hidden;
+      position: absolute;
+    }
+  }
+  &-is-visible{
+    visibility: visible;
+  }
+  &-is-hidden{
+    visibility: hidden;
+  }
+}
+
+
+// custom stuff
+
+nav {
+  //background-color: black;
+  margin: 0;
+  padding: 0 2rem;
+  min-width: 200px;
+  position: relative;
+  white-space: nowrap;
+  width: 100%; 
+  ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  a {
+    display: inline-block;
+    padding: 2rem 1rem;
+    font-weight: 300; 
+  }
+  li {
+    display: inline-block; 
+  }
+  &:first-child a {
+    padding-left: 0; 
+  }
+}
+
+.nav__dropdown-wrapper {
+  display: inline-block;
+  -webkit-perspective: 500px;
+  perspective: 500px; 
+}
+  
+// @media (max-width: 650px) {
+//   .nav__dropdown-wrapper {
+//     position: static !important;
+//   }
+// }
+
+.nav__dropdown {
+  padding: 2rem;
+  white-space: nowrap;
+  top: 80%;
+  right: 0;
+  background-color: white;
+  transition: 300ms cubic-bezier(0.25, 2, 0.25, 1);
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-transform: rotateX(-30deg);
+  transform: rotateX(-30deg);
+  opacity: 0;
+  li {
+    display: block;
+    &:first-child a {
+      padding-left: 2rem; 
+    } 
+    a {
+      display: inline-block;
+      padding: 0.5rem 2rem;
+      font-weight: 300;
+      font-size: 1.6rem;
+    }
+  }
+  &.show {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0 0 20px 0 rgba(49, 49, 49, 0.25);
+    transition: 300ms cubic-bezier(0.25, 2, 0.25, 1), box-shadow 1000ms cubic-bezier(0.25, 2, 0.25, 1); 
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-bottom: 6px solid white;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    top: -6px;
+    right: 1rem; 
+  }
+}
+
+
+
+// @media (max-width: 650px) {
+//   .nav__dropdown {
+//     right: auto;
+//     left: 0;
+//     &:after {
+//       right: auto;
+//       left: 4rem; 
+//     }  
+//   }
+// }
+
+.nav__dropdown-toggle {
+  outline: none;
+  display: inline-block;
+  border: none;
+  background: none;
+  font-weight: 500;
+  padding: 2rem 1rem;
+  background-repeat: no-repeat;
+  background-position: 100% center; 
+}
+
+

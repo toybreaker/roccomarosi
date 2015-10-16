@@ -8,58 +8,29 @@
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-weight: 800;
-    font-size: 4vw;
+    font-weight: 500;
+    //font-size: 4vw;
     margin:0;
     padding:0;
+    text-transform: uppercase;
+    color:$text_color;
 }
 a {
     text-decoration: none;
-    color: #ddd;
+    color: lighten($text_color, 50);
 }
 a:hover {
     text-decoration: none;
-    color: gray; 
+    color: $text_color; 
 }
 
 img.image-replace {}
 
 body {
   line-height:1;
-//top
-  &:after{
-    content:"";
-    color: red;
-    position: fixed;
-    top: 0;
-    left:0;
-    background-color: $text_color;
-    width: 100%;
-    height: $framing;
-    z-index:2;
-  }
-//bottom
-    &:before{
-    content:"";
-    color: red;
-    position: fixed;
-    bottom: 0;
-    left:0;
-    background-color: $text_color;
-    width: 100%;
-    height: $framing;
-    z-index:10;
-  }
+  font-family: 'Poppins', sans-serif;
 }
 
-//nested in this sequence:
-.swiper-container {
-  width: $framing_inside;
-  margin: 0 auto 0 auto;
-  padding-top: 0;
-}
-.swiper-wrapper{ 
-}
 .swiper-slide {
   img{
     width: 100%;
@@ -70,4 +41,41 @@ body {
   display:none;
   height:0;
   visibility: hidden;
+}
+
+.what{
+    letter-spacing: -1px;
+    font-size:100%;
+    font-weight: 300;
+    display:inline;
+    position: relative;
+    top:0;
+    color:lighten($text_color, 50);
+    @include media( "screen", ">bp1Width"){white-space: nowrap;}
+    
+}
+
+.header{
+  width: 100%;
+  min-height: 100px;
+}
+
+//rocco marosi
+.title_wrap{
+  width: calc(50% - 2rem);
+  margin: 2rem 1rem 1rem 1rem;
+  padding: 0 1rem;
+  float:left;
+  display: inline;
+  .title{
+    h1{font-size: 1.5rem;}
+  }
+  
+} 
+//menu
+.nav_wrap{
+  width: calc(50% - 2rem);
+  .nav{
+    text-align: right;
+  }
 }

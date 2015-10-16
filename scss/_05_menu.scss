@@ -9,8 +9,8 @@
 
 .switch{
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -28px;
+    top: -28px;
     z-index: 11;
     margin: 0 0 0 0;
     cursor: pointer;
@@ -90,11 +90,4 @@
     
     &:hover{ color: $main_color; }
 }
-.what{
-    letter-spacing: -1px;
-    font-size:55%;
-    display:block;
-    position: relative;
-    top:0;
-    opacity:1;
-}
+

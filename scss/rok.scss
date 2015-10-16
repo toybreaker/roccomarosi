@@ -1,9 +1,13 @@
 //variables
 
 //colors
-$text_color: white;
-$main_color: black;//$text_color;
-$alert_color: yellow;
+$light_color: white;
+$dark_color: black;
+
+$text_color: lighten($dark_color, 20); 
+$main_color: $light_color;
+
+$alert_color: red;
 
 //material design stuff
 $current_md_color: lighten(rgb(68,138,255), 5);
@@ -24,10 +28,16 @@ $framing: 2.5vw;
 $framing_inside: 95vw;
 $framing_color: white;
 
+
+
+//import partials
+//@import 'MDLoverride';
+
 @import '01_normalize';
 @import '02_boilerplate';
+@import 'priority_nav';
 @import '03_cmq';
 @import '04_main';
-@import '05_menu';
-@import '06_helpers';
+//@import '05_menu';
+//@import '06_helpers';
 @import '07_print';
