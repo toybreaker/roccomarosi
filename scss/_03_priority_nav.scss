@@ -42,9 +42,11 @@
   }
   &-is-visible{
     visibility: visible;
+    display: inline-block;
   }
   &-is-hidden{
     visibility: hidden;
+    display: none!important;
   }
 }
 

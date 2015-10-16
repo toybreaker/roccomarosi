@@ -219,9 +219,11 @@ textarea {
       visibility: hidden;
       position: absolute; }
   .priority-nav-is-visible {
-    visibility: visible; }
+    visibility: visible;
+    display: inline-block; }
   .priority-nav-is-hidden {
-    visibility: hidden; }
+    visibility: hidden;
+    display: none !important; }
 
 nav {
   margin: 0;
