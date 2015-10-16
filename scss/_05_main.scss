@@ -25,10 +25,19 @@ a:hover {
 }
 
 img.image-replace {}
+html {
+  overflow-x: hidden;
+  //dirty hack to fix android left white stripe problem..
+  width:102%;
 
+}
 body {
   line-height:1;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+
+  // //dirty hack to fix android left white stripe problem..
+  // width:100%;
 }
 
 .swiper-slide {
@@ -59,26 +68,4 @@ body {
 .header{
   width: 100%;
   min-height: 100px;
-}
-
-//rocco marosi
-.title_wrap{
-  width: calc(50% - 2rem);
-  margin: 2rem 1rem 1rem 1rem;
-  padding: 0 1rem;
-  float:left;
-  display: inline;
-  .title{
-    h1{font-size: 1.5rem;}
-  }
-  
-} 
-//menu
-.nav_wrap{
-  position: absolute;
-  right: 4rem;
-  width: calc(50% - 2rem);
-  .nav{
-    text-align: right;
-  }
 }

@@ -195,22 +195,38 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
-/*
- * Core styles + custom stuff for 
- * PriorityNav.js
- * Free to use under the MIT License.
- * http://twitter.com/GijsRoge
- */
+.title_wrap {
+  width: calc(50% - 2rem);
+  margin: 2rem 1rem 1rem 1rem;
+  padding: 0 1rem;
+  float: left;
+  display: inline; }
+  .title_wrap .title h1 {
+    font-size: 1.5rem;
+    line-height: 1; }
+
+.nav_wrap {
+  position: absolute;
+  right: 0;
+  width: calc(50% - 2rem); }
+  .nav_wrap .nav {
+    text-align: right; }
+
 .priority-nav {
   white-space: nowrap; }
   .priority-nav ul {
-    display: inline-block; }
+    display: inline-block;
+    pointer-events: none; }
+    .priority-nav ul.show {
+      pointer-events: all; }
   .priority-nav li {
     display: inline-block; }
   .priority-nav-has-dropdown .priority-nav__dropdown-toggle {
-    position: relative; }
+    position: relative;
+    top: .3rem; }
   .priority-nav__wrapper {
-    position: relative; }
+    position: relative;
+    right: 0; }
   .priority-nav__dropdown {
     position: absolute; }
     .priority-nav__dropdown.show {
@@ -227,8 +243,6 @@ textarea {
 
 nav {
   margin: 0;
-  padding: 0 2rem;
-  min-width: 200px;
   position: relative;
   white-space: nowrap;
   width: 100%; }
@@ -240,7 +254,9 @@ nav {
   nav a {
     display: inline-block;
     padding: 2rem 1rem;
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.5; }
   nav li {
     display: inline-block; }
   nav:first-child a {
@@ -254,7 +270,7 @@ nav {
 .nav__dropdown {
   padding: 2rem;
   white-space: nowrap;
-  top: 80%;
+  top: 100%;
   right: 0;
   background-color: white;
   transition: 300ms cubic-bezier(0.25, 2, 0.25, 1);
@@ -329,9 +345,14 @@ a:hover {
   text-decoration: none;
   color: #333333; }
 
+html {
+  overflow-x: hidden;
+  width: 102%; }
+
 body {
   line-height: 1;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden; }
 
 .swiper-slide img {
   width: 100%;
@@ -359,21 +380,32 @@ body {
   width: 100%;
   min-height: 100px; }
 
-.title_wrap {
-  width: calc(50% - 2rem);
-  margin: 2rem 1rem 1rem 1rem;
-  padding: 0 1rem;
-  float: left;
-  display: inline; }
-  .title_wrap .title h1 {
-    font-size: 1.5rem; }
+/*  Helper classes */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
 
-.nav_wrap {
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
   position: absolute;
-  right: 4rem;
-  width: calc(50% - 2rem); }
-  .nav_wrap .nav {
-    text-align: right; }
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
 
 @media print {
   * {
