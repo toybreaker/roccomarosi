@@ -347,8 +347,9 @@ body {
   display: inline;
   position: relative;
   top: 0;
+  right: 0;
   color: #b3b3b3; }
-  @media only screen and (min-width: 641px) {
+  @media only screen and (min-width: 1025px) {
     .what {
       white-space: nowrap; } }
 
@@ -366,6 +367,8 @@ body {
     font-size: 1.5rem; }
 
 .nav_wrap {
+  position: absolute;
+  right: 4rem;
   width: calc(50% - 2rem); }
   .nav_wrap .nav {
     text-align: right; }

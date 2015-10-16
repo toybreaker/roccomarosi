@@ -50,8 +50,9 @@ body {
     display:inline;
     position: relative;
     top:0;
+    right:0;
     color:lighten($text_color, 50);
-    @include media( "screen", ">bp1Width"){white-space: nowrap;}
+    @include media( "screen", ">maxWidth"){white-space: nowrap;}
     
 }
 
@@ -74,6 +75,8 @@ body {
 } 
 //menu
 .nav_wrap{
+  position: absolute;
+  right: 4rem;
   width: calc(50% - 2rem);
   .nav{
     text-align: right;
