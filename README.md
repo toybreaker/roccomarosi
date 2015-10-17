@@ -1,5 +1,5 @@
 #### [Rocco Marosi](http://roccomarosi.com) ⟐ Architecture Photography ⟐
-version 0.2.4
+version 0.2.5
  
 
 ##imager DEV branch
@@ -20,7 +20,8 @@ urgent:
  
 
 ## Changelog
-
+#### version 0.2.5:
+- last slide no disappear
 
 #### version 0.2.4:
 - minimal [material](https://github.com/google/material-design-lite) feel with flat header
