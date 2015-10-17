@@ -1,8 +1,10 @@
 google32e66f1a5601ec40.html
 .workinprogress
 robots.txt
-_lab/
 .htaccess
 node_modules
-
 Imager.js/
+.sass-cache/
+src/images_to_min
+_lab/
+_p_originals/
