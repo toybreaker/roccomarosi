@@ -247,6 +247,11 @@ textarea {
     font-size: 1.5rem;
     line-height: 1; }
 
+.undertitle {
+  position: fixed;
+  z-index: 0;
+  width: 100%; }
+
 .nav_wrap {
   position: absolute;
   right: 0;
@@ -383,10 +388,6 @@ nav {
   .nav__dropdown-toggle:hover {
     color: #333333; }
 
-.undertitle {
-  position: fixed;
-  z-index: -1; }
-
 /* ---Author---'s custom styles ============================================ */
 * {
   margin: 0;
@@ -426,11 +427,19 @@ body {
   .slide img {
     border-radius: 2px;
     width: 100%;
-    margin: 0;
-    border-top: 4px solid white; }
+    margin: 0; }
+  .slide.last {
+    position: relative;
+    z-index: 11; }
+  .slide:last-child {
+    position: relative;
+    z-index: 11; }
 
 .spacer {
-  height: 2rem; }
+  height: 4rem; }
+
+.user_trasparent {
+  pointer-events: none; }
 
 .caption {
   height: 2rem; }

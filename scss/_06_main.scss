@@ -36,7 +36,10 @@ body {
 
 }
 
-.slides{padding:0 1rem;}
+.slides{
+  padding:0 1rem;
+
+}
 
 .slide {
   margin-bottom:2rem;
@@ -46,14 +49,31 @@ body {
     border-radius: 2px;
     width: 100%;
     margin: 0;
-    border-top: 4px solid white;
-    
+    //border-top: 4px solid white;
+  }
+  &.last{
+    position: relative;
+    z-index:11;
+  }
+  &:last-child {
+    position: relative;
+    z-index:11;
   }
 }
 .slide.first img {}
 
-.spacer{height:2rem;}
+.spacer{height:4rem;}
+
+
+.user_trasparent{
+  pointer-events: none;
+}
+
+
+//2do
 .caption{height:2rem;}
+
+
 .hide{
   display:none;
   height:0;

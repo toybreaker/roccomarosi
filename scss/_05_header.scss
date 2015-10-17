@@ -17,6 +17,13 @@
   .title h1{font-size: 1.5rem; line-height:1;}
 } 
 
+.undertitle{
+  position: fixed;
+  z-index:0;
+  width: 100%;
+}
+
+
 //menu
 .nav_wrap{
   position: absolute;
@@ -202,11 +209,6 @@ nav {
   &:hover{color: $text_color;} 
 }
 
-
-.undertitle{
-  position: fixed;
-  z-index:-1;
-}
 
 
 
