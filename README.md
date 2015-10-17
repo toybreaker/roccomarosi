@@ -1,8 +1,8 @@
 #### [Rocco Marosi](http://roccomarosi.com) ⟐ Architecture Photography ⟐
 
-Super light mobile first portfolio display. Fully rensponsive. Focus on speed and simplicity, with care for minimizing network request and delivering a polished meaninful user experience.
+Super light mobile-first portfolio display static website. Fully rensponsive. Focus on speed and simplicity, with care for minimizing network request and delivering a polished meaninful user experience.
 
-Adering to [K.I.S.S](https://en.wikipedia.org/wiki/KISS_principle), [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (uhm... well, partly. Really not yet!)
+Adering to [K.I.S.S](https://en.wikipedia.org/wiki/KISS_principle) • [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (uhm... well, partly. Really not yet!)
 
 version 0.2.5
  
