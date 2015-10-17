@@ -1,16 +1,22 @@
 #### [Rocco Marosi](http://roccomarosi.com) ⟐ Architecture Photography ⟐
+
+Super light mobile first portfolio display, focus on speed and simplicity, with care for minimizing network request and polished user experience.
+
+Adering to [K.I.S.S](https://en.wikipedia.org/wiki/KISS_principle), [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (uhm... well, partly. Really not yet!)
+
 version 0.2.5
  
 
-##imager DEV branch
+## 2DOs
 
 urgent:
 
 - captions
 - qr in footer
 - imager setup: retina
+- gulp min + concat
 
-##Slider considerations:
+## Slider considerations:
 
 - [ ] [swiper.js](http://www.idangero.us/swiper/) (20kb) | fade need img as backgrounds: [demo](http://www.idangero.us/swiper/demos/16-effect-fade.html), [code](https://github.com/nolimits4web/Swiper/blob/master/demos/16-effect-fade.html)
 - [ ] [flickity](http://flickity.metafizzy.co/) (58kb) | currently online 
@@ -39,11 +45,16 @@ urgent:
 - refactored with just html activated [flickity](http://flickity.metafizzy.co/)
 
 
-## Dev features:
+## Features:
+### frontend
+- no jquery http calls
+- no material design http calls
+- [RWD](https://en.wikipedia.org/wiki/Responsive_web_design) with [Imager.js](https://github.com/BBC-News/Imager.js/) to handle images
 
+### dev:
 - `gulp images` task to produce sized copies
 - `gulp` task to compile sass and enable browsersync
-- [Imager.js](https://github.com/BBC-News/Imager.js/) to handle responsive images
+
 
 
 
