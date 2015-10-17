@@ -1,24 +1,32 @@
 #### [Rocco Marosi](http://roccomarosi.com) ⟐ Architecture Photography ⟐
-version 0.2.3
+version 0.2.4
  
 
 ##imager DEV branch
 
 urgent:
 
-- [ ] imager.js (6kb) setup: retina
+- captions
+- qr in footer
+- [X] imager.js (6kb) setup: retina
 
-- choose slider:
-    - [ ] [swiper.js](http://www.idangero.us/swiper/) (20kb)
-        - fade need img as backgrounds: [demo](http://www.idangero.us/swiper/demos/16-effect-fade.html), [code](https://github.com/nolimits4web/Swiper/blob/master/demos/16-effect-fade.html)
-    - [ ] flickity (58kb)
-        - currently online 
-    - [ ] vegas (64kb) need at least zepto (9kb) or jquery(84kb)
 
+##Slider considerations:
+
+- [X] [swiper.js](http://www.idangero.us/swiper/) (20kb)
+    - fade need img as backgrounds: [demo](http://www.idangero.us/swiper/demos/16-effect-fade.html), [code](https://github.com/nolimits4web/Swiper/blob/master/demos/16-effect-fade.html)
+- [X] flickity (58kb)
+    - currently online 
+- [X] vegas (64kb) need at least zepto (9kb) or jquery(84kb)
     
  
 
 ## Changelog
+
+
+#### version 0.2.4:
+- minimal material feel
+- priority-nav
 
 #### version 0.2.3:
 - gulp images task to automate image generation
