@@ -13,9 +13,10 @@ urgent:
 
 ##Slider considerations:
 
-- [X] [swiper.js](http://www.idangero.us/swiper/) (20kb) | fade need img as backgrounds: [demo](http://www.idangero.us/swiper/demos/16-effect-fade.html), [code](https://github.com/nolimits4web/Swiper/blob/master/demos/16-effect-fade.html)
-- [X] flickity (58kb) | currently online 
-- [X] vegas (64kb) | need at least zepto (9kb) or jquery(84kb)
+- [ ] [swiper.js](http://www.idangero.us/swiper/) (20kb) | fade need img as backgrounds: [demo](http://www.idangero.us/swiper/demos/16-effect-fade.html), [code](https://github.com/nolimits4web/Swiper/blob/master/demos/16-effect-fade.html)
+- [ ] flickity (58kb) | currently online 
+- [ ] vegas (64kb) | need at least zepto (9kb) or jquery(84kb)
+- [X] native scroll + [scrollReveal.js](https://github.com/jlmakes/scrollReveal.js/tree/master) (9kb)
     
  
 
