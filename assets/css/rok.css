@@ -429,6 +429,12 @@ body {
     margin: 0;
     border-top: 4px solid white; }
 
+.spacer {
+  height: 2rem; }
+
+.caption {
+  height: 2rem; }
+
 .hide {
   display: none;
   height: 0;
