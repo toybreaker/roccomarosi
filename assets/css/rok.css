@@ -299,7 +299,8 @@ nav {
     display: inline-block;
     list-style-type: none;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    padding-right: 1rem; }
   nav li {
     display: inline-block; }
   nav a {
@@ -389,10 +390,21 @@ nav {
     color: #333333; }
 
 /* ---Author---'s custom styles ============================================ */
-* {
+*, *:before, *:after {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  box-sizing: content-box; }
+  padding: 0; }
+
+.spacer {
+  height: 4rem; }
+
+.user_trasparent {
+  pointer-events: none; }
+
+.hide {
+  display: none;
+  height: 0;
+  visibility: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
@@ -422,8 +434,7 @@ body {
 
 .slide {
   margin-bottom: 2rem;
-  border-radius: 2px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  border-radius: 2px; }
   .slide img {
     border-radius: 2px;
     width: 100%;
@@ -434,20 +445,44 @@ body {
   .slide:last-child {
     position: relative;
     z-index: 11; }
+  .slide:before {
+    pointer-events: all !important;
+    content: "";
+    z-index: 1000;
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2) no-repeat url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12 2c-3.87 0-7 3.13-7 7 0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>');
+    background-size: 28px 28px;
+    background-position: center center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    .slide:before:hover {
+      border: 2px solid red; }
 
-.spacer {
-  height: 4rem; }
+figure {
+  margin: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
-.user_trasparent {
-  pointer-events: none; }
-
-.caption {
-  height: 2rem; }
-
-.hide {
-  display: none;
-  height: 0;
-  visibility: hidden; }
+figcaption {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: white;
+  position: absolute;
+  top: 100;
+  left: 5%;
+  width: 90%;
+  padding: 1.5rem 1.6rem 1rem 1.6rem;
+  margin: -8rem auto;
+  z-index: -1;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center; }
+  .is_showing figcaption {
+    padding: 1.5rem 1.6rem 1rem 1.6rem;
+    margin: -.5rem auto; }
 
 .what {
   letter-spacing: -1px;
