@@ -445,7 +445,10 @@ body {
   .slide:last-child {
     position: relative;
     z-index: 11; }
+    .caption.is_showing .slide:last-child {
+      margin-bottom: 4rem; }
   .slide:before {
+    cursor: pointer;
     pointer-events: all !important;
     content: "";
     z-index: 1000;
@@ -460,8 +463,10 @@ body {
     background-size: 28px 28px;
     background-position: center center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-    .slide:before:hover {
-      border: 2px solid red; }
+
+.slide:hover:before {
+  border: 2px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
 figure {
   margin: 0;
@@ -479,7 +484,8 @@ figcaption {
   z-index: -1;
   font-size: 1rem;
   line-height: 1;
-  text-align: center; }
+  text-align: center;
+  color: #b3b3b3; }
   .is_showing figcaption {
     padding: 1.5rem 1.6rem 1rem 1.6rem;
     margin: -.5rem auto; }
