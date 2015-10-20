@@ -1,55 +1,57 @@
 //header
 .header{
-  width: calc(100% - 2rem);
-  margin-right: 1rem;
-  margin-left: 1rem;
-  padding-top: 2rem;
+  width: 100%;
   min-height: 100px;
   background-color: white;
   position: relative;
   z-index: 20;
 }
-
 //rocco marosi
-.header_title{
+.title_wrap{
   width: calc(50% - 2rem);
-  margin: 0 1rem 1rem 0;
-  padding: 0 1rem 0 0;
+  margin: 2.3rem 1rem 1rem 1rem;
+  padding: 0 1rem;
   float:left;
   display: inline;
-
+  
   .title h1{font-size: 1.5rem; line-height:1;}
-}
+} 
 
 .undertitle{
   position: fixed;
   z-index:0;
   width: 100%;
-  margin-top: 1rem;
-  margin-left: 1rem;
 }
 
+
 //menu
-.header_nav{
+.nav_wrap{
   position: absolute;
-  right: 1rem;
+  right: 0;
   width: calc(50% - 2rem);
-  text-align: right;
+  .nav{ text-align: right; }
 }
 
 // PriorityNav.js - http://twitter.com/GijsRoge
 .priority-nav{
 
   white-space: nowrap; // prevent flash of unstyled content
+
   //Makes sure the menu's are inline-block so they don't take up the entire width of its parent. This will break the plugin.
-  ul, li{ display: inline-block; }
+  ul{
+    display: inline-block;
+    //padding-left: 3rem;
+  }
+
+  li{ display: inline-block; }
 
   &-has-dropdown{
     .priority-nav{
       &__dropdown{
         &-toggle{
           position: relative;
-          top: 0;
+          top: 2rem;
+          @include media( "screen", ">bp1Width"){ top: .3rem; }
         }
       }
     }
@@ -67,7 +69,10 @@
       visibility: visible;
       pointer-events: all;
     }
-    &-toggle{ visibility: hidden; }
+    &-toggle{
+      visibility: hidden;
+      position: absolute;
+    }
   }
 
   &-is-visible{
@@ -81,24 +86,27 @@
   }
 }
 
+
 // more stuff to clean...
-.header_nav {
+nav {
+  margin: 0;
+  position: relative;
+  white-space: nowrap;
+  width: 100%; 
   ul {
     display: inline-block;
     list-style-type: none;
-    margin: 0;
-  }
-  li {
-    display: inline-block;
-    &.active a {color:darken($text_color, 10);}
-  }
+    padding: 0;
+    margin: 0; }
+  li { display: inline-block; }
   a {
     display: inline-block;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
     font-weight: 300;
     font-size: 1.25rem;
-    line-height: 1.5;
+    line-height: 1.5; 
   }
+  &:first-child a { padding-left: 0; }
 }
 
 .nav__dropdown-wrapper {
@@ -107,13 +115,15 @@
   perspective: 500px;
   z-index: 10;
 }
+  
+
 
 .nav__dropdown {
-  padding: 0 2rem;
-  margin-bottom:4rem;
+  padding: 2rem;
   white-space: nowrap;
-  top: 200%;
-  right: -10px;
+  top: 120%;
+  @include media( "screen", ">bp1Width"){top: 90%;}
+  right: 10px;
   background-color: white;
   transition: 300ms cubic-bezier(0.25, 2, 0.25, 1);
   -webkit-transform-origin: center top;
@@ -123,30 +133,32 @@
   opacity: 0;
   li {
     display: block;
+    &:first-child a {
+      padding-left: 2rem; 
+    } 
     a {
       display: inline-block;
-      padding: .5rem 2rem;
+      padding: 0.4rem 1.5rem;
+      font-weight: 300;
+      font-size: 1.6rem;
     }
     &.last{
       border-radius: 2px;
       a{
-        margin-top: .5rem;
-        margin-right: 1.5rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        border: 1px solid $link_color;
+        margin-top:.75rem;
+        margin-right:1.5rem;
+        border: 1px solid lighten($text_color, 50);
         background: rgba(158,158,158,.2);
         @include shadow(1);
         font-size: 1.1rem;
         &:hover {
-          color: $link_color;
+          color: lighten($text_color, 50);
           @include shadow(3);
         }
       }
     }
   }
   &.show {
-    padding: 1.5rem .5rem 1.5rem 1.5rem;
     -webkit-transform: rotateX(0deg);
     transform: rotateX(0deg);
     opacity: 1;
@@ -154,7 +166,7 @@
     z-index:100;
     border-radius: 2px;
     box-shadow: 0 0 20px 0 rgba(49, 49, 49, 0.25);
-    transition: 300ms cubic-bezier(0.25, 2, 0.25, 1), box-shadow 1000ms cubic-bezier(0.25, 2, 0.25, 1);
+    transition: 300ms cubic-bezier(0.25, 2, 0.25, 1), box-shadow 1000ms cubic-bezier(0.25, 2, 0.25, 1); 
   }
 
   &:after {
@@ -167,26 +179,9 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     top: -10px;
-    right: 1rem;
+    right: 2rem; 
   }
 }
-
-.nav__dropdown-toggle {
-  outline: none;
-  display: inline-block;
-  border: none;
-  background: none;
-  font-weight: 300;
-  //padding: 0 1rem 0 1rem;
-  background-repeat: no-repeat;
-  background-position: 100% center;
-  color:$link_color;
-
-  &:hover{color: $text_color;}
-}
-
-
-
 
 // @media (max-width: 650px) {
 //   .nav__dropdown {
@@ -194,7 +189,27 @@
 //     left: 0;
 //     &:after {
 //       right: auto;
-//       left: 4rem;
-//     }
+//       left: 4rem; 
+//     }  
 //   }
 // }
+
+.nav__dropdown-toggle {
+  outline: none;
+  display: inline-block;
+  border: none;
+  background: none;
+  font-weight: 300;
+  font-size: 40px;
+  padding: .2rem 2rem 2rem 2rem;
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  color:lighten($text_color, 50);
+
+  &:hover{color: $text_color;} 
+}
+
+
+
+
+

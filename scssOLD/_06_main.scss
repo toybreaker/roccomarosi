@@ -70,12 +70,10 @@ body {
   &:last-child {
     position: relative;
     z-index:11;
-    .caption.is_showing & {margin-bottom: 4rem;}
   }
 
   //location FAB
   &:before{
-    cursor:pointer;
     pointer-events: all!important;
     content:"";
     z-index: 1000;
@@ -91,12 +89,12 @@ body {
     background-size: 28px 28px;
     background-position: center center;
     @include shadow(2);
+    &:hover{
+      border: 2px solid red;
+    }
   }
 }
-.slide:hover:before{
-  border: 2px solid white;
-  @include shadow(3);
-}
+
 
 
 //autocaption js snippet produces figure+figcaption
@@ -105,19 +103,18 @@ figure{
   @include shadow(2)
 }
 figcaption{
-  //@include shadow(2);
+  @include shadow(2);
   background-color: $light_color;
   position: absolute;
   top: 100;
-  left: 0;
-  width: 100%;
+  left: 5%;
+  width: 90%;
   padding: 1.5rem 1.6rem 1rem 1.6rem;
   margin: -8rem auto;
   z-index: -1;
   font-size:1rem;
   line-height: 1;
   text-align: center;
-  color:$link_color;
   .is_showing & {
     padding: 1.5rem 1.6rem 1rem 1.6rem;
     margin: -.5rem auto;
