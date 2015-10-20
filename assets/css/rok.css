@@ -231,17 +231,19 @@ textarea {
 * MIT license: http://www.opensource.org/licenses/mit-license.php
 */
 .header {
-  width: 100%;
+  width: calc(100% - 2rem);
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-top: 2rem;
   min-height: 100px;
   background-color: white;
   position: relative;
-  z-index: 20;
-  padding-top: 2rem; }
+  z-index: 20; }
 
 .header_title {
   width: calc(50% - 2rem);
-  margin: 0 1rem 1rem 1rem;
-  padding: 0 1rem;
+  margin: 0 1rem 1rem 0;
+  padding: 0 1rem 0 0;
   float: left;
   display: inline; }
   .header_title .title h1 {
@@ -252,18 +254,20 @@ textarea {
   position: fixed;
   z-index: 0;
   width: 100%;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  margin-left: 1rem; }
 
 .header_nav {
   position: absolute;
-  right: 0;
-  width: calc(50% - 2rem); }
+  right: 1rem;
+  width: calc(50% - 2rem);
+  text-align: right; }
 
 .priority-nav {
   white-space: nowrap; }
   .priority-nav ul {
     display: inline-block;
-    padding: 0; }
+    padding: 0 .5rem 0 0; }
   .priority-nav li {
     display: inline-block; }
   .priority-nav-has-dropdown .priority-nav__dropdown-toggle {
@@ -287,24 +291,18 @@ textarea {
     visibility: hidden;
     display: none !important; }
 
-.nav {
-  text-align: right;
-  margin: 0;
-  position: relative;
-  white-space: nowrap;
-  width: 100%; }
-  .nav ul {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0; }
-  .nav li {
-    display: inline-block; }
-  .nav a {
-    display: inline-block;
-    padding: 0 1rem;
-    font-weight: 300;
-    font-size: 1.25rem;
-    line-height: 1.5; }
+.header_nav ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0; }
+.header_nav li {
+  display: inline-block; }
+.header_nav a {
+  display: inline-block;
+  padding: 0 1rem;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.5; }
 
 .nav__dropdown-wrapper {
   display: inline-block;
@@ -317,7 +315,7 @@ textarea {
   margin-bottom: 4rem;
   white-space: nowrap;
   top: 200%;
-  right: 10px;
+  right: -10px;
   background-color: white;
   transition: 300ms cubic-bezier(0.25, 2, 0.25, 1);
   -webkit-transform-origin: center top;
@@ -374,7 +372,6 @@ textarea {
   border: none;
   background: none;
   font-weight: 300;
-  padding: 0 1.5rem 0 1rem;
   background-repeat: no-repeat;
   background-position: 100% center;
   color: #b3b3b3; }

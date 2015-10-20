@@ -1,18 +1,20 @@
 //header
 .header{
-  width: 100%;
+  width: calc(100% - 2rem);
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-top: 2rem;
   min-height: 100px;
   background-color: white;
   position: relative;
   z-index: 20;
-  padding-top: 2rem;
 }
 
 //rocco marosi
 .header_title{
   width: calc(50% - 2rem);
-  margin: 0 1rem 1rem 1rem;
-  padding: 0 1rem;
+  margin: 0 1rem 1rem 0;
+  padding: 0 1rem 0 0;
   float:left;
   display: inline;
 
@@ -24,13 +26,15 @@
   z-index:0;
   width: 100%;
   margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 //menu
 .header_nav{
   position: absolute;
-  right: 0;
+  right: 1rem;
   width: calc(50% - 2rem);
+  text-align: right;
 }
 
 // PriorityNav.js - http://twitter.com/GijsRoge
@@ -40,7 +44,7 @@
   //Makes sure the menu's are inline-block so they don't take up the entire width of its parent. This will break the plugin.
   ul{
     display: inline-block;
-    padding:0;
+    padding:0 .5rem 0 0;
   }
 
   li{
@@ -62,6 +66,7 @@
   &__wrapper{
     position: relative;
     right:0;
+    //margin-right: 2rem;
   }
 
   &__dropdown{
@@ -89,12 +94,12 @@
 }
 
 // more stuff to clean...
-.nav {
-  text-align: right;
-  margin: 0;
-  position: relative;
-  white-space: nowrap;
-  width: 100%;
+.header_nav {
+  // text-align: right;
+  // margin: 0;
+  // position: relative;
+  // white-space: nowrap;
+  // width: 100%;
   ul {
     display: inline-block;
     list-style-type: none;
@@ -123,7 +128,7 @@
   margin-bottom:4rem;
   white-space: nowrap;
   top: 200%;
-  right: 10px;
+  right: -10px;
   background-color: white;
   transition: 300ms cubic-bezier(0.25, 2, 0.25, 1);
   -webkit-transform-origin: center top;
@@ -190,7 +195,7 @@
   border: none;
   background: none;
   font-weight: 300;
-  padding: 0 1.5rem 0 1rem;
+  //padding: 0 1rem 0 1rem;
   background-repeat: no-repeat;
   background-position: 100% center;
   color:$link_color;
