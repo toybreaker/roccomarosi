@@ -49,7 +49,7 @@
 
   <body>
     <div class="undertitle">
-      <div class="title_wrap">
+      <div class="header_title">
         <div class="title">
           <a href="./"><h1>Rocco Marosi <span class="what">Public&nbsp;Architecture Photography</span></h1></a>
         </div>
@@ -59,15 +59,15 @@
 
     <div class="header group">
 
-      <div class="title_wrap">
+      <div class="header_title">
         <div class="title">
           <a href="./"><h1>Rocco Marosi <span class="what">Public&nbsp;Architecture Photography</span></h1></a>
         </div>
       </div>
 
-      <div class="nav_wrap">
+      <div class="header_nav">
         <nav class="nav">
-          <div class="wrapper resize-drag nav-wrapper priority-nav">
+          <div class="priority-nav">
             <ul>
               <li>
                 <a alt="Iperimagination" title="a selected portfolio of Rocco's residential works" href="residential.htm">Residential</a>
@@ -236,12 +236,12 @@
     <!-- Nav -->
     <script src="assets/j/priority-nav.min.js"></script>
     <script>
-      var wrapper = document.querySelector(".nav-wrapper");
+      var wrapper = document.querySelector(".priority-nav");
       var nav = priorityNav.init({
-          mainNavWrapper: ".nav-wrapper",
+          mainNavWrapper: ".priority-nav",
           navDropdownLabel: " + ", // dropdown toggle Text.
           navDropdownBreakpointLabel: " ☰ ", //button label for when the breakPoint is reached.
-          breakPoint: 740,  // width when all menu items are in dropdown.
+          breakPoint: 820,  // width when all menu items are in dropdown.
       });
     </script>
 
