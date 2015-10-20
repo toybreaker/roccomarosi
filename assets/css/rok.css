@@ -251,7 +251,8 @@ textarea {
 .undertitle {
   position: fixed;
   z-index: 0;
-  width: 100%; }
+  width: 100%;
+  margin-top: 1rem; }
 
 .header_nav {
   position: absolute;
@@ -328,8 +329,7 @@ textarea {
     display: block; }
     .nav__dropdown li a {
       display: inline-block;
-      padding: .5rem 2rem;
-      font-weight: 300; }
+      padding: .5rem 2rem; }
     .nav__dropdown li.active {
       text-color: black; }
     .nav__dropdown li.last {
@@ -465,12 +465,11 @@ figure {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 figcaption {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background-color: white;
   position: absolute;
   top: 100;
-  left: 5%;
-  width: 90%;
+  left: 0;
+  width: 100%;
   padding: 1.5rem 1.6rem 1rem 1.6rem;
   margin: -8rem auto;
   z-index: -1;

@@ -105,12 +105,12 @@ figure{
   @include shadow(2)
 }
 figcaption{
-  @include shadow(2);
+  //@include shadow(2);
   background-color: $light_color;
   position: absolute;
   top: 100;
-  left: 5%;
-  width: 90%;
+  left: 0;
+  width: 100%;
   padding: 1.5rem 1.6rem 1rem 1.6rem;
   margin: -8rem auto;
   z-index: -1;

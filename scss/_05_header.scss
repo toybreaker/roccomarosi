@@ -23,6 +23,7 @@
   position: fixed;
   z-index:0;
   width: 100%;
+  margin-top: 1rem;
 }
 
 //menu
@@ -132,14 +133,9 @@
   opacity: 0;
   li {
     display: block;
-    // &:first-child a {
-    //   padding-left: 2.5rem;
-    // }
     a {
       display: inline-block;
       padding: .5rem 2rem;
-      font-weight: 300;
-      //font-size: 1.6rem;
     }
 
     &.active {text-color:darken($text_color, 20);}
