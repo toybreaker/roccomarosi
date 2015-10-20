@@ -304,8 +304,6 @@ textarea {
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 1.5; }
-  .nav:first-child a {
-    padding-left: 0; }
 
 .nav__dropdown-wrapper {
   display: inline-block;
@@ -328,8 +326,6 @@ textarea {
   opacity: 0; }
   .nav__dropdown li {
     display: block; }
-    .nav__dropdown li:first-child a {
-      padding-left: 2.5rem; }
     .nav__dropdown li a {
       display: inline-block;
       padding: .5rem 2rem;
@@ -351,7 +347,7 @@ textarea {
           color: #b3b3b3;
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
   .nav__dropdown.show {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem .5rem 1.5rem 1.5rem;
     -webkit-transform: rotateX(0deg);
     transform: rotateX(0deg);
     opacity: 1;
