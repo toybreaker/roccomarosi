@@ -246,9 +246,8 @@ textarea {
   padding: 0 1rem 0 0;
   float: left;
   display: inline; }
-  .header_title .title h1 {
-    font-size: 1.5rem;
-    line-height: 1; }
+  .header_title h1 {
+    font-size: 1.5rem; }
 
 .undertitle {
   position: fixed;
@@ -256,12 +255,6 @@ textarea {
   width: 100%;
   margin-top: 1rem;
   margin-left: 1rem; }
-
-.header_nav {
-  position: absolute;
-  right: 1rem;
-  width: calc(50% - 2rem);
-  text-align: right; }
 
 .priority-nav {
   white-space: nowrap; }
@@ -288,20 +281,25 @@ textarea {
     visibility: hidden;
     display: none !important; }
 
-.header_nav ul {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0; }
-.header_nav li {
-  display: inline-block; }
-  .header_nav li.active a {
-    color: #1a1a1a; }
-.header_nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  font-weight: 300;
-  font-size: 1.25rem;
-  line-height: 1.5; }
+.header_nav {
+  position: absolute;
+  right: 1rem;
+  width: calc(50% - 2rem);
+  text-align: right; }
+  .header_nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0; }
+  .header_nav li {
+    display: inline-block; }
+    .header_nav li.active a {
+      color: #1a1a1a; }
+  .header_nav a {
+    display: inline-block;
+    padding: 0 1rem;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.5; }
 
 .nav__dropdown-wrapper {
   display: inline-block;
@@ -322,11 +320,11 @@ textarea {
   -webkit-transform: rotateX(-30deg);
   transform: rotateX(-30deg);
   opacity: 0; }
+  .nav__dropdown a {
+    display: inline-block;
+    padding: .5rem 2rem; }
   .nav__dropdown li {
     display: block; }
-    .nav__dropdown li a {
-      display: inline-block;
-      padding: .5rem 2rem; }
     .nav__dropdown li.last {
       border-radius: 2px; }
       .nav__dropdown li.last a {

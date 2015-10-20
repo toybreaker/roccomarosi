@@ -136,7 +136,7 @@ figcaption{
   right:0;
   color:$link_color;
 
-  @include media( "screen", ">bp1Width"){white-space: nowrap;}
+  @include media( "screen", ">bp1Width") {white-space: nowrap;}
 }
 
 

@@ -18,7 +18,7 @@
   float:left;
   display: inline;
 
-  .title h1{font-size: 1.5rem; line-height:1;}
+  h1{ font-size: 1.5rem; }
 }
 
 .undertitle{
@@ -29,18 +29,11 @@
   margin-left: 1rem;
 }
 
-//menu
-.header_nav{
-  position: absolute;
-  right: 1rem;
-  width: calc(50% - 2rem);
-  text-align: right;
-}
-
+// menu
 // PriorityNav.js - http://twitter.com/GijsRoge
 .priority-nav{
-
   white-space: nowrap; // prevent flash of unstyled content
+
   //Makes sure the menu's are inline-block so they don't take up the entire width of its parent. This will break the plugin.
   ul, li{ display: inline-block; }
 
@@ -83,6 +76,10 @@
 
 // more stuff to clean...
 .header_nav {
+  position: absolute;
+  right: 1rem;
+  width: calc(50% - 2rem);
+  text-align: right;
   ul {
     display: inline-block;
     list-style-type: none;
@@ -121,12 +118,12 @@
   -webkit-transform: rotateX(-30deg);
   transform: rotateX(-30deg);
   opacity: 0;
+  a {
+    display: inline-block;
+    padding: .5rem 2rem;
+  }
   li {
     display: block;
-    a {
-      display: inline-block;
-      padding: .5rem 2rem;
-    }
     &.last{
       border-radius: 2px;
       a{
@@ -177,24 +174,9 @@
   border: none;
   background: none;
   font-weight: 300;
-  //padding: 0 1rem 0 1rem;
   background-repeat: no-repeat;
   background-position: 100% center;
   color:$link_color;
 
   &:hover{color: $text_color;}
 }
-
-
-
-
-// @media (max-width: 650px) {
-//   .nav__dropdown {
-//     right: auto;
-//     left: 0;
-//     &:after {
-//       right: auto;
-//       left: 4rem;
-//     }
-//   }
-// }
