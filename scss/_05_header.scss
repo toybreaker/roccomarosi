@@ -113,6 +113,8 @@
     font-size: 1.25rem;
     line-height: 1.5;
   }
+  li.active a {color:darken($text_color, 10);}
+
   //&:first-child a { padding-left: 0; }
 }
 
@@ -142,9 +144,6 @@
       display: inline-block;
       padding: .5rem 2rem;
     }
-
-    &.active {text-color:darken($text_color, 20);}
-
     &.last{
       border-radius: 2px;
       a{

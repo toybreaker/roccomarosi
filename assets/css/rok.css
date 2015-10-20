@@ -303,6 +303,8 @@ textarea {
   font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.5; }
+.header_nav li.active a {
+  color: #1a1a1a; }
 
 .nav__dropdown-wrapper {
   display: inline-block;
@@ -328,8 +330,6 @@ textarea {
     .nav__dropdown li a {
       display: inline-block;
       padding: .5rem 2rem; }
-    .nav__dropdown li.active {
-      text-color: black; }
     .nav__dropdown li.last {
       border-radius: 2px; }
       .nav__dropdown li.last a {
