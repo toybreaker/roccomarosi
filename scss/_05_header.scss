@@ -42,14 +42,7 @@
 
   white-space: nowrap; // prevent flash of unstyled content
   //Makes sure the menu's are inline-block so they don't take up the entire width of its parent. This will break the plugin.
-  ul{
-    display: inline-block;
-    padding:0 .5rem 0 0;
-  }
-
-  li{
-    display: inline-block;
-  }
+  ul, li{ display: inline-block; }
 
   &-has-dropdown{
     .priority-nav{
@@ -57,7 +50,6 @@
         &-toggle{
           position: relative;
           top: 0;
-          //@include media( "screen", ">bp1Width"){ top: 0; }
         }
       }
     }
@@ -66,7 +58,6 @@
   &__wrapper{
     position: relative;
     right:0;
-    //margin-right: 2rem;
   }
 
   &__dropdown{
@@ -76,10 +67,7 @@
       visibility: visible;
       pointer-events: all;
     }
-    &-toggle{
-      visibility: hidden;
-      //position: absolute;
-    }
+    &-toggle{ visibility: hidden; }
   }
 
   &-is-visible{
@@ -95,17 +83,15 @@
 
 // more stuff to clean...
 .header_nav {
-  // text-align: right;
-  // margin: 0;
-  // position: relative;
-  // white-space: nowrap;
-  // width: 100%;
   ul {
     display: inline-block;
     list-style-type: none;
     margin: 0;
   }
-  li { display: inline-block; }
+  li {
+    display: inline-block;
+    &.active a {color:darken($text_color, 10);}
+  }
   a {
     display: inline-block;
     padding: 0 1rem;
@@ -113,9 +99,6 @@
     font-size: 1.25rem;
     line-height: 1.5;
   }
-  li.active a {color:darken($text_color, 10);}
-
-  //&:first-child a { padding-left: 0; }
 }
 
 .nav__dropdown-wrapper {

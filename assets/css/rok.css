@@ -265,10 +265,7 @@ textarea {
 
 .priority-nav {
   white-space: nowrap; }
-  .priority-nav ul {
-    display: inline-block;
-    padding: 0 .5rem 0 0; }
-  .priority-nav li {
+  .priority-nav ul, .priority-nav li {
     display: inline-block; }
   .priority-nav-has-dropdown .priority-nav__dropdown-toggle {
     position: relative;
@@ -297,14 +294,14 @@ textarea {
   margin: 0; }
 .header_nav li {
   display: inline-block; }
+  .header_nav li.active a {
+    color: #1a1a1a; }
 .header_nav a {
   display: inline-block;
   padding: 0 1rem;
   font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.5; }
-.header_nav li.active a {
-  color: #1a1a1a; }
 
 .nav__dropdown-wrapper {
   display: inline-block;
