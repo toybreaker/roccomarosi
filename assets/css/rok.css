@@ -283,7 +283,7 @@ textarea {
 
 .header_nav {
   position: absolute;
-  right: 1rem;
+  right: .1rem;
   width: calc(50% - 2rem);
   text-align: right; }
   .header_nav ul {
@@ -366,14 +366,19 @@ textarea {
   display: inline-block;
   border: none;
   background: none;
+  width: 48px;
+  height: 48px;
   font-weight: 300;
   background-repeat: no-repeat;
   background-position: 100% center;
-  color: #b3b3b3; }
+  color: #b3b3b3;
+  border: 1px solid #b3b3b3;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   .nav__dropdown-toggle:hover {
-    color: #333333; }
+    color: #333333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
-/* ---Author---'s custom styles ============================================ */
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
@@ -417,6 +422,8 @@ body {
   padding: 0 1rem; }
 
 .slide {
+  position: relative;
+  z-index: 1;
   margin-bottom: 2rem;
   border-radius: 2px; }
   .slide img {
@@ -431,22 +438,6 @@ body {
     z-index: 11; }
     .caption.is_showing .slide:last-child {
       margin-bottom: 4rem; }
-  .slide:before {
-    cursor: pointer;
-    pointer-events: all !important;
-    content: "";
-    z-index: 1000;
-    display: block;
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2) no-repeat url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12 2c-3.87 0-7 3.13-7 7 0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>');
-    background-size: 28px 28px;
-    background-position: center center;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 .slide:hover:before {
   border: 2px solid white;
@@ -487,6 +478,8 @@ figcaption {
       white-space: nowrap; } }
 
 .mdl-mega-footer {
+  position: relative;
+  z-index: 1;
   padding: 2rem 1rem 6rem 2rem;
   color: #cccccc;
   font-weight: 300;
@@ -529,7 +522,7 @@ figcaption {
     .mdl-mega-footer__bottom-section .mdl-mega-footer__link-list li {
       float: left;
       margin-bottom: 0;
-      margin-right: 5px; }
+      margin-right: 10px; }
 
 .mdl-mega-footer__bottom-section {
   padding-top: 16px;

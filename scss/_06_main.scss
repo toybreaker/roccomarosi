@@ -1,6 +1,4 @@
-
-/* ---Author---'s custom styles ============================================ */
-
+//main
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -20,8 +18,7 @@
 }
 //headings
 h1,h2,h3,h4,h5,h6{
-    font-weight: 500;
-    //font-size: 4vw;
+    font-weight: 500; //font-size: 4vw;
     margin:0;
     padding:0;
     text-transform: uppercase;
@@ -39,9 +36,7 @@ a:hover {
 }
 
 //leiaut
-html {
-  overflow-x: hidden;
-}
+html { overflow-x: hidden; }
 body {
   line-height:1;
   font-family: 'Poppins', sans-serif;
@@ -55,6 +50,8 @@ body {
 }
 
 .slide {
+  position: relative;
+  z-index:1;
   margin-bottom:2rem;
   border-radius: 2px;
   //@include shadow(4);
@@ -74,24 +71,24 @@ body {
   }
 
   //location FAB
-  &:before{
-    cursor:pointer;
-    pointer-events: all!important;
-    content:"";
-    z-index: 1000;
-    display: block;
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    //border: 2px solid white;
-    background: rgba(255,255,255,.2) no-repeat url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12 2c-3.87 0-7 3.13-7 7 0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>');
-    background-size: 28px 28px;
-    background-position: center center;
-    @include shadow(2);
-  }
+  // &:before{
+  //   cursor:pointer;
+  //   pointer-events: all!important;
+  //   content:"";
+  //   z-index: 1000;
+  //   display: block;
+  //   position: absolute;
+  //   bottom: 1rem;
+  //   right: 1rem;
+  //   width: 36px;
+  //   height: 36px;
+  //   border-radius: 50%;
+  //   //border: 2px solid white;
+  //   background: rgba(255,255,255,.2) no-repeat url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12 2c-3.87 0-7 3.13-7 7 0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>');
+  //   background-size: 28px 28px;
+  //   background-position: center center;
+  //   @include shadow(2);
+  // }
 }
 .slide:hover:before{
   border: 2px solid white;
@@ -143,6 +140,8 @@ figcaption{
 
 //footer
 .mdl-mega-footer{
+  position:relative;
+  z-index:1;
   padding: 2rem 1rem 6rem 2rem;
   color: $text_color_invert;
   font-weight: 300;
@@ -187,7 +186,7 @@ figcaption{
     .mdl-mega-footer__bottom-section &{
       float: left;
       margin-bottom: 0;
-      margin-right: 5px;
+      margin-right: 10px;
     }
   }
 }
