@@ -1,0 +1,590 @@
+/* beautified by - http://www.cleancss.com/css-beautify/*/
+/*! https://necolas.github.io/normalize.css/3.0.2/normalize.css */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active, a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+html {
+  font-size: 16px;
+  line-height: 1.1; }
+
+body {
+  font-size: 1.5rem; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+img {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/**
+* Conditional Media Query Mixin by @sheiko (http://dsheiko.com)
+* The problem this mixin solves is explained there 
+* http://css-tricks.com/conditional-media-query-mixins/
+* https://github.com/dsheiko
+* MIT license: http://www.opensource.org/licenses/mit-license.php
+*/
+.header {
+  width: calc(100% - 2rem);
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-top: 2rem;
+  min-height: 100px;
+  background-color: white;
+  position: relative;
+  z-index: 20; }
+
+.header_title {
+  width: calc(50% - 2rem);
+  margin: 0 1rem 1rem 0;
+  padding: 0 1rem 0 0;
+  float: left;
+  display: inline; }
+  .header_title h1 {
+    font-size: 1.5rem; }
+
+.undertitle {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  margin-top: 1rem;
+  margin-left: 1rem; }
+
+.priority-nav {
+  white-space: nowrap; }
+  .priority-nav ul, .priority-nav li {
+    display: inline-block; }
+  .priority-nav-has-dropdown .priority-nav__dropdown-toggle {
+    position: relative;
+    top: 0; }
+  .priority-nav__wrapper {
+    position: relative;
+    right: 0; }
+  .priority-nav__dropdown {
+    position: absolute;
+    pointer-events: none; }
+    .priority-nav__dropdown.show {
+      visibility: visible;
+      pointer-events: all; }
+    .priority-nav__dropdown-toggle {
+      visibility: hidden; }
+  .priority-nav-is-visible {
+    visibility: visible;
+    display: inline-block; }
+  .priority-nav-is-hidden {
+    visibility: hidden;
+    display: none !important; }
+
+.header_nav {
+  position: absolute;
+  right: 1rem;
+  width: calc(50% - 2rem);
+  text-align: right; }
+  .header_nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0; }
+  .header_nav li {
+    display: inline-block; }
+    .header_nav li.active a {
+      color: #1a1a1a; }
+  .header_nav a {
+    display: inline-block;
+    padding: 0 1rem;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.5; }
+
+.nav__dropdown-wrapper {
+  display: inline-block;
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  z-index: 10; }
+
+.nav__dropdown {
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+  white-space: nowrap;
+  top: 200%;
+  right: -10px;
+  background-color: white;
+  transition: 300ms cubic-bezier(0.25, 2, 0.25, 1);
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-transform: rotateX(-30deg);
+  transform: rotateX(-30deg);
+  opacity: 0; }
+  .nav__dropdown a {
+    display: inline-block;
+    padding: .5rem 2rem; }
+  .nav__dropdown li {
+    display: block; }
+    .nav__dropdown li.last {
+      border-radius: 2px; }
+      .nav__dropdown li.last a {
+        margin-top: .5rem;
+        margin-right: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        border: 1px solid #b3b3b3;
+        background: rgba(158, 158, 158, 0.2);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        font-size: 1.1rem; }
+        .nav__dropdown li.last a:hover {
+          color: #b3b3b3;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  .nav__dropdown.show {
+    padding: 1.5rem .5rem 1.5rem 1.5rem;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+    border-radius: 2px;
+    box-shadow: 0 0 20px 0 rgba(49, 49, 49, 0.25);
+    transition: 300ms cubic-bezier(0.25, 2, 0.25, 1), box-shadow 1000ms cubic-bezier(0.25, 2, 0.25, 1); }
+  .nav__dropdown:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-bottom: 10px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: -10px;
+    right: 1rem; }
+
+.nav__dropdown-toggle {
+  outline: none;
+  display: inline-block;
+  border: none;
+  background: none;
+  font-weight: 300;
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  color: #b3b3b3; }
+  .nav__dropdown-toggle:hover {
+    color: #333333; }
+
+/* ---Author---'s custom styles ============================================ */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.spacer {
+  height: 4rem; }
+
+.user_trasparent {
+  pointer-events: none; }
+
+.hide {
+  display: none;
+  height: 0;
+  visibility: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: #333333; }
+
+a {
+  text-decoration: none;
+  color: #b3b3b3; }
+
+a:hover {
+  text-decoration: none;
+  color: #333333; }
+
+html {
+  overflow-x: hidden; }
+
+body {
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden; }
+
+.slides {
+  padding: 0 1rem; }
+
+.slide {
+  margin-bottom: 2rem;
+  border-radius: 2px; }
+  .slide img {
+    border-radius: 2px;
+    width: 100%;
+    margin: 0; }
+  .slide.last {
+    position: relative;
+    z-index: 11; }
+  .slide:last-child {
+    position: relative;
+    z-index: 11; }
+    .caption.is_showing .slide:last-child {
+      margin-bottom: 4rem; }
+  .slide:before {
+    cursor: pointer;
+    pointer-events: all !important;
+    content: "";
+    z-index: 1000;
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2) no-repeat url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M12 2c-3.87 0-7 3.13-7 7 0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>');
+    background-size: 28px 28px;
+    background-position: center center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.slide:hover:before {
+  border: 2px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+figure {
+  margin: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+figcaption {
+  background-color: white;
+  position: absolute;
+  top: 100;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 1.6rem 1rem 1.6rem;
+  margin: -8rem auto;
+  z-index: -1;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  color: #b3b3b3; }
+  .is_showing figcaption {
+    padding: 1.5rem 1.6rem 1rem 1.6rem;
+    margin: -.5rem auto; }
+
+.what {
+  letter-spacing: -1px;
+  font-size: 100%;
+  font-weight: 300;
+  display: inline;
+  position: relative;
+  top: 0;
+  right: 0;
+  color: #b3b3b3; }
+  @media only screen and (min-width: 641px) {
+    .what {
+      white-space: nowrap; } }
+
+.mdl-mega-footer {
+  padding: 2rem 1rem 6rem 2rem;
+  color: #cccccc;
+  font-weight: 300;
+  background-color: black; }
+  .mdl-mega-footer a {
+    color: inherit;
+    text-decoration: none;
+    white-space: nowrap; }
+    .mdl-mega-footer a:hover {
+      color: #448aff; }
+  .mdl-mega-footer svg {
+    margin-top: -10px;
+    width: 36px;
+    height: 36px;
+    fill: #cccccc; }
+    .mdl-mega-footer svg:hover {
+      fill: white; }
+  .mdl-mega-footer .up {
+    float: right; }
+
+.mdl-logo {
+  font-size: 1.1rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #cccccc; }
+  .mdl-logo small {
+    display: block;
+    opacity: .5; }
+
+.mdl-mega-footer__link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px; }
+  .mdl-mega-footer__link-list li {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 20px; }
+    .mdl-mega-footer__bottom-section .mdl-mega-footer__link-list li {
+      float: left;
+      margin-bottom: 0;
+      margin-right: 5px; }
+
+.mdl-mega-footer__bottom-section {
+  padding-top: 16px;
+  margin-bottom: 16px; }
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /* Don't show links for images, or javascript/internal links*/
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+/*# sourceMappingURL=rok.css.map */
