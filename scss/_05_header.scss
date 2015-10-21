@@ -133,11 +133,11 @@
         padding-right: 1.5rem;
         border: 1px solid $link_color;
         background: rgba(158,158,158,.2);
-        @include shadow(1);
+        @include shadow(2);
         font-size: 1.1rem;
         &:hover {
-          color: $link_color;
-          @include shadow(3);
+          color: $dark_color;//$link_color;
+          @include shadow(1);
         }
       }
     }
