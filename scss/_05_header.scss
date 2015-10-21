@@ -77,7 +77,7 @@
 // more stuff to clean...
 .header_nav {
   position: absolute;
-  right: 1rem;
+  right: .1rem;
   width: calc(50% - 2rem);
   text-align: right;
   ul {
@@ -133,11 +133,11 @@
         padding-right: 1.5rem;
         border: 1px solid $link_color;
         background: rgba(158,158,158,.2);
-        @include shadow(1);
+        @include shadow(2);
         font-size: 1.1rem;
         &:hover {
-          color: $link_color;
-          @include shadow(3);
+          color: $dark_color;//$link_color;
+          @include shadow(1);
         }
       }
     }
@@ -173,10 +173,17 @@
   display: inline-block;
   border: none;
   background: none;
+  width: 48px;
+  height: 48px;
   font-weight: 300;
   background-repeat: no-repeat;
   background-position: 100% center;
   color:$link_color;
-
-  &:hover{color: $text_color;}
+  border:1px solid $link_color;
+  border-radius: 50%;
+  @include shadow(2);
+  &:hover{
+    color: $text_color;
+    @include shadow(1);
+  }
 }

@@ -4,7 +4,7 @@ Super light mobile-first portfolio display static website. Fully rensponsive. Fo
 
 Adering to [K.I.S.S](https://en.wikipedia.org/wiki/KISS_principle) • [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (uhm... well, partly. Really not yet!)
 
-v 0.2.6
+v 0.2.7
  
 
 ## 2DOs
@@ -25,6 +25,12 @@ Urgent:
  
 
 ## Changelog
+
+#### v  0.2.7:
+- killed the icons on the shots
+- no more hamburger! this piece of unicode `☰` also written `&#9776;` is not showing on android 4.1.2:  ...lame!
+
+
 #### v  0.2.6:
 - now with some material design flavour
 - captions visible on click
