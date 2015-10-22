@@ -22,6 +22,14 @@ $header_font-size: 5vw;
 }
 
 
+.what{
+  display: block;
+  letter-spacing: -1px;
+  position: relative;
+  color:$link_color;
+}
+
+
 .expand_more{
   position: absolute;
   z-index: 1000;
@@ -33,11 +41,3 @@ $header_font-size: 5vw;
   &:hover{fill:black;}
 }
 //rocco marosi
-
-
-.what{
-  display: block;
-  letter-spacing: -1px;
-  position: relative;
-  color:$link_color;
-}

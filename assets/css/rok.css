@@ -230,39 +230,6 @@ textarea {
 * https://github.com/dsheiko
 * MIT license: http://www.opensource.org/licenses/mit-license.php
 */
-.header {
-  width: calc(100vw - 2rem);
-  height: 100vh;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  padding-top: 2rem;
-  min-height: 100px;
-  background-color: white;
-  position: relative;
-  z-index: 1;
-  font-weight: 300;
-  font-size: 5vw; }
-  .header h1 {
-    font-weight: 300;
-    font-size: 5vw; }
-
-.expand_more {
-  position: absolute;
-  z-index: 1000;
-  bottom: 10vh;
-  left: calc(50vw - 24px);
-  width: 48px;
-  height: 48px;
-  fill: red; }
-  .expand_more:hover {
-    fill: black; }
-
-.what {
-  display: block;
-  letter-spacing: -1px;
-  position: relative;
-  color: #b3b3b3; }
-
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
@@ -280,7 +247,7 @@ textarea {
   visibility: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -301,6 +268,39 @@ body {
   line-height: 1;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden; }
+
+.header {
+  width: calc(100vw - 2rem);
+  height: 100vh;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-top: 2rem;
+  min-height: 100px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 5vw; }
+  .header h1 {
+    font-weight: 300;
+    font-size: 5vw; }
+
+.what {
+  display: block;
+  letter-spacing: -1px;
+  position: relative;
+  color: #b3b3b3; }
+
+.expand_more {
+  position: absolute;
+  z-index: 1000;
+  bottom: 10vh;
+  left: calc(50vw - 24px);
+  width: 48px;
+  height: 48px;
+  fill: red; }
+  .expand_more:hover {
+    fill: black; }
 
 .slides {
   padding: 0 1rem; }
