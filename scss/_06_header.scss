@@ -1,20 +1,29 @@
 //header
-$header_font-size: 7vw;
-
+$header_font_size_viewportSized: calc(4vw + 3vh / 2);
+$header_font_size_fixSized: 8vh;
 
 .header{
+  width: 100vw;
   height: 100vh;
   font-weight: 300;
-  font-size: $header_font-size;
-  line-height: 11vh;
+  font-size: $header_font_size_viewportSized;
+  @include media( "screen", ">bp1Width") {font-size: $header_font_size_fixSized;}
+  line-height: 1;
+
   h1{
     font-weight: 300;
-    font-size: $header_font-size;
+    font-size: $header_font_size_viewportSized;
+    @include media( "screen", ">bp1Width") {font-size: $header_font_size_fixSized;}
   }
 }
 
 .header_center_box{
- max-height: 70vh;
+  width: 70vw;
+  height: 60vh;
+  margin: 20vh auto 20vh auto;
+  @include media( "screen", ">minWidth") { margin: 10vh auto auto auto;}
+  @include media( "screen", ">bp1Width") {margin: 15vh auto 15vh auto;}
+  ul{list-style: none;}
 }
 
 .what{
@@ -27,10 +36,14 @@ $header_font-size: 7vw;
 .expand_more{
   position: absolute;
   z-index: 1000;
-  bottom: 5vh;
+  bottom: 2vh;
   left: calc(50% - 24px);
   width: 48px;
   height: 48px;
   fill: red;
   &:hover{fill:black;}
+}
+.header_nav{
+  padding-top: 1rem;
+  text-align: right;
 }

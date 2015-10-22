@@ -225,7 +225,7 @@ textarea {
 
 /**
 * Conditional Media Query Mixin by @sheiko (http://dsheiko.com)
-* The problem this mixin solves is explained there 
+* The problem this mixin solves is explained there
 * http://css-tricks.com/conditional-media-query-mixins/
 * https://github.com/dsheiko
 * MIT license: http://www.opensource.org/licenses/mit-license.php
@@ -270,16 +270,33 @@ body {
   overflow-x: hidden; }
 
 .header {
+  width: 100vw;
   height: 100vh;
   font-weight: 300;
-  font-size: 7vw;
-  line-height: 11vh; }
+  font-size: calc(4vw + 3vh / 2);
+  line-height: 1; }
+  @media only screen and (min-width: 641px) {
+    .header {
+      font-size: 8vh; } }
   .header h1 {
     font-weight: 300;
-    font-size: 7vw; }
+    font-size: calc(4vw + 3vh / 2); }
+    @media only screen and (min-width: 641px) {
+      .header h1 {
+        font-size: 8vh; } }
 
 .header_center_box {
-  max-height: 70vh; }
+  width: 70vw;
+  height: 60vh;
+  margin: 20vh auto 20vh auto; }
+  @media only screen and (min-width: 321px) {
+    .header_center_box {
+      margin: 10vh auto auto auto; } }
+  @media only screen and (min-width: 641px) {
+    .header_center_box {
+      margin: 15vh auto 15vh auto; } }
+  .header_center_box ul {
+    list-style: none; }
 
 .what {
   display: block;
@@ -290,13 +307,17 @@ body {
 .expand_more {
   position: absolute;
   z-index: 1000;
-  bottom: 5vh;
+  bottom: 2vh;
   left: calc(50% - 24px);
   width: 48px;
   height: 48px;
   fill: red; }
   .expand_more:hover {
     fill: black; }
+
+.header_nav {
+  padding-top: 1rem;
+  text-align: right; }
 
 .slides {
   padding: 0 1rem; }
