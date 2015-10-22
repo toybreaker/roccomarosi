@@ -4,13 +4,14 @@ Super light mobile-first portfolio display static website. Fully rensponsive. Fo
 
 Adering to [K.I.S.S](https://en.wikipedia.org/wiki/KISS_principle) • [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (uhm... well, partly. Really not yet!)
 
-v 0.2.7
+v 0.2.8
  
 
 ## 2DOs
 
 Urgent:
 
+- landing screen vw, vh, orientation.js
 - qr in footer
 - imager setup: retina
 - gulp min + concat
