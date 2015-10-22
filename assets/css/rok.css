@@ -270,20 +270,16 @@ body {
   overflow-x: hidden; }
 
 .header {
-  width: calc(100vw - 2rem);
   height: 100vh;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  padding-top: 2rem;
-  min-height: 100px;
-  background-color: white;
-  position: relative;
-  z-index: 1;
   font-weight: 300;
-  font-size: 5vw; }
+  font-size: 7vw;
+  line-height: 11vh; }
   .header h1 {
     font-weight: 300;
-    font-size: 5vw; }
+    font-size: 7vw; }
+
+.header_center_box {
+  max-height: 70vh; }
 
 .what {
   display: block;
@@ -294,8 +290,8 @@ body {
 .expand_more {
   position: absolute;
   z-index: 1000;
-  bottom: 10vh;
-  left: calc(50vw - 24px);
+  bottom: 5vh;
+  left: calc(50% - 24px);
   width: 48px;
   height: 48px;
   fill: red; }

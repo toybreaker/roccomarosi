@@ -3,18 +3,10 @@ $header_font-size: 7vw;
 
 
 .header{
-  // width: calc(100vw - 2rem);
-  // height: 100vh;
-  // margin-right: 1rem;
-  // margin-left: 1rem;
-  // padding-top: 2rem;
-  // min-height: 100px;
-  // background-color: white;
-  // position: relative;
-  // z-index: 1;
+  height: 100vh;
   font-weight: 300;
   font-size: $header_font-size;
-  line-height: 1;
+  line-height: 11vh;
   h1{
     font-weight: 300;
     font-size: $header_font-size;
@@ -22,10 +14,7 @@ $header_font-size: 7vw;
 }
 
 .header_center_box{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-lef
+ max-height: 70vh;
 }
 
 .what{
