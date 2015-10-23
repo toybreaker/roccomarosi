@@ -14,7 +14,17 @@ var responsive   = require('gulp-responsive');
 var imagemin     = require('gulp-imagemin');
 var pngquant     = require('imagemin-pngquant');
 var reload       = browserSync.reload;
+var jade = require('gulp-jade');
 
+gulp.task('templates', function() {
+  var YOUR_LOCALS = {};
+
+  gulp.src('./src/*.jade')
+    .pipe(jade({
+      locals: YOUR_LOCALS
+    }))
+    .pipe(gulp.dest('./dist/'))
+});
 
 // Reponsive sizing
 gulp.task('images', function () {
@@ -91,11 +101,10 @@ gulp.task('sass', function () {
 gulp.task('default', ['serve']);
 
 
-// to autoprefix just use sublime (alt+super+p) > autoprefixer 
+// to autoprefix just use sublime (alt+super+p) > autoprefixer
 // it will prefix the whole css/scss file
 // https://github.com/sindresorhus/sublime-autoprefixer
 
 //todo:
 //minify task at least for css then maybe also html
 //package task to zip version while in dev
-
