@@ -1,29 +1,56 @@
 //header
-$header_font_size_viewportSized: calc(4vw + 3vh / 2);
-$header_font_size_fixSized: 8vh;
+$header_font_size: calc(2.75vh + 16px);
 
 .header{
   width: 100vw;
   height: 100vh;
+  position: relative;
   font-weight: 300;
-  font-size: $header_font_size_viewportSized;
-  @include media( "screen", ">bp1Width") {font-size: $header_font_size_fixSized;}
+  font-size: $header_font_size;
   line-height: 1;
 
   h1{
     font-weight: 300;
-    font-size: $header_font_size_viewportSized;
-    @include media( "screen", ">bp1Width") {font-size: $header_font_size_fixSized;}
+    font-size: $header_font_size;
+  }
+  ul{ list-style: none; }
+
+  // add some shit...
+  &:before{
+    content: "";
+    position: fixed;
+    top: 8vh;
+    right: 8vw;
+    width: 8vw;
+    height: 8vh;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+  }
+  &:after{
+    content: "";
+    position: fixed;
+    bottom: 8vh;
+    left: 8vw;
+    width: 8vw;
+    height: 8vh;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
   }
 }
-
-.header_center_box{
-  width: 70vw;
-  height: 60vh;
-  margin: 20vh auto 20vh auto;
-  @include media( "screen", ">minWidth") { margin: 10vh auto auto auto;}
-  @include media( "screen", ">bp1Width") {margin: 15vh auto 15vh auto;}
-  ul{list-style: none;}
+.header_title{
+  position: absolute;
+  padding: 0 11vw;
+  top: 11vh;
+  text-align: center;
+  @include media( "screen", ">minWidth") {text-align: left;}
+}
+.header_nav{
+  width: 100%;
+  position: absolute;
+  padding: 0 11vw;
+  bottom: 11vh;
+  text-align: center;
+  @include media( "screen", ">minWidth") {text-align: right;}
 }
 
 .what{
@@ -36,14 +63,10 @@ $header_font_size_fixSized: 8vh;
 .expand_more{
   position: absolute;
   z-index: 1000;
-  bottom: 2vh;
+  bottom: calc(50% - 12px);
   left: calc(50% - 24px);
   width: 48px;
   height: 48px;
   fill: red;
   &:hover{fill:black;}
-}
-.header_nav{
-  padding-top: 1rem;
-  text-align: right;
 }

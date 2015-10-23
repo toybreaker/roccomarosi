@@ -272,31 +272,52 @@ body {
 .header {
   width: 100vw;
   height: 100vh;
+  position: relative;
   font-weight: 300;
-  font-size: calc(4vw + 3vh / 2);
+  font-size: calc(2.75vh + 16px);
   line-height: 1; }
-  @media only screen and (min-width: 641px) {
-    .header {
-      font-size: 8vh; } }
   .header h1 {
     font-weight: 300;
-    font-size: calc(4vw + 3vh / 2); }
-    @media only screen and (min-width: 641px) {
-      .header h1 {
-        font-size: 8vh; } }
-
-.header_center_box {
-  width: 70vw;
-  height: 60vh;
-  margin: 20vh auto 20vh auto; }
-  @media only screen and (min-width: 321px) {
-    .header_center_box {
-      margin: 10vh auto auto auto; } }
-  @media only screen and (min-width: 641px) {
-    .header_center_box {
-      margin: 15vh auto 15vh auto; } }
-  .header_center_box ul {
+    font-size: calc(2.75vh + 16px); }
+  .header ul {
     list-style: none; }
+  .header:before {
+    content: "";
+    position: fixed;
+    top: 8vh;
+    right: 8vw;
+    width: 8vw;
+    height: 8vh;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray; }
+  .header:after {
+    content: "";
+    position: fixed;
+    bottom: 8vh;
+    left: 8vw;
+    width: 8vw;
+    height: 8vh;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray; }
+
+.header_title {
+  position: absolute;
+  padding: 0 11vw;
+  top: 11vh;
+  text-align: center; }
+  @media only screen and (min-width: 321px) {
+    .header_title {
+      text-align: left; } }
+
+.header_nav {
+  width: 100%;
+  position: absolute;
+  padding: 0 11vw;
+  bottom: 11vh;
+  text-align: center; }
+  @media only screen and (min-width: 321px) {
+    .header_nav {
+      text-align: right; } }
 
 .what {
   display: block;
@@ -307,17 +328,13 @@ body {
 .expand_more {
   position: absolute;
   z-index: 1000;
-  bottom: 2vh;
+  bottom: calc(50% - 12px);
   left: calc(50% - 24px);
   width: 48px;
   height: 48px;
   fill: red; }
   .expand_more:hover {
     fill: black; }
-
-.header_nav {
-  padding-top: 1rem;
-  text-align: right; }
 
 .slides {
   padding: 0 1rem; }
