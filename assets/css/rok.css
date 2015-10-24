@@ -337,6 +337,8 @@ body {
   @media only screen and (min-width: 321px) {
     .header_nav {
       text-align: right; } }
+  .header_nav .active a {
+    color: black; }
 
 .what {
   display: block;

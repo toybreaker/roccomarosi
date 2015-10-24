@@ -76,6 +76,9 @@ $border_size: 3px;
   @include media( "screen", ">minWidth") {
     text-align: right;
   }
+  // style for active page
+  .active a{color: black;}
+
 }
 
 .what{
