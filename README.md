@@ -13,6 +13,8 @@ Urgent:
 
 - footer icon refactor with line icons
 - qr in footer
+- animate scroll down icon
+- helpers: (temporarly show) "click for more infos" on photos
 - imager setup: retina
 - gulp min + concat
 
