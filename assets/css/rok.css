@@ -274,47 +274,66 @@ body {
   height: 100vh;
   position: relative;
   font-weight: 300;
-  font-size: calc(2.75vh + 16px);
-  line-height: 1; }
+  font-size: calc(2.75vw + 16px); }
+  @media only screen and (max-width: 320px) {
+    .header {
+      font-size: calc(2.75vw + 8px);
+      line-height: 1; } }
+  @media only screen and (min-width: 321px) and (max-width: 640px) {
+    .header {
+      font-size: calc(2.75vw + 12px);
+      line-height: 1; } }
   .header h1 {
-    font-weight: 300;
-    font-size: calc(2.75vh + 16px); }
+    font-size: calc(2.75vw + 16px); }
+    @media only screen and (max-width: 320px) {
+      .header h1 {
+        font-size: calc(2.75vw + 14px);
+        line-height: 1; } }
+    @media only screen and (min-width: 321px) and (max-width: 640px) {
+      .header h1 {
+        font-size: calc(2.75vw + 14px);
+        line-height: 1; } }
   .header ul {
     list-style: none; }
   .header:before {
     content: "";
-    position: fixed;
-    top: 8vh;
-    right: 8vw;
+    position: absolute;
+    top: 7vh;
+    right: 7vw;
     width: 8vw;
     height: 8vh;
-    border-top: 1px solid gray;
-    border-right: 1px solid gray; }
+    border-top: 3px solid #b3b3b3;
+    border-right: 3px solid #b3b3b3;
+    border-radius: 4px; }
   .header:after {
     content: "";
-    position: fixed;
-    bottom: 8vh;
-    left: 8vw;
+    position: absolute;
+    bottom: 7vh;
+    left: 7vw;
     width: 8vw;
     height: 8vh;
-    border-bottom: 1px solid gray;
-    border-left: 1px solid gray; }
+    border-bottom: 3px solid #b3b3b3;
+    border-left: 3px solid #b3b3b3;
+    border-radius: 3px; }
 
 .header_title {
   position: absolute;
   padding: 0 11vw;
   top: 11vh;
-  text-align: center; }
-  @media only screen and (min-width: 321px) {
+  text-align: left; }
+  @media only screen and (max-width: 320px) {
     .header_title {
-      text-align: left; } }
+      text-align: center;
+      padding-left: 3rem;
+      padding-right: 3rem; } }
 
 .header_nav {
   width: 100%;
   position: absolute;
   padding: 0 11vw;
   bottom: 11vh;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.2; }
   @media only screen and (min-width: 321px) {
     .header_nav {
       text-align: right; } }
@@ -322,19 +341,28 @@ body {
 .what {
   display: block;
   letter-spacing: -1px;
-  position: relative;
   color: #b3b3b3; }
 
 .expand_more {
   position: absolute;
   z-index: 1000;
-  bottom: calc(50% - 12px);
-  left: calc(50% - 24px);
-  width: 48px;
-  height: 48px;
-  fill: red; }
-  .expand_more:hover {
-    fill: black; }
+  bottom: calc(50% - 16px);
+  left: calc(50% - 16px);
+  width: 38px;
+  height: 38px; }
+  @media only screen and (max-width: 320px) {
+    .expand_more {
+      bottom: calc(50% - 10px); } }
+  .expand_more svg {
+    border-radius: 3px;
+    fill: #b3b3b3;
+    border: 3px solid #b3b3b3; }
+    @media only screen and (max-width: 640px) {
+      .expand_more svg {
+        border: 0 none; } }
+    .expand_more svg:hover {
+      fill: gray;
+      border: 3px solid gray; }
 
 .slides {
   padding: 0 1rem; }
@@ -383,9 +411,10 @@ figcaption {
     margin: -.5rem auto; }
 
 .mdl-mega-footer {
+  min-height: 50vh;
   position: relative;
   z-index: 1;
-  padding: 2rem 1rem 6rem 2rem;
+  padding: 2rem 1rem 2rem 2rem;
   color: #cccccc;
   font-weight: 300;
   background-color: black; }
@@ -393,37 +422,40 @@ figcaption {
     color: inherit;
     text-decoration: none;
     white-space: nowrap; }
-    .mdl-mega-footer a:hover {
-      color: #448aff; }
   .mdl-mega-footer svg {
-    margin-top: -10px;
+    margin-top: 0;
     width: 36px;
     height: 36px;
     fill: #cccccc; }
+    @media only screen and (min-width: 641px) {
+      .mdl-mega-footer svg {
+        margin-top: -6px; } }
+    @media only screen and (min-width: 1025px) {
+      .mdl-mega-footer svg {
+        margin-top: -10px; } }
     .mdl-mega-footer svg:hover {
       fill: white; }
   .mdl-mega-footer .up {
     float: right; }
 
 .mdl-logo {
-  font-size: 1.1rem;
-  line-height: 1.25;
   text-transform: uppercase;
   margin-bottom: 16px;
   color: #cccccc; }
-  .mdl-logo small {
+  .mdl-logo span {
     display: block;
     opacity: .5; }
+  .mdl-logo h3 {
+    color: #cccccc; }
 
 .mdl-mega-footer__link-list {
   list-style: none;
   padding: 0;
   margin: 0 0 32px; }
   .mdl-mega-footer__link-list li {
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 1rem;
     letter-spacing: 0;
-    line-height: 20px; }
+    line-height: 1.5; }
     .mdl-mega-footer__bottom-section .mdl-mega-footer__link-list li {
       float: left;
       margin-bottom: 0;
