@@ -11,7 +11,6 @@ v 0.2.9
 
 Urgent:
 
-- footer icon refactor with line icons
 - qr in footer
 - animate scroll down icon
 - helpers: (temporarly show) "click for more infos" on photos
@@ -32,6 +31,7 @@ Urgent:
 #### v 0.2.9:
 - landing screen vw, vh, no scipt, no flexbox, just plain old css
 - footer improvements
+- footer icon refactor with line icons
 
 #### v 0.2.8:
 - landing page feel

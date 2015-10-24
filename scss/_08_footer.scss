@@ -21,6 +21,16 @@
     height: 36px;
     fill: $text_color_invert;
     &:hover{fill:$light_color;}
+    &.stroke {
+      stroke: $text_color_invert;
+      &:hover{stroke:$light_color;}
+    }
+    &.mail{
+      position: relative;
+      top: -10px;
+      width: 60px;
+      height: 60px;
+    }
   }
   .up{float: right;}
 }
@@ -53,6 +63,7 @@
       margin-right: 10px;
     }
   }
+
 }
 
 .mdl-mega-footer__bottom-section {

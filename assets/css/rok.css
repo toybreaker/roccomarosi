@@ -441,6 +441,15 @@ figcaption {
         margin-top: -10px; } }
     .mdl-mega-footer svg:hover {
       fill: white; }
+    .mdl-mega-footer svg.stroke {
+      stroke: #cccccc; }
+      .mdl-mega-footer svg.stroke:hover {
+        stroke: white; }
+    .mdl-mega-footer svg.mail {
+      position: relative;
+      top: -10px;
+      width: 60px;
+      height: 60px; }
   .mdl-mega-footer .up {
     float: right; }
 
