@@ -1,0 +1,44 @@
+//main
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// utilism
+.spacer{height:4rem;}
+
+.user_trasparent{pointer-events: none;}
+
+.hide{
+  display:none;
+  height:0;
+  visibility: hidden;
+}
+//headings
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300; //font-size: 4vw;
+    margin:0;
+    padding:0;
+    text-transform: uppercase;
+    color:$text_color;
+}
+
+//linkism
+a {
+    text-decoration: none;
+    color: $link_color;
+}
+a:hover {
+    text-decoration: none;
+    color: $text_color;
+}
+
+//leiaut
+html { overflow-x: hidden; }
+body {
+  line-height:1;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}

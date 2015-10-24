@@ -4,13 +4,14 @@ Super light mobile-first portfolio display static website. Fully rensponsive. Fo
 
 Adering to [K.I.S.S](https://en.wikipedia.org/wiki/KISS_principle) • [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (uhm... well, partly. Really not yet!)
 
-v 0.2.7
- 
+v 0.2.8
+
 
 ## 2DOs
 
 Urgent:
 
+- landing screen vw, vh, orientation.js
 - qr in footer
 - imager setup: retina
 - gulp min + concat
@@ -18,13 +19,18 @@ Urgent:
 ## Slider considerations:
 
 - [ ] [swiper.js](http://www.idangero.us/swiper/) (20kb) | fade need img as backgrounds: [demo](http://www.idangero.us/swiper/demos/16-effect-fade.html), [code](https://github.com/nolimits4web/Swiper/blob/master/demos/16-effect-fade.html)
-- [ ] [flickity](http://flickity.metafizzy.co/) (58kb) | currently online 
+- [ ] [flickity](http://flickity.metafizzy.co/) (58kb) | currently online
 - [ ] [vegas](https://github.com/jaysalvat/vegas) (64kb) | need at least zepto (9kb) or jquery(84kb)
 - [X] native scroll + [scrollReveal.js](https://github.com/jlmakes/scrollReveal.js/tree/master) (9kb)
-    
- 
+
+
 
 ## Changelog
+
+
+#### v  0.2.8:
+- landing page feel
+- viewport sized typograhpy on **first screen** aka **100vwx100vh**
 
 #### v  0.2.7:
 - killed the icons on the shots
@@ -57,7 +63,7 @@ Urgent:
 
 ## Features:
 ### frontend
-- no jquery 
+- no jquery
 - no material design http calls (just good stuff in css)
 - [RWD](https://en.wikipedia.org/wiki/Responsive_web_design) with [Imager.js](https://github.com/BBC-News/Imager.js/) to handle images
 
