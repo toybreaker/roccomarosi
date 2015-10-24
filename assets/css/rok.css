@@ -421,7 +421,7 @@ figcaption {
   position: relative;
   z-index: 1;
   padding: 2rem 1rem 2rem 2rem;
-  color: #cccccc;
+  color: #999999;
   font-weight: 300;
   background-color: black; }
   .mdl-mega-footer a {
@@ -432,7 +432,7 @@ figcaption {
     margin-top: 0;
     width: 36px;
     height: 36px;
-    fill: #cccccc; }
+    fill: #999999; }
     @media only screen and (min-width: 641px) {
       .mdl-mega-footer svg {
         margin-top: -6px; } }
@@ -442,7 +442,7 @@ figcaption {
     .mdl-mega-footer svg:hover {
       fill: white; }
     .mdl-mega-footer svg.stroke {
-      stroke: #cccccc; }
+      stroke: #999999; }
       .mdl-mega-footer svg.stroke:hover {
         stroke: white; }
     .mdl-mega-footer svg.mail {
@@ -456,13 +456,13 @@ figcaption {
 .mdl-logo {
   text-transform: uppercase;
   margin-bottom: 16px;
-  color: #cccccc; }
+  color: #999999; }
   .mdl-logo h3 {
     color: white; }
   .mdl-logo .what {
     display: block;
     font-weight: 300;
-    color: #cccccc; }
+    color: #999999; }
 
 .mdl-mega-footer__link-list {
   list-style: none;
