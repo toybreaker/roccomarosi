@@ -29,12 +29,13 @@
   text-transform: uppercase;
   margin-bottom: 16px;
   color: $text_color_invert;
-  span{
-    display:block;
-    opacity: .5;
-  }
   h3{
-  color: $text_color_invert;
+    color:$light_color ;
+  }
+  .what{
+    display:block;
+    font-weight: 300;
+    color: $text_color_invert;
   }
 }
 

@@ -448,10 +448,11 @@ figcaption {
   text-transform: uppercase;
   margin-bottom: 16px;
   color: #cccccc; }
-  .mdl-logo span {
-    display: block;
-    opacity: .5; }
   .mdl-logo h3 {
+    color: white; }
+  .mdl-logo .what {
+    display: block;
+    font-weight: 300;
     color: #cccccc; }
 
 .mdl-mega-footer__link-list {
