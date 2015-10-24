@@ -65,6 +65,14 @@ $border_size: 3px;
     padding-left:3rem;
     padding-right:3rem;
   }
+  a:hover{
+    h1{
+      color: $link_color;
+    }
+    .what{
+      color: $text_color;
+    }
+  }
 }
 .header_nav{
   width: 100%;

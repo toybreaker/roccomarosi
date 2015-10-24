@@ -326,6 +326,10 @@ body {
       text-align: center;
       padding-left: 3rem;
       padding-right: 3rem; } }
+  .header_title a:hover h1 {
+    color: #b3b3b3; }
+  .header_title a:hover .what {
+    color: #333333; }
 
 .header_nav {
   width: 100%;
