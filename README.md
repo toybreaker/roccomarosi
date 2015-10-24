@@ -4,7 +4,7 @@ Super light mobile-first portfolio display static website. Fully rensponsive. Fo
 
 Adering to [K.I.S.S](https://en.wikipedia.org/wiki/KISS_principle) • [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (uhm... well, partly. Really not yet!)
 
-v 0.2.9
+v 0.2.10
 
 
 ## 2DOs
@@ -28,9 +28,11 @@ Urgent:
 
 ## Changelog
 
+#### v 0.2.10:
+- footer improvements
+
 #### v 0.2.9:
 - landing screen vw, vh, no scipt, no flexbox, just plain old css
-- footer improvements
 - footer icon refactor with line icons
 
 #### v 0.2.8:

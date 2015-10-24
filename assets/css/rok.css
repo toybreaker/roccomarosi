@@ -251,15 +251,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  color: #333333; }
+  color: #404040; }
 
 a {
   text-decoration: none;
-  color: #b3b3b3; }
+  color: #bfbfbf; }
 
 a:hover {
   text-decoration: none;
-  color: #333333; }
+  color: #404040; }
 
 html {
   overflow-x: hidden; }
@@ -302,8 +302,8 @@ body {
     right: 7vw;
     width: 8vw;
     height: 8vh;
-    border-top: 3px solid #b3b3b3;
-    border-right: 3px solid #b3b3b3;
+    border-top: 3px solid #bfbfbf;
+    border-right: 3px solid #bfbfbf;
     border-radius: 4px; }
   .header:after {
     content: "";
@@ -312,8 +312,8 @@ body {
     left: 7vw;
     width: 8vw;
     height: 8vh;
-    border-bottom: 3px solid #b3b3b3;
-    border-left: 3px solid #b3b3b3;
+    border-bottom: 3px solid #bfbfbf;
+    border-left: 3px solid #bfbfbf;
     border-radius: 3px; }
 
 .header_title {
@@ -327,9 +327,9 @@ body {
       padding-left: 3rem;
       padding-right: 3rem; } }
   .header_title a:hover h1 {
-    color: #b3b3b3; }
+    color: #bfbfbf; }
   .header_title a:hover .what {
-    color: #333333; }
+    color: #404040; }
 
 .header_nav {
   width: 100%;
@@ -347,7 +347,7 @@ body {
 .what {
   display: block;
   letter-spacing: -1px;
-  color: #b3b3b3; }
+  color: #bfbfbf; }
 
 .expand_more {
   position: absolute;
@@ -361,14 +361,14 @@ body {
       bottom: calc(50% - 10px); } }
   .expand_more svg {
     border-radius: 3px;
-    fill: #b3b3b3;
-    border: 3px solid #b3b3b3; }
+    fill: #bfbfbf;
+    border: 3px solid #bfbfbf; }
     @media only screen and (max-width: 640px) {
       .expand_more svg {
         border: 0 none; } }
     .expand_more svg:hover {
-      fill: gray;
-      border: 3px solid gray; }
+      fill: #8c8c8c;
+      border: 3px solid #8c8c8c; }
 
 .slides {
   padding: 0 1rem; }
@@ -411,75 +411,90 @@ figcaption {
   font-size: 1rem;
   line-height: 1;
   text-align: center;
-  color: #b3b3b3; }
+  color: #bfbfbf; }
   .is_showing figcaption {
     padding: 1.5rem 1.6rem 1rem 1.6rem;
     margin: -.5rem auto; }
 
-.mdl-mega-footer {
+.footer {
   min-height: 50vh;
   position: relative;
   z-index: 1;
-  padding: 2rem 1rem 2rem 2rem;
-  color: #999999;
+  padding: 2rem 1rem;
+  color: gray;
   font-weight: 300;
   background-color: black; }
-  .mdl-mega-footer a {
+  .footer a {
     color: inherit;
     text-decoration: none;
     white-space: nowrap; }
-  .mdl-mega-footer svg {
+  .footer svg {
     margin-top: 0;
     width: 36px;
     height: 36px;
-    fill: #999999; }
+    fill: gray; }
     @media only screen and (min-width: 641px) {
-      .mdl-mega-footer svg {
+      .footer svg {
         margin-top: -6px; } }
     @media only screen and (min-width: 1025px) {
-      .mdl-mega-footer svg {
+      .footer svg {
         margin-top: -10px; } }
-    .mdl-mega-footer svg:hover {
+    .footer svg:hover {
       fill: white; }
-    .mdl-mega-footer svg.stroke {
-      stroke: #999999; }
-      .mdl-mega-footer svg.stroke:hover {
+    .footer svg.stroke {
+      stroke: gray; }
+      .footer svg.stroke:hover {
         stroke: white; }
-    .mdl-mega-footer svg.mail {
+    .footer svg.mail {
       position: relative;
       top: -10px;
       width: 60px;
       height: 60px; }
-  .mdl-mega-footer .up {
-    float: right; }
 
-.mdl-logo {
+.footer_pad {
+  position: absolute;
+  bottom: 3rem;
+  left: 8vw;
+  right: 2rem;
+  padding-top: 3rem; }
+
+.footer_up {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; }
+  .footer_up a {
+    z-index: 100;
+    position: absolute;
+    right: 2rem;
+    top: 2rem; }
+
+.footer_title {
   text-transform: uppercase;
   margin-bottom: 16px;
-  color: #999999; }
-  .mdl-logo h3 {
-    color: white; }
-  .mdl-logo .what {
+  color: gray; }
+  .footer_title h3 {
+    color: #bfbfbf; }
+  .footer_title .what {
     display: block;
     font-weight: 300;
-    color: #999999; }
+    color: gray; }
 
-.mdl-mega-footer__link-list {
+.footer_list {
+  width: 100%;
+  display: block;
   list-style: none;
   padding: 0;
-  margin: 0 0 32px; }
-  .mdl-mega-footer__link-list li {
+  margin: 0; }
+  .footer_list div {
     font-size: 1rem;
     letter-spacing: 0;
     line-height: 1.5; }
-    .mdl-mega-footer__bottom-section .mdl-mega-footer__link-list li {
+    .footer_pad .footer_list div {
       float: left;
       margin-bottom: 0;
       margin-right: 10px; }
-
-.mdl-mega-footer__bottom-section {
-  padding-top: 16px;
-  margin-bottom: 16px; }
 
 @media print {
   * {

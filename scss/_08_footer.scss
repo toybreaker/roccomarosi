@@ -1,10 +1,10 @@
 
 //footer
-.mdl-mega-footer{
+.footer{
   min-height: 50vh;
   position:relative;
   z-index:1;
-  padding: 2rem 1rem 2rem 2rem;
+  padding: 2rem 1rem;
   color: $text_color_invert;
   font-weight: 300;
   background-color: $dark_color;
@@ -32,15 +32,35 @@
       height: 60px;
     }
   }
-  .up{float: right;}
+
 }
 
-.mdl-logo {
+.footer_pad {
+  position: absolute;
+  bottom: 3rem;
+  left: 8vw;
+  right: 2rem;
+  padding-top: 3rem;
+}
+.footer_up{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  a{
+    z-index: 100;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+  }
+}
+.footer_title {
   text-transform: uppercase;
   margin-bottom: 16px;
   color: $text_color_invert;
   h3{
-    color:$light_color ;
+    color: lighten($text_color_invert, 25);
   }
   .what{
     display:block;
@@ -49,24 +69,20 @@
   }
 }
 
-.mdl-mega-footer__link-list{
+.footer_list{
+  width: 100%;
+  display: block;
   list-style: none;
   padding: 0;
-  margin: 0 0 32px;
-  li {
+  margin: 0;
+  div {
     font-size: 1rem;
     letter-spacing: 0;
     line-height: 1.5;
-    .mdl-mega-footer__bottom-section &{
+    .footer_pad &{
       float: left;
       margin-bottom: 0;
       margin-right: 10px;
     }
   }
-
-}
-
-.mdl-mega-footer__bottom-section {
-  padding-top: 16px;
-  margin-bottom: 16px;
 }
