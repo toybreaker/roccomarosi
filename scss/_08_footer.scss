@@ -1,7 +1,8 @@
 
 //footer
 .footer{
-  min-height: 50vh;
+  height: 70vh;
+  min-height: 300px;
   position:relative;
   z-index:1;
   padding: 2rem 1rem;
@@ -70,19 +71,24 @@
 }
 
 .footer_list{
-  width: 100%;
   display: block;
+  width: 100%;
+  clear: both;
   list-style: none;
   padding: 0;
   margin: 0;
-  div {
+  &.legal{
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  &.contacts a{
+    float: left;
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+  a {
     font-size: 1rem;
     letter-spacing: 0;
     line-height: 1.5;
-    .footer_pad &{
-      float: left;
-      margin-bottom: 0;
-      margin-right: 10px;
-    }
   }
 }

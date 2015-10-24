@@ -417,7 +417,8 @@ figcaption {
     margin: -.5rem auto; }
 
 .footer {
-  min-height: 50vh;
+  height: 70vh;
+  min-height: 300px;
   position: relative;
   z-index: 1;
   padding: 2rem 1rem;
@@ -482,19 +483,23 @@ figcaption {
     color: gray; }
 
 .footer_list {
-  width: 100%;
   display: block;
+  width: 100%;
+  clear: both;
   list-style: none;
   padding: 0;
   margin: 0; }
-  .footer_list div {
+  .footer_list.legal {
+    font-size: 1rem;
+    line-height: 1.5; }
+  .footer_list.contacts a {
+    float: left;
+    margin-bottom: 0;
+    margin-right: 1rem; }
+  .footer_list a {
     font-size: 1rem;
     letter-spacing: 0;
     line-height: 1.5; }
-    .footer_pad .footer_list div {
-      float: left;
-      margin-bottom: 0;
-      margin-right: 10px; }
 
 @media print {
   * {
