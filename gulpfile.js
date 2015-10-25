@@ -14,6 +14,9 @@ var responsive   = require('gulp-responsive');
 var imagemin     = require('gulp-imagemin');
 var pngquant     = require('imagemin-pngquant');
 var reload       = browserSync.reload;
+
+
+//TESTING JADE:
 var jade = require('gulp-jade');
 
 gulp.task('templates', function() {
