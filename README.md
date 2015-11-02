@@ -11,11 +11,18 @@ v 0.2.10
 
 Urgent:
 
-- qr in footer
-- animate scroll down icon
+- animate: shake the "v" icon
 - helpers: (temporarly show) "click for more infos" on photos
 - imager setup: retina
 - gulp min + concat
+
+Sometime soon:
+
+- service workers
+
+Maybe:
+
+- quick contact form
 
 ## Slider considerations:
 
