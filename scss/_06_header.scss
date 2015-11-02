@@ -118,4 +118,5 @@ $border_size: 3px;
       border: $border_size solid darken($link_color, 20);
     }
   }
+  .qr_is_big &{display: none;}
 }

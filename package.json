@@ -1,17 +1,14 @@
 {
   "name": "rocco_marosi",
-  "version": "0.2.3",
+  "version": "0.2.10",
   "description": "gulp + ruby-sass + sourcemaps + browsersync = Spoton!",
   "main": "gulpfile.js",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "printONdemand"
-  ],
   "author": "rokma",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^1.7.2",
     "gulp": "^3.8.10",

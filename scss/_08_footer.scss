@@ -2,13 +2,16 @@
 //footer
 .footer{
   height: 70vh;
-  min-height: 300px;
+  min-height: 400px;
   position:relative;
   z-index:1;
   padding: 2rem 1rem;
   color: $text_color_invert;
   font-weight: 300;
   background-color: $dark_color;
+  .is_big & {
+    * > :not(.qr){ opacity: .2;}
+  }
   a {
     color: inherit;
     text-decoration: none;
@@ -18,8 +21,8 @@
     margin-top: 0;
     @include media( "screen", ">bp1Width") { margin-top: -6px; }
     @include media( "screen", ">maxWidth") { margin-top: -10px; }
-    width: 36px;
-    height: 36px;
+    width: 42px;
+    height: 42px;
     fill: $text_color_invert;
     &:hover{fill:$light_color;}
     &.stroke {
@@ -28,20 +31,62 @@
     }
     &.mail{
       position: relative;
-      top: -10px;
-      width: 60px;
-      height: 60px;
+      top: -8px;
+      width: 68px;
+      height: 68px;
+    }
+    &.gplus{
+      position: relative;
+      top: 0;
+      width: 52px;
+      height: 52px;
+    }
+    &.linkedin{
+      position: relative;
+      top: 4px;
+      width: 44px;
+      height: 44px;
     }
   }
 
 }
 
+.qr{
+  position: relative;
+  top: 2px;
+  left:3px;
+  border-radius: 2px;
+  .bg{
+    fill: $text_color_invert;
+
+  }
+  .fg{
+    fill: #000;
+  }
+  &.is_big{
+    position: fixed;
+    top:20%;
+    left: calc(50% - 100px);
+    svg{
+      width: 200px;
+      height: 200px;
+      .bg{
+        fill: #fff;
+      }
+      .fg{
+        fill: #000;
+      }
+    }
+  }
+}
+
 .footer_pad {
   position: absolute;
-  bottom: 3rem;
+  bottom: 0;
   left: 8vw;
   right: 2rem;
-  padding-top: 3rem;
+  //padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .footer_up{
   position: absolute;
@@ -52,13 +97,17 @@
   a{
     z-index: 100;
     position: absolute;
-    right: 2rem;
+    right: 1rem;
     top: 2rem;
+    @include media( "screen", ">minWidth"){
+      right: 2rem;
+      top: 2rem;
+    }
   }
 }
 .footer_title {
   text-transform: uppercase;
-  margin-bottom: 16px;
+
   color: $text_color_invert;
   h3{
     color: lighten($text_color_invert, 25);
@@ -67,6 +116,7 @@
     display:block;
     font-weight: 300;
     color: $text_color_invert;
+    padding-right:4rem;
   }
 }
 
@@ -80,11 +130,19 @@
   &.legal{
     font-size: 1rem;
     line-height: 1.5;
+    margin-bottom: 0;
   }
   &.contacts a{
     float: left;
     margin-bottom: 0;
-    margin-right: 1rem;
+    margin-right: .75rem;
+    @include media( "screen", ">minWidth") {
+      margin-right: 1rem;
+    }
+    @include media( "screen", ">bp1Width") {
+      margin-right: 1.5rem;
+    }
+    margin-top:2rem;
   }
   a {
     font-size: 1rem;
