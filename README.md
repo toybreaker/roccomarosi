@@ -19,6 +19,7 @@ Urgent:
 Sometime soon:
 
 - service workers
+- some-kind-of templating (jade?)
 
 Maybe:
 
