@@ -337,10 +337,11 @@ body {
   padding: 0 11vw;
   bottom: 11vh;
   text-align: center;
-  line-height: 1.2; }
+  line-height: 2; }
   @media only screen and (min-width: 321px) {
     .header_nav {
-      text-align: right; } }
+      text-align: right;
+      line-height: 1.2; } }
   .header_nav .active a {
     color: black; }
 
@@ -476,8 +477,9 @@ figcaption {
   .qr .fg {
     fill: #000; }
   .qr.is_big {
-    position: fixed;
-    top: 20%;
+    position: absolute;
+    bottom: 10rem;
+    top: auto;
     left: calc(50% - 100px); }
     .qr.is_big svg {
       width: 200px;

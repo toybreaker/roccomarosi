@@ -64,8 +64,9 @@
     fill: #000;
   }
   &.is_big{
-    position: fixed;
-    top:20%;
+    position: absolute;
+    bottom:10rem;
+    top: auto;
     left: calc(50% - 100px);
     svg{
       width: 200px;

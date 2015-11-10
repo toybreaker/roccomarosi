@@ -80,9 +80,10 @@ $border_size: 3px;
   padding: 0 11vw;
   bottom: 11vh;
   text-align: center;
-  line-height: 1.2;
+  line-height: 2;
   @include media( "screen", ">minWidth") {
     text-align: right;
+    line-height: 1.2;
   }
   // style for active page
   .active a{color: black;}
