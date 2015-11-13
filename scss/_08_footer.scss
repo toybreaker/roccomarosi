@@ -10,7 +10,7 @@
   font-weight: 300;
   background-color: $dark_color;
   .is_big & {
-    * > :not(.qr){ opacity: .2;}
+    * > :not(.qr_switch){ opacity: .2;}
   }
   a {
     color: inherit;
@@ -21,8 +21,8 @@
     margin-top: 0;
     @include media( "screen", ">bp1Width") { margin-top: -6px; }
     @include media( "screen", ">maxWidth") { margin-top: -10px; }
-    width: 42px;
-    height: 42px;
+    width: 46px;
+    height: 46px;
     fill: $text_color_invert;
     &:hover{fill:$light_color;}
     &.stroke {
@@ -37,21 +37,23 @@
     }
     &.gplus{
       position: relative;
-      top: 0;
-      width: 52px;
-      height: 52px;
+      top: 2px;
+      width: 50px;
+      height: 50px;
     }
     &.linkedin{
       position: relative;
       top: 4px;
-      width: 44px;
-      height: 44px;
+    }
+    &.qr_to_here{
+      position: relative;
+      top: 2px;
     }
   }
 
 }
 
-.qr{
+.qr_switch{
   position: relative;
   top: 2px;
   left:3px;

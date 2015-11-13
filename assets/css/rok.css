@@ -298,20 +298,20 @@ body {
   .header:before {
     content: "";
     position: absolute;
-    top: 7vh;
+    top: 7vw;
     right: 7vw;
-    width: 8vw;
-    height: 8vh;
+    width: 10.5vw;
+    height: 10.5vw;
     border-top: 3px solid #bfbfbf;
     border-right: 3px solid #bfbfbf;
-    border-radius: 4px; }
+    border-radius: 3px; }
   .header:after {
     content: "";
     position: absolute;
-    bottom: 7vh;
+    bottom: 7vw;
     left: 7vw;
-    width: 8vw;
-    height: 8vh;
+    width: 10.5vw;
+    height: 10.5vw;
     border-bottom: 3px solid #bfbfbf;
     border-left: 3px solid #bfbfbf;
     border-radius: 3px; }
@@ -428,7 +428,7 @@ figcaption {
   color: gray;
   font-weight: 300;
   background-color: black; }
-  .is_big .footer * > :not(.qr) {
+  .is_big .footer * > :not(.qr_switch) {
     opacity: .2; }
   .footer a {
     color: inherit;
@@ -436,8 +436,8 @@ figcaption {
     white-space: nowrap; }
   .footer svg {
     margin-top: 0;
-    width: 42px;
-    height: 42px;
+    width: 46px;
+    height: 46px;
     fill: gray; }
     @media only screen and (min-width: 641px) {
       .footer svg {
@@ -458,35 +458,36 @@ figcaption {
       height: 68px; }
     .footer svg.gplus {
       position: relative;
-      top: 0;
-      width: 52px;
-      height: 52px; }
+      top: 2px;
+      width: 50px;
+      height: 50px; }
     .footer svg.linkedin {
       position: relative;
-      top: 4px;
-      width: 44px;
-      height: 44px; }
+      top: 4px; }
+    .footer svg.qr_to_here {
+      position: relative;
+      top: 2px; }
 
-.qr {
+.qr_switch {
   position: relative;
   top: 2px;
   left: 3px;
   border-radius: 2px; }
-  .qr .bg {
+  .qr_switch .bg {
     fill: gray; }
-  .qr .fg {
+  .qr_switch .fg {
     fill: #000; }
-  .qr.is_big {
+  .qr_switch.is_big {
     position: absolute;
     bottom: 10rem;
     top: auto;
     left: calc(50% - 100px); }
-    .qr.is_big svg {
+    .qr_switch.is_big svg {
       width: 200px;
       height: 200px; }
-      .qr.is_big svg .bg {
+      .qr_switch.is_big svg .bg {
         fill: #fff; }
-      .qr.is_big svg .fg {
+      .qr_switch.is_big svg .fg {
         fill: #000; }
 
 .footer_pad {
@@ -557,10 +558,10 @@ figcaption {
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important;
-    line-height: 1; }
+    line-height: 1;
+    font-size: 16pt; }
 
-  a,
-  a:visited {
+  a, a:visited {
     text-decoration: none; }
 
   a[href]:after {
@@ -585,25 +586,19 @@ figcaption {
     display: table-header-group;
     /* h5bp.com/t */ }
 
-  tr,
-  img {
+  tr {
     page-break-inside: avoid; }
 
   img {
+    page-break-inside: avoid;
     max-width: 100% !important; }
 
   @page {
     margin: 0.5cm;
     margin-top: 1.5cm; }
-  p,
-  h2,
-  h3 {
+  p, h2, h3 {
     orphans: 3;
     widows: 3; }
-
-  h2,
-  h3 {
-    page-break-after: avoid; }
 
   *:after {
     display: block;
@@ -617,47 +612,74 @@ figcaption {
     font-size: 10pt;
     line-height: 1; }
 
+  svg.footer_list_ico {
+    width: 23pt !important;
+    height: 23pt !important; }
+
+  .footer svg.mail {
+    width: 26pt !important;
+    height: 26pt !important; }
+
+  .footer svg.mail,
+  .footer svg.gplus,
+  .footer svg.linkedin {
+    top: 8pt; }
+
+  .header_title {
+    position: relative; }
+
+  .footer_list_link {
+    margin-top: 1pt;
+    width: 100%; }
+
+  .qr_switch {
+    margin-left: -4pt;
+    padding-top: 2pt;
+    margin-bottom: 10pt; }
+    .qr_switch svg {
+      width: 50pt !important;
+      height: 50pt !important; }
+      .qr_switch svg .bg {
+        fill: #fff; }
+      .qr_switch svg .fg {
+        fill: #000; }
+    .qr_switch.is_big {
+      position: static; }
+
+  figcaption {
+    display: block; }
+
+  .footer.group {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0; }
+
   h1 {
     page-break-before: always; }
 
   h1, h2, h3, h4, h5 {
     page-break-after: avoid; }
 
-  table, figure {
+  table, figure, footer.footer.group {
     page-break-inside: avoid; }
 
-  .header_title {
-    position: relative; }
+  h2,
+  h3 {
+    page-break-after: avoid; }
 
-  .footer_list_link {
-    width: 100%;
-    background-color: white !important; }
-    .footer_list_link svg.qr {
-      background-color: white !important; }
-
-  .qr {
-    margin-left: -4pt;
-    margin-bottom: 10pt; }
-    .qr svg {
-      width: 100pt;
-      height: 100pt; }
-      .qr svg .bg {
-        fill: #fff; }
-      .qr svg .fg {
-        fill: #000; }
-    .qr.is_big {
-      position: static; }
-
-  figcaption {
-    display: block; }
-
-  footer.footer.group {
-    page-break-before: always; }
-
-  .slides {
+  .slides,
+  .footer_title,
+  .expand_more,
+  .footer_up,
+  .footer_list.group.legal {
     display: none; }
 
   .header_nav {
-    text-align: right; } }
+    text-align: right; }
+
+  .footer_list.contacts a {
+    margin-top: 0; } }
 
 /*# sourceMappingURL=rok.css.map */

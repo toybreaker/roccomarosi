@@ -2,6 +2,9 @@
 $header_font_size: calc(2.75vw + 16px);
 $border_size: 3px;
 
+$corners_distance: 7vw;
+$corners_dimension: $corners_distance*1.5;
+
 .header{
   width: 100vw;
   height: 100vh;
@@ -18,38 +21,39 @@ $border_size: 3px;
   }
 
   h1{
-    font-size: $header_font_size;
     @include media( "screen", "<minWidth") {
       font-size: calc(2.75vw + 14px);
       line-height: 1;
     }
+
     @include media( "screen", ">minWidth", "<bp1Width") {
       font-size: calc(2.75vw + 14px);
       line-height: 1;
     }
-
+    font-size: $header_font_size;
   }
+
   ul{ list-style: none; }
 
   // add some shit...
   &:before{
     content: "";
     position: absolute;
-    top: 7vh;
-    right: 7vw;
-    width: 8vw;
-    height: 8vh;
+    top: $corners_distance;
+    right: $corners_distance;
+    width: $corners_dimension;
+    height: $corners_dimension;
     border-top: $border_size solid $link_color;
     border-right: $border_size solid $link_color;
-    border-radius: 4px;
+    border-radius: $border_size;
   }
   &:after{
     content: "";
     position: absolute;
-    bottom: 7vh;
-    left: 7vw;
-    width: 8vw;
-    height: 8vh;
+    bottom: $corners_distance;
+    left: $corners_distance;
+    width: $corners_dimension;
+    height: $corners_dimension;
     border-bottom: $border_size solid $link_color;
     border-left: $border_size solid $link_color;
     border-radius: $border_size;
