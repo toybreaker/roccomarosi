@@ -62,7 +62,7 @@ $corners_dimension: $corners_distance*1.5;
 .header_title{
   position: absolute;
   padding: 0 11vw;
-  top: 11vh;
+  top: $corners_distance;
   text-align: left;
   @include media( "screen", "<minWidth") {
     text-align: center;
@@ -82,7 +82,7 @@ $corners_dimension: $corners_distance*1.5;
   width: 100%;
   position: absolute;
   padding: 0 11vw;
-  bottom: 11vh;
+  bottom: $corners_distance;
   text-align: center;
   line-height: 2;
   @include media( "screen", ">minWidth") {

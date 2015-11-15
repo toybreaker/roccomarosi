@@ -85,11 +85,11 @@
 
 .footer_pad {
   position: absolute;
-  bottom: 0;
-  left: 8vw;
+  bottom: $corners_distance;
+  left: $corners_distance;
   right: 2rem;
-  //padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 .footer_up{
   position: absolute;
