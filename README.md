@@ -25,6 +25,7 @@ Maybe:
 
 - quick contact form
 
+
 ## Slider considerations:
 
 - [ ] [swiper.js](http://www.idangero.us/swiper/) (20kb) | fade need img as backgrounds: [demo](http://www.idangero.us/swiper/demos/16-effect-fade.html), [code](https://github.com/nolimits4web/Swiper/blob/master/demos/16-effect-fade.html)
@@ -53,7 +54,6 @@ Maybe:
 #### v 0.2.7:
 - killed the icons on the shots
 - no more hamburger! this piece of unicode `☰` also written `&#9776;` is not showing on android 4.1.2:  ...lame!
-
 
 #### v 0.2.6:
 - now with some material design flavour
