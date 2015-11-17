@@ -12,14 +12,14 @@ v 0.2.11
 Urgent:
 
 - animate: shake the "v" icon
-- helpers: (temporarly show) "click for more infos" on photos
+- helpers: (temporarly show) "tap to see photo details" on photos
 - imager setup: retina
 - gulp min + concat
 
 Sometime soon:
 
 - service workers
-- some-kind-of templating (jade?)
+- some-kind-of template (jade?)
 
 Maybe:
 
