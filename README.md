@@ -53,6 +53,7 @@ Maybe:
 
 #### v 0.2.7:
 - killed the icons on the shots
+- no more material design, just some paper photos feel with shadow!
 - no more hamburger! this piece of unicode `☰` also written `&#9776;` is not showing on android 4.1.2:  ...lame!
 
 #### v 0.2.6:
