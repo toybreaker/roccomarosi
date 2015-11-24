@@ -367,6 +367,10 @@ body {
         .expand_more svg:hover {
           fill: #8c8c8c;
           border: 3px solid #8c8c8c; } }
+  .expand_more a {
+    display: block;
+    width: 50px;
+    height: 50px; }
   .qr_is_big .expand_more {
     display: none; }
 
