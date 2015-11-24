@@ -13,7 +13,7 @@ $corners_dimension: $corners_distance*1.3;
 }
 
 .header {
-  width: calc(100% - 7vw);// calc(100% - $corners_distance);
+  width: 100%;// calc(100% - $corners_distance);
   height: 100%;
   position: relative;
   font-weight: 300;
@@ -57,7 +57,7 @@ $corners_dimension: $corners_distance*1.3;
 .header_title{
   position: absolute;
   text-align: center;
-  width: calc(100% - 7vw);// calc(100% - $corners_distance);
+  //width: 100%;
   top: $corners_distance * 1.5;
   left: 0;
   @include media( "screen", ">minWidth") {
