@@ -281,11 +281,11 @@ body {
   height: 100%;
   position: relative;
   font-weight: 300;
-  font-size: calc(2.75vw + 16px);
-  line-height: 1.25; }
+  font-size: calc(2.75vw + 15px);
+  line-height: 1.15; }
   .header h1 {
-    font-size: calc(2.75vw + 16px);
-    line-height: 1.25; }
+    font-size: calc(2.75vw + 15px);
+    line-height: 1.15; }
   .header ul {
     list-style: none; }
   .header:before {
@@ -331,12 +331,11 @@ body {
   left: 7vw;
   bottom: 10.5vw;
   text-align: center;
-  line-height: 1.75; }
+  line-height: 1.15; }
   @media only screen and (min-width: 375px) {
     .header_nav {
       bottom: 7vw;
-      text-align: right;
-      line-height: 1.25; } }
+      text-align: right; } }
   .header_nav .active a {
     color: black; }
 
