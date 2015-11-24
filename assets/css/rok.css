@@ -282,13 +282,10 @@ body {
   position: relative;
   font-weight: 300;
   font-size: calc(2.75vw + 16px);
-  line-height: 1; }
+  line-height: 1.25; }
   .header h1 {
-    font-size: calc(2.75vw + 16px); }
-    @media only screen and (min-width: 375px) {
-      .header h1 {
-        font-size: calc(2.75vw + 14px);
-        line-height: 1; } }
+    font-size: calc(2.75vw + 16px);
+    line-height: 1.25; }
   .header ul {
     list-style: none; }
   .header:before {
@@ -339,7 +336,7 @@ body {
     .header_nav {
       bottom: 7vw;
       text-align: right;
-      line-height: 1.2; } }
+      line-height: 1.25; } }
   .header_nav .active a {
     color: black; }
 
