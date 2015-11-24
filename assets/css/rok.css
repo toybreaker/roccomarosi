@@ -277,7 +277,7 @@ body {
   height: 100vh; }
 
 .header {
-  width: calc(100% - $corners_distance);
+  width: calc(100% - 7vw);
   height: 100%;
   position: relative;
   font-weight: 300;
@@ -315,7 +315,7 @@ body {
 .header_title {
   position: absolute;
   text-align: center;
-  width: 100%;
+  width: calc(100% - 7vw);
   top: 10.5vw;
   left: 0; }
   @media only screen and (min-width: 375px) {
@@ -529,7 +529,7 @@ figcaption {
   color: gray; }
   .footer_title h3 {
     color: #bfbfbf; }
-  .footer_title .what {
+  .footer_title .footer_what {
     display: block;
     font-weight: 300;
     color: gray;
@@ -689,7 +689,7 @@ figcaption {
     font-weight: 300;
     line-height: 1.25; }
 
-  .what {
+  .what, .footer_what {
     font-size: 18pt;
     font-weight: 200; }
 
