@@ -281,44 +281,46 @@ body {
   height: 100%;
   position: relative;
   font-weight: 300;
-  font-size: calc(2.75vw + 15px);
+  font-size: calc(2.5vw + 15px);
   line-height: 1.15; }
   .header h1 {
-    font-size: calc(2.75vw + 15px);
+    font-size: calc(2.5vw + 15px);
     line-height: 1.15; }
   .header ul {
     list-style: none; }
   .header:before {
     content: "";
     position: absolute;
-    top: 7vw;
-    right: 7vw;
-    width: 9.1vw;
-    height: 9.1vw;
+    top: 3vw;
+    right: 3vw;
+    width: 3.9vw;
+    height: 3.9vw;
     border-top: 3px solid #bfbfbf;
     border-right: 3px solid #bfbfbf;
     border-radius: 3px; }
   .header:after {
     content: "";
     position: absolute;
-    bottom: 7vw;
-    left: 7vw;
-    width: 9.1vw;
-    height: 9.1vw;
+    bottom: 3vw;
+    left: 3vw;
+    width: 3.9vw;
+    height: 3.9vw;
     border-bottom: 3px solid #bfbfbf;
     border-left: 3px solid #bfbfbf;
     border-radius: 3px; }
 
 .header_title {
+  width: 100%;
   position: absolute;
   text-align: center;
-  top: 10.5vw;
+  top: 4.5vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
   left: 0; }
   @media only screen and (min-width: 375px) {
     .header_title {
       text-align: left;
-      top: 7vw;
-      left: 7vw; } }
+      top: 3vw; } }
   .header_title a:hover h1 {
     color: #bfbfbf; }
   .header_title a:hover .what {
@@ -327,14 +329,14 @@ body {
 .header_nav {
   width: calc(100% - $corners_distance - $corners_distance);
   position: absolute;
-  right: 7vw;
-  left: 7vw;
-  bottom: 10.5vw;
+  right: 3vw;
+  left: 3vw;
+  bottom: 4.5vw;
   text-align: center;
   line-height: 1.15; }
   @media only screen and (min-width: 375px) {
     .header_nav {
-      bottom: 7vw;
+      bottom: 3vw;
       text-align: right; } }
   .header_nav .active a {
     color: black; }
@@ -350,7 +352,7 @@ body {
 .expand_more {
   position: absolute;
   z-index: 1000;
-  bottom: calc(50% - 25px);
+  bottom: calc(55% - 25px);
   left: calc(50% - 25px);
   width: 50px;
   height: 50px; }
@@ -498,8 +500,8 @@ figcaption {
 
 .footer_pad {
   position: absolute;
-  bottom: 7vw;
-  left: 7vw;
+  bottom: 3vw;
+  left: 3vw;
   right: 2rem;
   padding-left: 1rem;
   padding-bottom: 1rem; }
@@ -694,8 +696,8 @@ figcaption {
     display: block;
     font-size: 8pt;
     position: absolute;
-    bottom: 7vw;
-    right: 7vw;
+    bottom: 3vw;
+    right: 3vw;
     left: 2rem;
     text-align: right;
     padding-right: 1rem;

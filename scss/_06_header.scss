@@ -1,8 +1,8 @@
 //header
-$header_font_size: calc(2.75vw + 15px);
+$header_font_size: calc(2.5vw + 15px);
 $border_size: 3px;
 
-$corners_distance: 7vw; //use this also for verticals
+$corners_distance: 3vw; //use this also for verticals
 $corners_dimension: $corners_distance*1.3;
 $header_line_height: 1.15;
 
@@ -27,7 +27,7 @@ $header_line_height: 1.15;
 
   ul{ list-style: none; }
 
-  // add some shit...
+  // add some shit... corners
   &:before{
     content: "";
     position: absolute;
@@ -52,14 +52,18 @@ $header_line_height: 1.15;
   }
 }
 .header_title{
+  width: 100%;
   position: absolute;
   text-align: center;
   top: $corners_distance * 1.5;
+  padding-left: $corners_distance;
+  padding-right: $corners_distance;
   left: 0;
   @include media( "screen", ">minWidth") {
     text-align: left;
     top: $corners_distance;
-    left: $corners_distance;
+    // left: $corners_distance;
+    // right: $corners_distance;
   }
   a:hover{
     h1{
@@ -99,7 +103,7 @@ $header_line_height: 1.15;
 .expand_more{
   position: absolute;
   z-index: 1000;
-  bottom: calc(50% - 25px);
+  bottom: calc(55% - 25px);
   left: calc(50% - 25px);
   width: 50px;
   height: 50px;
