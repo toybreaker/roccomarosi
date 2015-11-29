@@ -473,14 +473,9 @@ figcaption {
 
 .qr_switch {
   border-radius: 2px;
-  position: absolute;
-  top: -9rem;
-  left: 1rem; }
-  @media only screen and (min-width: 375px) {
-    .qr_switch {
-      position: relative;
-      top: 2px;
-      left: 3px; } }
+  position: relative;
+  top: 2px;
+  left: 3px; }
   .qr_switch .bg {
     fill: gray; }
   .qr_switch .fg {
