@@ -96,7 +96,7 @@ gulp.task('serve', ['sass'], function() {
 gulp.task('sass', function () {
     return gulp.src('scss/**/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('assets/css'))// Write the CSS & Source maps
+        .pipe(gulp.dest('assets/css'))// Write CSS (& Source maps)?
         .pipe(filter('**/*.css')) // Filtering stream to only css files
         .pipe(browserSync.reload({stream:true}));
 });
