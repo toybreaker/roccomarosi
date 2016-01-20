@@ -35,6 +35,19 @@ Maybe:
 
 
 
+
+## Features:
+### frontend
+- no jquery
+- no material design http calls (just good stuff in css)
+- [RWD](https://en.wikipedia.org/wiki/Responsive_web_design) with [Imager.js](https://github.com/BBC-News/Imager.js/) to handle images
+
+### dev:
+- `npm install` setup dependencies
+- `gulp` task to compile sass and enable browsersync
+- `gulp images` task to produce sized copies
+
+
 ## Changelog
 
 #### v 0.2.11:
@@ -78,18 +91,6 @@ Maybe:
 
 #### v 0.2.1:
 - refactored with just html activated [flickity](http://flickity.metafizzy.co/)
-
-
-## Features:
-### frontend
-- no jquery
-- no material design http calls (just good stuff in css)
-- [RWD](https://en.wikipedia.org/wiki/Responsive_web_design) with [Imager.js](https://github.com/BBC-News/Imager.js/) to handle images
-
-### dev:
-- `gulp images` task to produce sized copies
-- `gulp` task to compile sass and enable browsersync
-
 
 
 

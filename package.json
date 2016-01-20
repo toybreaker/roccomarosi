@@ -18,6 +18,7 @@
     "gulp-imagemin": "^2.3.0",
     "gulp-responsive": "^1.2.1",
     "gulp-responsive-images": "0.0.3",
-    "gulp-ruby-sass": "^0.7.1"
+    "gulp-ruby-sass": "^0.7.1",
+    "imagemin-pngquant": "^4.2.0"
   }
 }

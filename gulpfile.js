@@ -1,5 +1,5 @@
 'use strict';
-// GULP here just process sass and enable browsersync
+// GULP here process sass and enable browsersync
 // sourcemap handled automagically by gulp-ruby-sass
 // images task to optimize images.
 
