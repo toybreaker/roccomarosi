@@ -10,7 +10,7 @@ v 0.2.11
 ## 2DOs
 
 Urgent:
-
+- tests
 - animate: shake the "v" icon
 - helpers: (temporarly show) "tap to see photo details" on photos
 - imager setup: retina
