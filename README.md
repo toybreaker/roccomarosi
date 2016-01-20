@@ -35,16 +35,16 @@ Maybe:
 - [X] native scroll + [scrollReveal.js](https://github.com/jlmakes/scrollReveal.js/tree/master) (9kb)
 
 
-
-
-## Features:
-##### frontend
+#### frontend features
 - no jquery
 - no material design http calls (just good stuff in css)
 - [RWD](https://en.wikipedia.org/wiki/Responsive_web_design) with [Imager.js](https://github.com/BBC-News/Imager.js/) to handle images
 
-##### dev:
+#### setup
 - `npm install` setup dependencies
+- `npm install imagemin-pngquant` for working images
+
+#### dev features
 - `gulp` task to compile sass and enable browsersync
 - `gulp images` task to produce sized copies
 
