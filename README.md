@@ -42,7 +42,7 @@ Maybe:
 
 #### setup
 - `npm install` setup dependencies
-- `npm install imagemin-pngquant` for working images
+- `npm install imagemin-pngquant` to work images
 
 #### dev features
 - `gulp` task to compile sass and enable browsersync
