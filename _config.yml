@@ -9,7 +9,7 @@ license: http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US
 version: 0.3.0
 
 baseurl: ""
-url: "http://roccomarosi.com"
+url: "https://roccomarosi.com"
 
 github:
   username: toybreaker
