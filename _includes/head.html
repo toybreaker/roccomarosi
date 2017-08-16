@@ -1,0 +1,22 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.layout == 'index' %}{{site.long-title}}{% else %}{{site.title}} - {% if page.section %}{{ page.section }}{% endif %} {{site.sector}}{% endif %}</title>
+
+  <link rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US">
+
+  <meta name="description" content="{% if page.description %}{{ page.description}}{% else %}{{ site.description }}{% endif %}"> {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}"> {% else %}
+  <meta name="keywords" content="{{ site.keywords }}"> {% endif %}
+
+ <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+
+ <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+ <meta name="version" content="{{ site.version }}">
+
+ {% seo %}
+
+</head>

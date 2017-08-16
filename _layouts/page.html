@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ {% include head.html %}
+
+ <body class="{{page.section}}">
+
+  {% include header.html %}
+
+  {% if page.section == 'index' %}
+  {% include photo_loop_index.html %}
+  {% endif %}
+
+  {% if page.section == 'commercial' %}
+  {% include photo_loop_commercial.html %}
+  {% endif %}
+
+  {% if page.section == 'public' %}
+  {% include photo_loop_public.html %}
+  {% endif %}
+
+  {% if page.section == 'residential' %}
+  {% include photo_loop_residential.html %}
+  {% endif %}
+
+  {% include footer.html %}
+
+ </body>
+
+</html>
