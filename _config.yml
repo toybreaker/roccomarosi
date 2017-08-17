@@ -33,6 +33,7 @@ plugins:
  - jekyll-seo-tag
  - jekyll-redirect-from
  - jekyll-sitemap
+ - html-proofer
 exclude:
  - Gemfile
  - Gemfile.lock
