@@ -1,7 +1,6 @@
 //header
 $header_font_size: calc(2.5vw + 15px);
 $border_size: 3px;
-
 $corners_distance: 8vw; //use this also for verticals
 $corners_dimension: $corners_distance*1.3;
 $header_line_height: 1.15;
@@ -13,22 +12,25 @@ $header_line_height: 1.15;
 }
 
 .header {
-  width: 100%;// calc(100% - $corners_distance);
+  width: 100%; // calc(100% - $corners_distance);
   height: 100%;
   position: relative;
   font-weight: 300;
-  font-size: $header_font_size;
-  line-height: $header_line_height;
+  //font-size: $header_font_size;
+  @include responsive-font(4vw, 30px, 100px, 40px);
+  line-height: 1;
 
-  h1{
-    font-size: $header_font_size;
-    line-height: $header_line_height;
+  h1 {
+    //font-size: $header_font_size;
+    @include responsive-font(6vw, 35px, 150px, 50px);
+    line-height: 1;
   }
 
-  ul{ list-style: none; }
-
+  ul {
+    list-style: none;
+  }
   // add some shit... corners
-  &:before{
+  &:before {
     content: "";
     position: absolute;
     top: $corners_distance;
@@ -38,8 +40,10 @@ $header_line_height: 1.15;
     border-top: $border_size solid $link_color;
     border-right: $border_size solid $link_color;
     border-radius: $border_size;
+    margin-right: -1rem;
   }
-  &:after{
+
+  &:after {
     content: "";
     position: absolute;
     bottom: $corners_distance;
@@ -49,9 +53,11 @@ $header_line_height: 1.15;
     border-bottom: $border_size solid $link_color;
     border-left: $border_size solid $link_color;
     border-radius: $border_size;
+    margin-left: -1rem;
   }
 }
-.header_title{
+
+.header_title {
   width: 100%;
   position: absolute;
   text-align: center;
@@ -59,22 +65,25 @@ $header_line_height: 1.15;
   padding-left: $corners_distance;
   padding-right: $corners_distance;
   left: 0;
-  @include media( "screen", ">minWidth") {
+  @include media("screen", ">minWidth") {
     text-align: left;
     top: $corners_distance;
     // left: $corners_distance;
     // right: $corners_distance;
   }
-  a:hover{
-    h1{
+
+  a:hover {
+    h1 {
       color: $link_color;
     }
-    .what{
+
+    .what {
       color: $text_color;
     }
   }
 }
-.header_nav{
+
+.header_nav {
   //width: calc(100% - $corners_distance);
   position: absolute;
   right: $corners_distance;
@@ -82,26 +91,50 @@ $header_line_height: 1.15;
   bottom: $corners_distance * 1.5;
   text-align: center;
   line-height: $header_line_height;
-  @include media( "screen", ">minWidth") {
+  @include media("screen", ">minWidth") {
     bottom: $corners_distance;
     text-align: right;
     //line-height: $header_line_height;
   }
-  a{text-transform: capitalize;}
+  li {
+    display: block;
+  }
+
+  a {
+    text-transform: uppercase;
+    @include responsive-font(4vw, 30px, 50px, 36px);
+    line-height: 1;
+    display: block;
+    height: 22px;
+    @include media("screen", ">minWidth") {
+        height: 28px;
+    }
+    @include media("screen", ">bp1Width") {
+        height: 34px;
+    }
+    @include media("screen", ">maxWidth") {
+        height: 42px;
+    }
+  }
   // style for active page
-  .active a{color: black;}
+  .active a {
+    color: black;
+  }
 }
 
-.what{
-  @include media( "screen", ">bp1Width") {
-    .br{display: none;}
+.what {
+  @include media("screen", ">bp1Width") {
+    .br {
+      display: none;
+    }
   }
   display: block;
   letter-spacing: -1px;
-  color:$link_color;
+  color: $link_color;
+  text-transform: uppercase;
 }
 
-.expand_more{
+.expand_more {
   position: absolute;
   z-index: 1000;
   bottom: calc(55% - 25px);
@@ -109,13 +142,17 @@ $header_line_height: 1.15;
   width: 50px;
   height: 50px;
 
-  svg{
+  svg {
     border-radius: $border_size;
     fill: $link_color;
     border: 0 none;
-    &:hover { fill: darken($link_color, 20); }
-    @include media( "screen", ">bp1Width") {
+
+    &:hover {
+      fill: darken($link_color, 20);
+    }
+    @include media("screen", ">bp1Width") {
       border: $border_size solid $link_color;
+
       &:hover {
         fill: darken($link_color, 20);
         border: $border_size solid darken($link_color, 20);
@@ -128,5 +165,8 @@ $header_line_height: 1.15;
     width: 50px;
     height: 50px;
   }
-  .qr_is_big &{display: none;}
+
+  .qr_is_big & {
+    display: none;
+  }
 }
