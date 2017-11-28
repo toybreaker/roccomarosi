@@ -77,7 +77,7 @@
 
     <div class="footer_list group legal">
 
-      <div class="footer_list_row">2017 © Rocco Marosi. All rights reserved. <br>Powered by <a title="website powered by Junglestar, a one stop shop for all your internet needs - check it out" href="http://junglestar.org">Junglestar.</a></div>
+      <div class="footer_list_row">{{ "now" | date: "%Y" }} © Rocco Marosi. All rights reserved. <br>Powered by <a title="website powered by Junglestar, a one stop shop for all your internet needs - check it out" href="http://junglestar.org">Junglestar.</a></div>
 
     </div>
 
@@ -92,17 +92,29 @@
   <p>plus.google.com/+roccomarosi</p>
 </div>
 
-
-{% include script_toggle_qr.html %}
-
 {% include script_scroll_reveal.html %}
 
 {% include script_imager.html %}
 
-{% include script_webfonts.html %}
-
-{% include script_toggle_figcaptions.html %}
+<!-- wrap img in figure and make caption from alt -->
+<script type="text/javascript">
+  var images= document.querySelectorAll( "#check img" ),
+  L = images.length, fig = document.createElement('figure'),
+  who, temp
+  while(L) {
+    temp = fig.cloneNode(false);
+    who = images[--L];
+    caption = who.getAttribute("alt");
+    who.parentNode.insertBefore(temp, who);
+    content = document.createElement( 'figcaption' );
+    content.innerHTML = caption;
+    temp.appendChild(who);
+    temp.appendChild(content);
+  }
+</script>
 
 {% include script_ext_links.html %}
+
+{% include script_toggle_qr.html %}
 
 {% include script_google_analytics.html %}

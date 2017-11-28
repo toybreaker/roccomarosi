@@ -105,7 +105,7 @@ $header_line_height: 1.15;
     @include responsive-font(4vw, 30px, 50px, 36px);
     line-height: 1;
     display: block;
-    height: 22px;
+    height: 26px;
     @include media("screen", ">minWidth") {
         height: 28px;
     }

@@ -1,7 +1,7 @@
 {
   "name": "rocco_marosi",
-  "version": "0.3.0",
-  "description": "jekyll + netlify + gulp + ruby-sass + sourcemaps + browsersync = Spoton!",
+  "version": "0.3.1",
+  "description": "jekyll + netlify + gulp + ruby-sass + sourcemaps + browsersync = Overdone!",
   "main": "gulpfile.js",
   "private": true,
   "scripts": {

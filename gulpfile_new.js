@@ -4,7 +4,7 @@ const gulp  = require('gulp')
 const concat = require('gulp-concat')
 const uglify = require('gulp-uglify')
 
-gulp.task('scripts', function() {
+gulp.task('grind_scripts', function() {
   const scriptsToMerge = [
     './_src/jquery.unveil.js',
     './_src/masonry.pkgd.js',
@@ -18,7 +18,7 @@ gulp.task('scripts', function() {
 })
 
 gulp.task('watch', function() {
-  gulp.watch('./_src/**/*.js', ['scripts'])
+  gulp.watch('./_src/**/*.js', ['grind_scripts'])
 })
 
-gulp.task('default', ['scripts'])
+gulp.task('default', ['grind_scripts'])
