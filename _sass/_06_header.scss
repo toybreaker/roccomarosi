@@ -96,6 +96,7 @@ $header_line_height: 1.15;
     text-align: right;
     //line-height: $header_line_height;
   }
+
   li {
     display: block;
   }
@@ -107,13 +108,13 @@ $header_line_height: 1.15;
     display: block;
     height: 26px;
     @include media("screen", ">minWidth") {
-        height: 28px;
+      height: 28px;
     }
     @include media("screen", ">bp1Width") {
-        height: 34px;
+      height: 34px;
     }
     @include media("screen", ">maxWidth") {
-        height: 42px;
+      height: 42px;
     }
   }
   // style for active page
