@@ -9,6 +9,8 @@ $header_line_height: 1.15;
   width: 100vw;
   //the only vh is here...
   height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .header {
