@@ -17,14 +17,14 @@ twitter:
   username: rokmatwit
 google:
   analytics: UA-43130984-1
-  plus: +Roccomarosi
-linkedin: https://sg.linkedin.com/in/roccomarosi
+  plus: https://plus.google.com/+Roccomarosi
+linkedin: https://www.linkedin.com/in/roccomarosi
 
 # for jekyll-seo-tag
 social:
   name: Rocco Marosi
   links:
-    - https://sg.linkedin.com/in/roccomarosi
+    - https://www.linkedin.com/in/roccomarosi
     - https://plus.google.com/+Roccomarosi
 
 # Build settings
