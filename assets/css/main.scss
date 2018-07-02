@@ -1,5 +1,4 @@
 ---
-# Only mainSassfile needs front matter (dashes enough)
 sitemap: false
 ---
 // variables
@@ -14,7 +13,7 @@ $light_color: white;
 $dark_color: black;
   $text_color_invert: lighten($dark_color, 50);
   $text_color: lighten($dark_color, 25);
-    $link_color: lighten($text_color, 50);
+    $link_color: lighten($dark_color, 50);
     $link_color_invert: darken($text_color, 50);
 
 //material design stuff
