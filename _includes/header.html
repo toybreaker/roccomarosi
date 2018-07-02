@@ -3,7 +3,7 @@
  <div class="header" data-sr=''>
 
   <div class="header_title" data-sr=''>
-   <a class="title" href="/" alt="home">
+   <a class="title" title="back to home page" href="/" alt="home">
     <h1>{{site.title}}</h1>
    </a>
    <span class="what">{{site.sector}}</span>
@@ -12,7 +12,7 @@
   {% include menu.html %}
 
 
-<!--
+  {% comment %}
   <div class="header_nav" data-sr=''>
 
    <ul>
@@ -35,10 +35,11 @@
 
    </ul>
 
-  </div> -->
+  </div>
+{% endcomment %}
 
   <div class="expand_more" data-sr='reset'>
-   <a href="#check">
+   <a title="scroll down to see work photo examples" href="#check">
      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
        <path d="M16.59 8.59l-4.59 4.58-4.59-4.58-1.41 1.41 6 6 6-6z"/>
        <path d="M0 0h24v24h-24z" fill="none"/>
