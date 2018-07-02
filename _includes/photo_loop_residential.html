@@ -3,7 +3,7 @@
 {% for image in site.data.photos.residential %}
  <div class="slide" data-sr='reset'>
 
-  <div class="delayed-image-load" data-src="/assets/p/{{image.photo}}-{width}.jpg" data-alt="{{image.building}}, {{image.location}}{% if image.country %}, {{image.country}}{% endif %} •{% if image.architect %} {{image.architect}} •{% endif %} Rocco Marosi © {{image.year}}"></div>
+  <div class="delayed-image-load" data-src="/assets/p/{{image.photo}}-{width}.jpg" data-alt="{{image.building}}, {{image.location}}{% if image.country %}, {{image.country}}{% endif %} •{% if image.architect %} {{image.architect}}{% endif %} © Rocco Marosi"></div>
 
  </div>
 
