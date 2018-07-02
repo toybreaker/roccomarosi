@@ -11,7 +11,7 @@ $alert_color: red;
 $light_color: white;
   $main_color: $light_color;
 $dark_color: black;
-  $text_color_invert: lighten($dark_color, 40);
+  $text_color_invert: lighten($dark_color, 60);
   $text_color: lighten($dark_color, 25);
     $link_color: lighten($dark_color, 40);
     $link_color_invert: darken($text_color, 50);
