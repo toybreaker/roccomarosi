@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.layout == 'index' %}{{site.long-title}}{% else %}{{site.title}} - {% if page.section %}{{ page.section }}{% endif %} {{site.sector}}{% endif %}</title>
+  <title>{% if page.section == 'index' %}{{site.long-title}}{% else %}{{site.title}} - {% if page.section %}{{ page.section | capitalize }}{% endif %} {{site.sector}}{% endif %}</title>
 
   <link rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US">
 
