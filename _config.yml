@@ -5,8 +5,8 @@ email: rocco.marosi@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Hello, my name is Rocco Marosi and I specialize in Architectural Photography Services.
 keywords: photographer, architecture, architectural photography, get a quote, specialized, professional, skilled, images, villa, resort, mall, public spaces, available.
-license: http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US
-version: 0.3.0
+license: https://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US
+version: 0.4.0
 
 baseurl: ""
 url: "https://roccomarosi.com"
@@ -17,15 +17,15 @@ twitter:
   username: rokmatwit
 google:
   analytics: UA-43130984-1
-  plus: https://plus.google.com/+Roccomarosi
 linkedin: https://www.linkedin.com/in/roccomarosi
+instagram: https://www.instagram.com/rocco.marosi
 
 # for jekyll-seo-tag
 social:
   name: Rocco Marosi
   links:
     - https://www.linkedin.com/in/roccomarosi
-    - https://plus.google.com/+Roccomarosi
+    - https://www.instagram.com/rocco.marosi/
 
 # Build settings
 markdown: kramdown

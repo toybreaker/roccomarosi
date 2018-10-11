@@ -32,10 +32,16 @@
     }
     width: 46px;
     height: 46px;
-    fill: $text_color_invert;
 
     &:hover {
-      fill: $light_color;
+      cursor: pointer;
+    }
+
+    &.grey{
+      fill: $text_color_invert;
+      &:hover {
+        fill: $light_color;
+      }
     }
 
     &.stroke {
