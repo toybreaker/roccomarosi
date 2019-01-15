@@ -4,22 +4,18 @@ Super light mobile-first portfolio display static website. Fully responsive. Foc
 
 Adhering to [K.I.S.S](https://en.wikipedia.org/wiki/KISS_principle) • [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
-version: 0.3.1
-
+version: 0.4.1
 
 ## 2DOs
 
 Urgent:
 
 - animate: shake the "v" icon
-- helpers: (temporarly show) "tap to see photo details" on photos
-- imager setup: retina
-- gulp min + concat
+- single pages for each photo, w/ thumbs (maybe) in footer for social media posting
 
 Sometime soon:
 
 - service workers
-- some-kind-of template (jade?)
 
 Maybe:
 
@@ -53,12 +49,17 @@ Maybe:
 
 #### dev features
 
-- `gulp` task to compile sass and enable browsersync
+- `gulp lower` task to produce lowercased images
 
-- `gulp images` task to produce sized copies
+- `gulp jpgs` task to produce sized images
 
 
 ## Changelog
+
+#### v 0.4.0:
+
+- refactored gulp task in an updated, simpler, leaner way
+- showing captions, always
 
 #### v 0.3.0:
 

@@ -1,24 +1,27 @@
 {
   "name": "rocco_marosi",
-  "version": "0.3.1",
-  "description": "jekyll + netlify + gulp + ruby-sass + sourcemaps + browsersync = Overdone!",
+  "version": "1.4.0",
+  "description": "rocco_marosi website image processor",
   "main": "gulpfile.js",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "rokma",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toybreaker/roccomarosi.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toybreaker/roccomarosi/issues"
+  },
+  "homepage": "https://github.com/toybreaker/roccomarosi#readme",
   "devDependencies": {
-    "browser-sync": "^1.7.2",
-    "gulp": "^3.8.10",
-    "gulp-autoprefixer": "^1.0.1",
-    "gulp-filter": "^2.0.2",
-    "gulp-gm": "0.0.8",
-    "gulp-imagemin": "^2.3.0",
-    "gulp-responsive": "^1.2.1",
-    "gulp-responsive-images": "0.0.3",
-    "gulp-ruby-sass": "^0.7.1",
-    "imagemin-pngquant": "^4.2.0"
+    "change-case": "^3.0.2",
+    "google-spreadsheet": "^2.0.5",
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-responsive": "^2.11.0"
   }
 }
