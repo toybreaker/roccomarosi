@@ -1,13 +1,13 @@
 <div class="slides" id="check">
 
-{% for image in site.data.photos.public %}
- <div class="slide" data-sr='reset'>
+  {% for image in site.data.photos.public %}
+   <div class="slide" data-sr='reset'>
 
-  <div class="delayed-image-load" data-src="/assets/p/{{image.photo}}-{width}.jpg" data-alt="{{image.building}}, {{image.location}}{% if image.country %}, {{image.country}}{% endif %} {% if image.architect %}• {{image.architect}}{% endif %} © Rocco Marosi"></div>
+    <div class="delayed-image-load" data-src="/assets/p/{{image.photo}}-{width}.jpg" data-alt="{{image.building}}, {{image.location}}{% if image.country %}, {{image.country}}{% endif %} {% if image.architect %}• {{image.architect}}{% endif %} © Rocco Marosi"></div>
 
- </div>
+   </div>
 
- <div class="spacer user_trasparent"></div>
-{% endfor %}
+   <div class="spacer user_trasparent"></div>
+  {% endfor %}
 
 </div>
