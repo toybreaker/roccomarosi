@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Hello, my name is Rocco Marosi and I specialize in Architectural Photography Services.
 keywords: photographer, architecture, architectural photography, get a quote, specialized, professional, skilled, images, villa, resort, mall, public spaces, available.
 license: https://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US
-version: 0.4.1
+version: 0.4.2
 
 baseurl: ""
 url: "https://roccomarosi.com"
