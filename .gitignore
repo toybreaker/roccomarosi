@@ -5,6 +5,7 @@ __LAB/
 Icon
 Gemfile.lock
 .sass-cache/
+.jekyll-cache
 Imager.js
 _site/
 robots.txt

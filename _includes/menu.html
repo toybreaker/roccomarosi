@@ -1,21 +1,23 @@
-<div class="header_nav" data-sr=''>
-  <ul>
+<div class="header_nav menu" data-sr=''>
 
-    {% for item in site.data.menu %}
-    {% if page.url contains item.page %}
-    <li class="active">
-      <a href="/{{item.page}}/">{{item.page}}</a>
-    </li>
-    {% else %}
-    <li>
-      <a href="/{{item.page}}/">{{item.page}}</a>
-    </li>
-    {% endif %}
-    {% endfor %}
+{% for item in site.data.menu %}
+  {% if page.url contains item.page %}
+  <div class="menu_item active">
+    <a title="{{item.page}}" href="/{{item.page}}/">
+      <span>{{item.page}}</span>
+    </a>
+  </div>
+  {% else %}
+  <div class="menu_item">
+    <a title="{{item.page}}" href="/{{item.page}}/">
+      <span>{{item.page}}</span>
+    </a>
+  </div>
+  {% endif %}
+{% endfor %}
 
-    <li class="last">
-     <a alt="Rocco Marosi is available everywhere on planet earth excluding antartica" title="{{ site.email }}" href="mailto:{{ site.email }}">Get a quote</a>
-    </li>
+  <div class="menu_item last">
+   <a alt="Rocco Marosi is available everywhere on planet earth excluding antartica" title="{{ site.email }}" href="mailto:{{ site.email }}">Get a quote</a>
+  </div>
 
-  </ul>
 </div>

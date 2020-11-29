@@ -1,0 +1,59 @@
+.menu {
+  //width: calc(100% - $corners_distance);
+  position: absolute;
+  padding: $corners_distance/2;
+  right: $corners_distance;
+  left: $corners_distance;
+  bottom: $corners_distance * 1.5;
+  text-align: center;
+  @include media("screen", ">minWidth") {
+    bottom: $corners_distance;
+    text-align: right;
+    //line-height: $header_line_height;
+  }
+
+  .menu_item {
+    // link container
+    font-size: $menu_font_size;
+    text-transform: uppercase;
+    //@include responsive-font(4vw, 30px, 50px, 36px);
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+  }
+
+  a {
+    font-size: $menu_font_size;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 0 10px;
+    margin: 3px 0;
+    border: 3px solid #666;
+    width: 100%;
+    max-width: 250px;
+    @include media("screen", ">minWidth") {}
+
+  }
+
+  .menu_item.last a {
+    color: #aaa;
+    border-color: #aaa;
+  }
+
+  // style for active page
+  .active a {
+    color: black;
+    border-color: black;
+  }
+
+  a:visited {
+    color: #ccc;
+    border: 3px solid #ccc;
+  }
+
+}

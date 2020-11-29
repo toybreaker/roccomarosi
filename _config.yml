@@ -1,34 +1,34 @@
-title: Rocco Marosi
-sector: Architectural Photography
-long-title: Rocco Marosi Architectural Photography
-email: rocco.marosi@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+version:       1.5.0
+title:         Rocco Marosi
+sector:        Architectural Photography
+long-title:    Rocco Marosi Architectural Photography
+email:         rocco.marosi@gmail.com
+description:   > # this means to ignore newlines until "baseurl:"
   Hello, my name is Rocco Marosi and I specialize in Architectural Photography Services.
-keywords: photographer, architecture, architectural photography, get a quote, specialized, professional, skilled, images, villa, resort, mall, public spaces, available.
-license: https://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US
-version: 0.4.2
+keywords:      photographer, architecture, architectural photography, get a quote, specialized, professional, skilled, images, villa, resort, mall, public spaces, available.
+license:       https://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US
 
-baseurl: ""
-url: "https://roccomarosi.com"
+baseurl:       ""
+url:           "https://roccomarosi.com"
 
 github:
-  username: toybreaker
+  username:    toybreaker
 twitter:
-  username: rokmatwit
+  username:    rokmatwit
 google:
-  analytics: UA-43130984-1
-linkedin: https://www.linkedin.com/in/roccomarosi
-instagram: https://www.instagram.com/rocco.marosi
+  analytics:   UA-43130984-1
+linkedin:      https://www.linkedin.com/in/roccomarosi
+instagram:     https://www.instagram.com/rocco.marosi
 
 # for jekyll-seo-tag
 social:
-  name: Rocco Marosi
+  name:        Rocco Marosi
   links:
     - https://www.linkedin.com/in/roccomarosi
     - https://www.instagram.com/rocco.marosi/
 
 # Build settings
-markdown: kramdown
+markdown:      kramdown
 plugins:
  - jekyll-seo-tag
  - jekyll-sitemap
@@ -43,10 +43,10 @@ exclude:
  - Icon
  - node_modules
  - .workinprogress
-permalink: pretty
+permalink:     pretty
 
 
 collections:
   pages:
-   output: true
-   permalink: /:path/
+   output:     true
+   permalink:  /:path/

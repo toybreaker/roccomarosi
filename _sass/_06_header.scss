@@ -1,6 +1,5 @@
 //header
 
-
 .header_box {
   width: 100vw;
   //the only vh is here...
@@ -24,10 +23,7 @@
     line-height: 1;
   }
 
-  ul {
-    list-style: none;
-  }
-  // add some shit... corners
+  //corners
   &:before {
     content: "";
     position: absolute;
@@ -59,15 +55,13 @@
   width: 100%;
   position: absolute;
   text-align: center;
-  top: $corners_distance * 3;
+  top: $corners_distance * 2;
   padding-left: $corners_distance;
   padding-right: $corners_distance;
   left: 0;
   @include media("screen", ">minWidth") {
     text-align: left;
     top: $corners_distance;
-    // left: $corners_distance;
-    // right: $corners_distance;
   }
 
   a:hover {
@@ -78,46 +72,6 @@
     .what {
       color: $text_color;
     }
-  }
-}
-
-.header_nav {
-  //width: calc(100% - $corners_distance);
-  position: absolute;
-  right: $corners_distance;
-  left: $corners_distance;
-  bottom: $corners_distance * 3;
-  text-align: center;
-  line-height: $header_line_height;
-  @include media("screen", ">minWidth") {
-    bottom: $corners_distance;
-    text-align: right;
-    //line-height: $header_line_height;
-  }
-
-  li {
-    display: block;
-  }
-
-  a {
-    text-transform: uppercase;
-    @include responsive-font(4vw, 30px, 50px, 36px);
-    line-height: 1;
-    display: block;
-    height: 26px;
-    @include media("screen", ">minWidth") {
-      height: 28px;
-    }
-    @include media("screen", ">bp1Width") {
-      height: 34px;
-    }
-    @include media("screen", ">maxWidth") {
-      height: 42px;
-    }
-  }
-  // style for active page
-  .active a {
-    color: black;
   }
 }
 
