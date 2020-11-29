@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/33190688-afc3-41c7-8c7a-ae8677c49ddd/deploy-status)](https://app.netlify.com/sites/roccomarosi/deploys)
+
 #### [Rocco Marosi](http://roccomarosi.com) ⟐ Architecture Photography ⟐
 
 Super light mobile-first portfolio display static website. Fully responsive. Focus on speed and simplicity, with care for minimizing network request and delivering a polished meaningful user experience.
