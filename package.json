@@ -1,5 +1,5 @@
 {
-  "version": "1.51",
+  "version": "1.6.0",
   "name": "rocco_marosi",
   "description": "rocco_marosi website image processor",
   "main": "gulpfile.js",
@@ -20,9 +20,11 @@
   "homepage": "https://github.com/toybreaker/roccomarosi#readme",
   "devDependencies": {
     "change-case": "^3.0.2",
-    "google-spreadsheet": "^2.0.5",
     "gulp": "^4.0.0",
     "gulp-rename": "^1.4.0",
-    "gulp-responsive": "^2.11.0"
+    "gulp-responsive": "^2.11.0".
+    "set-value": ">=2.0.1",
+    "minimist": ">=1.2.3",
+    "yargs-parser": ">=5.0.0-security.0"
   }
 }

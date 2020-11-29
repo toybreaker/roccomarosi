@@ -1,10 +1,9 @@
-version:       1.5.1
+version:       1.6.0
 title:         Rocco Marosi
 sector:        Architectural Photography
 long-title:    Rocco Marosi Architectural Photography
 email:         rocco.marosi@gmail.com
-description:   > # this means to ignore newlines until "baseurl:"
-  Hello, my name is Rocco Marosi and I specialize in Architectural Photography Services.
+description:   "Hello, my name is Rocco Marosi and I specialize in Architectural Photography Services."
 keywords:      photographer, architecture, architectural photography, get a quote, specialized, professional, skilled, images, villa, resort, mall, public spaces, available.
 license:       https://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US
 
