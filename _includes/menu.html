@@ -9,15 +9,28 @@
   </div>
   {% else %}
   <div class="menu_item">
+
     <a title="{{item.page}}" href="/{{item.page}}/">
       <span>{{item.page}}</span>
     </a>
+
   </div>
   {% endif %}
 {% endfor %}
 
   <div class="menu_item last">
-   <a alt="Rocco Marosi is available everywhere on planet earth excluding antartica" title="{{ site.email }}" href="mailto:{{ site.email }}">Get a quote</a>
+
+    <a alt="Rocco Marosi is available everywhere on planet earth excluding antartica" title="{{ site.email }}" href="mailto:{{ site.email }}">
+      <span>Get a quote</span>
+    </a>
+
   </div>
 
 </div>
+
+<script>
+  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+</script>

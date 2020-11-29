@@ -1,25 +1,22 @@
-//header
+// header now without vh! (only as fallback)
+// https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
 
 .header_box {
   width: 100vw;
-  //the only vh is here...
-  height: 100vh;
-  min-height: 100vh;
-  max-height: 100vh;
+  height: 100vh; // Fallback for browsers that do not support Custom Properties
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .header {
-  width: 100%; // calc(100% - $corners_distance);
+  width: 100%;
   height: 100%;
   position: relative;
   font-weight: 300;
-  //font-size: $header_font_size;
   @include responsive-font(4vw, 30px, 100px, 40px);
   line-height: 1;
 
   h1 {
-    //font-size: $header_font_size;
-    @include responsive-font(6vw, 35px, 150px, 50px);
+    @include responsive-font(6vw, 58px, 150px, 58px);
     line-height: 1;
   }
 
@@ -34,7 +31,6 @@
     border-top: $border_size solid $link_color;
     border-right: $border_size solid $link_color;
     border-radius: $border_size;
-    margin-right: -1rem;
   }
 
   &:after {
@@ -47,31 +43,6 @@
     border-bottom: $border_size solid $link_color;
     border-left: $border_size solid $link_color;
     border-radius: $border_size;
-    margin-left: -1rem;
-  }
-}
-
-.header_title {
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  top: $corners_distance * 2;
-  padding-left: $corners_distance;
-  padding-right: $corners_distance;
-  left: 0;
-  @include media("screen", ">minWidth") {
-    text-align: left;
-    top: $corners_distance;
-  }
-
-  a:hover {
-    h1 {
-      color: $link_color;
-    }
-
-    .what {
-      color: $text_color;
-    }
   }
 }
 
@@ -85,6 +56,36 @@
   letter-spacing: -1px;
   color: $link_color;
   text-transform: uppercase;
+  line-height: 1.075;
+  padding-top: 4px;
+}
+
+.header_title {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: $corners_distance * 2;
+  padding-left: $corners_distance;
+  padding-right: $corners_distance;
+  left: 0;
+  @include media("screen", ">bp1Width") {
+    text-align: left;
+    top: $corners_distance;
+
+    .br {
+      display: none;
+    }
+  }
+
+  a:hover {
+    h1 {
+      color: $link_color;
+    }
+
+    .what {
+      color: $text_color;
+    }
+  }
 }
 
 .expand_more {
