@@ -1,6 +1,6 @@
 {
   "name": "rocco_marosi",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "rocco_marosi website image processor",
   "main": "gulpfile.js",
   "private": true,
