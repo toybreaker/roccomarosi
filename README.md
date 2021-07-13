@@ -6,7 +6,7 @@ Super light mobile-first portfolio display static website. Fully responsive. Foc
 
 Adhering to [K.I.S.S](https://en.wikipedia.org/wiki/KISS_principle) • [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
-version: 0.4.1
+version: 1.7.0
 
 ## 2DOs
 
@@ -43,20 +43,12 @@ Maybe:
 
 - [RWD](https://en.wikipedia.org/wiki/Responsive_web_design) with [Imager.js](https://github.com/BBC-News/Imager.js/) to handle images
 
-#### setup
-
-- `npm install` setup dependencies
-
-- `npm install imagemin-pngquant` to work images
-
-#### dev features
-
-- `gulp lower` task to produce lowercased images
-
-- `gulp jpgs` task to produce sized images
-
 
 ## Changelog
+
+#### v 1.7.0:
+
+- deleted gulp tasks, use [grinder](https://github.com/toybreaker/grinder)
 
 #### v 0.4.0:
 
