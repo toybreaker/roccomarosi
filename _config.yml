@@ -1,4 +1,4 @@
-version:       1.7.0
+version:       1.7.1
 title:         Rocco Marosi
 sector:        Architectural Photography
 long-title:    Rocco Marosi Architectural Photography
@@ -16,6 +16,8 @@ twitter:
   username:    rokmatwit
 google:
   analytics:   UA-43130984-1
+  analyticsG4: G-2M8YR7TEGY
+
 linkedin:      https://www.linkedin.com/in/roccomarosi
 instagram:     https://www.instagram.com/rocco.marosi
 
@@ -29,6 +31,7 @@ social:
 # Build settings
 markdown:      kramdown
 plugins:
+ - jekyll/tagging
  - jekyll-seo-tag
  - jekyll-sitemap
  - html-proofer
