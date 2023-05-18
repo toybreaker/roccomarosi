@@ -6,7 +6,7 @@ Super light mobile-first portfolio display static website. Fully responsive. Foc
 
 Adhering to [K.I.S.S](https://en.wikipedia.org/wiki/KISS_principle) • [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
-version: 1.7.1
+version: 1.7.3
 
 ## 2DOs
 

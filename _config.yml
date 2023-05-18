@@ -1,4 +1,4 @@
-version:       1.7.3
+version:       1.7.4
 title:         Rocco Marosi
 sector:        Architectural Photography
 long-title:    Rocco Marosi Architectural Photography
@@ -31,11 +31,10 @@ social:
 # Build settings
 markdown:      kramdown
 plugins:
-  - jekyll-seo-tag
-  - jekyll-redirect-from
-  - jekyll-sitemap
-  - jekyll-paginate
-  - html-proofer
+ - jekyll/tagging
+ - jekyll-seo-tag
+ - jekyll-sitemap
+ - html-proofer
 exclude:
  - Gemfile
  - Gemfile.lock

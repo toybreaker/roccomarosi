@@ -6,9 +6,7 @@ Icon
 Gemfile.lock
 .sass-cache/
 .jekyll-cache
-Imager.js
 _site/
 robots.txt
 node_modules
 
-_src/images_to_min
