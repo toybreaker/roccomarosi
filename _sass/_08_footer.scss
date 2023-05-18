@@ -12,7 +12,7 @@
 
   .is_big & {
     * > :not(.qr_switch) {
-      opacity: .2;
+      opacity: 0.2;
     }
   }
 
@@ -23,10 +23,10 @@
 
   svg {
     margin-top: 0;
-    @include media("screen", ">bp1Width") {
+    @include media('screen', '>bp1Width') {
       margin-top: -6px;
     }
-    @include media("screen", ">maxWidth") {
+    @include media('screen', '>maxWidth') {
       margin-top: -10px;
     }
     width: 46px;
@@ -134,7 +134,7 @@
     position: absolute;
     right: $corners_distance;
     top: $corners_distance;
-    @include media("screen", ">minWidth") {
+    @include media('screen', '>minWidth') {
       right: $corners_distance;
       top: $corners_distance;
     }
@@ -148,7 +148,8 @@
   .h3,
   h3 {
     color: lighten($text_color_invert, 25);
-    @include responsive-font(5vw, 35px, 150px, 50px);
+    //@include responsive-font(5vw, 35px, 150px, 50px);
+    font-size: clamp(5vw, 35px, 150px);
   }
 
   .footer_what {
@@ -157,7 +158,8 @@
     display: block;
     color: $text_color_invert;
     padding-right: 4rem;
-    @include responsive-font(4vw, 30px, 100px, 40px);
+    //@include responsive-font(4vw, 30px, 100px, 40px);
+    font-size: clamp(4vw, 30px, 100px);
   }
 }
 
@@ -178,11 +180,11 @@
   &.contacts a {
     float: left;
     margin-bottom: 0;
-    margin-right: .75rem;
-    @include media("screen", ">minWidth") {
+    margin-right: 0.75rem;
+    @include media('screen', '>minWidth') {
       margin-right: 1rem;
     }
-    @include media("screen", ">bp1Width") {
+    @include media('screen', '>bp1Width') {
       margin-right: 1.5rem;
     }
     margin-top: 2rem;

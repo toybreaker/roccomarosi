@@ -12,34 +12,38 @@
   height: 100%;
   position: relative;
   font-weight: 300;
-  @include responsive-font(4vw, 30px, 100px, 40px);
+  font-size: clamp(3vw, 30px, 100px);
   line-height: 1;
 
   h1 {
-    @include responsive-font(6vw, 58px, 150px, 58px);
+    font-size: clamp(6vw, 58px, 150px);
     line-height: 1;
+    padding-top: var(--corner_distance);
+    @include media('screen', '>bp1Width') {
+      padding-top: calc(var(--corner_distance) / 2);
+    }
   }
 
   //corners
   &:before {
-    content: "";
+    content: '';
     position: absolute;
-    top: $corners_distance;
-    right: $corners_distance;
-    width: $corners_dimension;
-    height: $corners_dimension;
+    top: var(--corner_distance);
+    right: var(--corner_distance);
+    width: var(--corner_dimension);
+    height: var(--corner_dimension);
     border-top: $border_size solid $link_color;
     border-right: $border_size solid $link_color;
     border-radius: $border_size;
   }
 
   &:after {
-    content: "";
+    content: '';
     position: absolute;
-    bottom: $corners_distance;
-    left: $corners_distance;
-    width: $corners_dimension;
-    height: $corners_dimension;
+    bottom: var(--corner_distance);
+    left: var(--corner_distance);
+    width: var(--corner_dimension);
+    height: var(--corner_dimension);
     border-bottom: $border_size solid $link_color;
     border-left: $border_size solid $link_color;
     border-radius: $border_size;
@@ -47,7 +51,7 @@
 }
 
 .what {
-  @include media("screen", ">bp1Width") {
+  @include media('screen', '>bp1Width') {
     .br {
       display: none;
     }
@@ -64,13 +68,14 @@
   width: 100%;
   position: absolute;
   text-align: center;
-  top: $corners_distance * 2;
-  padding-left: $corners_distance;
-  padding-right: $corners_distance;
+  top: calc(var(--corner_distance) * 2);
+  padding-left: var(--corner_distance);
+  padding-right: var(--corner_distance);
   left: 0;
-  @include media("screen", ">bp1Width") {
+  @include media('screen', '>bp1Width') {
     text-align: left;
-    top: $corners_distance;
+    left: calc(var(--corner_distance) / 2);
+    top: var(--corner_distance);
 
     .br {
       display: none;
@@ -104,7 +109,7 @@
     &:hover {
       fill: darken($link_color, 20);
     }
-    @include media("screen", ">bp1Width") {
+    @include media('screen', '>bp1Width') {
       border: $border_size solid $link_color;
 
       &:hover {

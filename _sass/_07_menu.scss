@@ -1,32 +1,26 @@
 .menu {
-  //width: calc(100% - $corners_distance);
   position: absolute;
-  padding: $corners_distance/2;
-  right: $corners_distance;
-  left: $corners_distance;
-  bottom: $corners_distance * 1.5;
+  padding: var(--corner_distance);
+  right: var(--corner_distance);
+  left: var(--corner_distance);
+  bottom: calc(var(--corner_distance) * 3);
   text-align: center;
-  @include media("screen", ">bp1Width") {
-    padding-right: 0;
-    padding-bottom: 0;
-    bottom: $corners_distance;
+  @include media('screen', '>bp1Width') {
+    bottom: calc(var(--corner_distance) * 1);
     text-align: right;
-    //line-height: $header_line_height;
   }
 
   .menu_item {
     // link container
     font-size: $menu_font_size;
     text-transform: uppercase;
-    //@include responsive-font(4vw, 30px, 50px, 36px);
     line-height: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    @include media("screen", ">bp1Width") {
+    @include media('screen', '>bp1Width') {
       justify-content: flex-end;
     }
-
   }
 
   a {
@@ -43,19 +37,12 @@
     max-width: 230px;
 
     span {
-      @include media("screen", ">bp1Width") {
+      @include media('screen', '>bp1Width') {
         width: 90%;
         text-align: right;
       }
     }
-
   }
-
-  // not enough contrast, so just get rid of it!
-  // .menu_item.last a {
-  //   color: #999;
-  //   border-color: #999;
-  // }
 
   // style for active page
   .active a {
@@ -67,5 +54,4 @@
     color: #ccc;
     border: 3px solid #ccc;
   }
-
 }

@@ -18,14 +18,14 @@
 @mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
   $responsive-unitless: $responsive / ($responsive - $responsive + 1);
   $dimension: if(unit($responsive) == 'vh', 'height', 'width');
-  $min-breakpoint: $min / $responsive-unitless * 100;
+  $min-breakpoint: calc($min / $responsive-unitless * 100);
 
   @media (max-#{$dimension}: #{$min-breakpoint}) {
     font-size: $min;
   }
 
   @if $max {
-    $max-breakpoint: $max / $responsive-unitless * 100;
+    $max-breakpoint: calc($max / $responsive-unitless * 100);
 
     @media (min-#{$dimension}: #{$max-breakpoint}) {
       font-size: $max;
@@ -49,7 +49,7 @@ body {
 header {
   background-color: pink;
   font-size: 14px;
-  color: #EA540A;
+  color: #ea540a;
   padding: 8px;
 }
 

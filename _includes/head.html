@@ -13,7 +13,7 @@
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
 
   {% capture inline_css %}
-    {% include main.scss %}
+  {% include main.scss %}
   {% endcapture %}
   <style>{{ inline_css | scssify }}</style>
 
